@@ -1,0 +1,121 @@
+
+.z-single-product {
+    background-image: url("http://youtubevirals.com/wp-content/themes/youtube2014/images/zbaoanhle/new1.png");
+    color: #FFFFFF;
+    font-family: arial;
+    height: 395px;
+    width: 178px;
+}
+.z-single-product .first-row {
+    height: 100px;
+}
+.z-single-product .first-row .view {
+    display: block;
+    font-size: 20px;
+    padding-left: 8px;
+    position: relative;
+}
+.z-single-product .first-row .price {
+    display: block;
+    font-size: 50px;
+    font-weight: bolder;
+    margin: 0 auto;
+    text-align: center;
+}
+.z-single-product .first-row .package {
+    display: block;
+    font-size: 12px;
+    padding-left: 50px;
+    position: relative;
+    text-align: center;
+    top: -7px;
+}
+.normal-row {
+    display: block;
+    margin-bottom: 5px;
+    text-align: center;
+}
+.view-count.normal-row {
+    height: 35px;
+    line-height: 35px;
+}
+.delivery-day.normal-row {
+    height: 45px;
+    line-height: 45px;
+}
+.country-target.normal-row {
+    height: 46px;
+}
+.like-comment.normal-row {
+    height: 45px;
+}
+.money-back.normal-row {
+    height: 45px;
+}
+.order-button {
+    display: block;
+    height: 54px;
+}
+.normal-row > img {
+    display: block;
+    margin: 0 auto;
+    position: relative;
+    top: 7px;
+}
+.homeplan-list > li {
+    float: left;
+    list-style: none outside none;
+    margin-left: 15px;
+    margin-top: 3px;
+}
+.homeplan-list > li:first-child {
+    margin: 0;
+}
+.homeplan-list > li:first-child:hover {
+    transform: none;
+    -webkit-transform: none;
+}
+.homeplan-list > li:hover {
+    transform: scale(1.1);
+    transition: all 0.5s ease 0s;
+    -webkit-transform: scale(1.1);
+    -webkit-transition: all 0.5s ease 0s;
+}
+.page-title {
+    color: #FFFFFF;
+}
+.site-content {
+    padding: 0px;
+}
+.products > li h3 {
+    color: #FFFFFF !important;
+    font-size: 20px !important;
+    text-align: center;
+}
+.products > li .price {
+    font-size: 20px !important;
+    text-align: center;
+}
+.products > li .add_to_cart_button {
+    display: block !important;
+    margin: 0 auto !important;
+    width: 78px;
+}
+.woocommerce-result-count {
+    color: #FFFFFF;
+    font-size: 20px;
+}
+
+#video-wrapper {
+    background-image: url("http://youtubevirals.com/wp-content/themes/youtube2014/images/video.png");
+    margin: 30px auto;
+    padding: 14px 75px 30px;
+    position: relative;
+    width: 600px;
+}
+#video-wrapper > video {
+    border-radius: 12px;
+    display: block;
+    height: 337px;
+    margin: 50px auto;
+}
