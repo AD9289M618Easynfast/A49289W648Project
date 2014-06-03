@@ -1,0 +1,907 @@
+#jf-header .rt-container .rt-grid-4 {
+	margin-left:0;
+	margin-right:0;
+	display:block;
+	height:100%
+}
+#jf-header .rt-container .rt-grid-8 {
+	margin-left:0;
+	margin-right:0;
+	float:right
+}
+#jf-header .rt-container .rt-grid-8.rt-alpha {
+	float:left
+}
+#jf-header .rt-container .rt-menubar {
+	float:right;
+	height:60px
+}
+#rt-top-surround {
+	background-color:0;
+	background-image:0;
+	background-repeat:repeat-x;
+	filter:0;
+	color:#888;
+	text-shadow:none;
+	box-shadow:none;
+	border-bottom:0;
+	background:none!important
+}
+#rt-top-surround::after {
+background:0
+}
+#jf-component-bg {
+	position:relative
+}
+#jf-preloader {
+	display:none;
+	position:fixed;
+	top:0;
+	left:0;
+	height:100%;
+	width:100%;
+	z-index:999999
+}
+#jf-preloader #jf-indicator {
+	position:absolute;
+	top:0;
+	bottom:0;
+	margin:0;
+	width:0;
+	top:400px
+}
+#jf-preloader #jf-progress {
+	position:absolute;
+	left:0;
+	right:0;
+	width:200px;
+	margin:0 auto;
+	top:400px;
+	margin-top:-60px;
+	text-align:center;
+	height:20px;
+	padding:83px 0 17px
+}
+#jf-preloader #jf-preloader-logo {
+	position:absolute;
+	left:0;
+	right:0;
+	width:200px;
+	margin:0 auto;
+	top:170px;
+	height:210px;
+	background-image:url(../images/jf/logo/logo_200x210.png);
+	background-repeat:no-repeat;
+	display:none
+}
+#jf-component-bg .rt-container .rt-grid-12 {
+	margin:0
+}
+#jf-component-bg .rt-container .rt-grid-12 .rt-block {
+	padding:0;
+	margin:0
+}
+#jf-component-bg .rt-container .rt-grid-12 .rt-block .component-content {
+	padding:0px
+}
+#jf-undermenu {
+	margin-right:10px
+}
+#jf-breadcrumbs-info .jf-breadcrumbs-info-container {
+	position:relative;
+	background:#fff;
+	border:1px solid #DDD;
+	border-radius:0 0 3px 3px;
+	margin:10px auto 25px auto;
+	padding:10px 0;
+	height:24px
+}
+#rt-breadcrumbs {
+	margin:0
+}
+#rt-breadcrumbs .rt-container {
+	background:0
+}
+#rt-breadcrumbs .rt-container .jf-breadcrumbs-padding {
+	padding:2px 10px
+}
+#rt-breadcrumbs .rt-container .rt-grid-12 .rt-block {
+	padding:0 10px;
+	margin:0
+}
+#rt-breadcrumbs .breadcrumbs a {
+	color:#4b93ad
+}
+#rt-breadcrumbs .breadcrumbs a:hover {
+	color:#4b93ad;
+	text-decoration:underline
+}
+#rt-breadcrumbs .breadcrumbs a, #rt-breadcrumbs .breadcrumbs span {
+	font-size:16px
+}
+#rt-breadcrumbs .breadcrumbs .jf-breadcrumb-arrow {
+	padding:0 4px 0 8px;
+	margin-bottom:-1px;
+	display:inline-block
+}
+.breadcrumbs a::after {
+display:none
+}
+.default-tipsy {
+	font-size:16px;
+	position:absolute;
+	padding:5px;
+	z-index:100000
+}
+.default-tipsy-inner {
+	background-color:#838383;
+	color:#FFF;
+	max-width:200px;
+	padding:2px 8px 3px 8px;
+	text-align:center
+}
+.default-tipsy-inner {
+	border-radius:3px;
+	-moz-border-radius:3px;
+	-webkit-border-radius:3px
+}
+.default-tipsy-arrow {
+	position:absolute;
+	width:0;
+	height:0;
+	border:5px solid transparent
+}
+.default-tipsy-arrow-n {
+	border-bottom-color:#838383
+}
+.default-tipsy-arrow-s {
+	border-top-color:#838383
+}
+.default-tipsy-arrow-e {
+	border-left-color:#838383
+}
+.default-tipsy-arrow-w {
+	border-right-color:#838383
+}
+.default-tipsy-n .default-tipsy-arrow, .default-tipsy-nw .default-tipsy-arrow, .default-tipsy-ne .default-tipsy-arrow {
+	top:0;
+	border-top:0
+}
+.default-tipsy-s .default-tipsy-arrow, .default-tipsy-sw .default-tipsy-arrow, .default-tipsy-se .default-tipsy-arrow {
+	bottom:0;
+	border-bottom:0
+}
+.default-tipsy-n .default-tipsy-arrow, .default-tipsy-s .default-tipsy-arrow {
+	left:50%;
+	margin-left:-5px
+}
+.default-tipsy-nw .default-tipsy-arrow, .default-tipsy-sw .default-tipsy-arrow {
+	left:10px
+}
+.default-tipsy-ne .default-tipsy-arrow, .default-tipsy-se .default-tipsy-arrow {
+	right:10px
+}
+.default-tipsy-e .default-tipsy-arrow, .default-tipsy-w .default-tipsy-arrow {
+	top:50%;
+	margin-top:-5px
+}
+.default-tipsy-e .default-tipsy-arrow {
+	right:0;
+	border-right:0
+}
+.default-tipsy-w .default-tipsy-arrow {
+	left:0;
+	border-left:none
+}
+.arialfont-tipsy {
+	font-size:12px;
+	position:absolute;
+	padding:5px;
+	z-index:100000
+}
+.arialfont-tipsy-inner {
+	background-color:#838383;
+	color:#FFF;
+	max-width:200px;
+	padding:2px 8px 3px 8px;
+	text-align:center
+}
+.arialfont-tipsy-inner {
+	border-radius:3px;
+	-moz-border-radius:3px;
+	-webkit-border-radius:3px
+}
+.arialfont-tipsy-arrow {
+	position:absolute;
+	width:0;
+	height:0;
+	border:5px solid transparent
+}
+.arialfont-tipsy-arrow-n {
+	border-bottom-color:#838383
+}
+.arialfont-tipsy-arrow-s {
+	border-top-color:#838383
+}
+.arialfont-tipsy-arrow-e {
+	border-left-color:#838383
+}
+.arialfont-tipsy-arrow-w {
+	border-right-color:#838383
+}
+.arialfont-tipsy-n .arialfont-tipsy-arrow, .arialfont-tipsy-nw .arialfont-tipsy-arrow, .arialfont-tipsy-ne .arialfont-tipsy-arrow {
+	top:0;
+	border-top:0
+}
+.arialfont-tipsy-s .arialfont-tipsy-arrow, .arialfont-tipsy-sw .arialfont-tipsy-arrow, .arialfont-tipsy-se .arialfont-tipsy-arrow {
+	bottom:0;
+	border-bottom:0
+}
+.arialfont-tipsy-n .arialfont-tipsy-arrow, .arialfont-tipsy-s .arialfont-tipsy-arrow {
+	left:50%;
+	margin-left:-5px
+}
+.arialfont-tipsy-nw .arialfont-tipsy-arrow, .arialfont-tipsy-sw .arialfont-tipsy-arrow {
+	left:10px
+}
+.arialfont-tipsy-ne .arialfont-tipsy-arrow, .arialfont-tipsy-se .arialfont-tipsy-arrow {
+	right:10px
+}
+.arialfont-tipsy-e .arialfont-tipsy-arrow, .arialfont-tipsy-w .arialfont-tipsy-arrow {
+	top:50%;
+	margin-top:-5px
+}
+.arialfont-tipsy-e .arialfont-tipsy-arrow {
+	right:0;
+	border-right:0
+}
+.arialfont-tipsy-w .arialfont-tipsy-arrow {
+	left:0;
+	border-left:none
+}
+.default-tipsy, .arialfont-tipsy {
+	z-index:1000000!important
+}
+.default-tipsy-inner, .arialfont-tipsy-inner {
+	border-radius:2px;
+	-moz-border-radius:2px;
+	-webkit-border-radius:2px
+}
+.default-tipsy-inner {
+	line-height:22px
+}
+.arialfont-tipsy-inner {
+	font-family:Helvetica, Arial, Sans-Serif;
+	line-height:16px;
+	max-width:400px;
+	padding:5px 8px
+}
+
+
+
+
+
+
+
+#rt-main .rt-container .rt-block {
+	padding:10px;
+	border:1px solid #DDD;
+	margin:0 0 10px 0;
+	background:#fff
+}
+
+
+.button, .readon, .readmore, button.validate, #member-profile a, #member-registration a, .formelm-buttons button, .btn-primary {
+	background:#2a7b99;
+	padding:5px 8px 3px 8px;
+	border-radius:2px;
+	border-radius:2px;
+	-moz-border-radius:2px;
+	-o-border-radius:2px;
+	-webkit-border-radius:2px;
+	border:none!important;
+	color:white;
+	font-size:15px;
+	text-transform:uppercase;
+	cursor:pointer;
+	letter-spacing:1px;
+	line-height:15px;
+	margin-bottom:10px
+}
+.button:hover, .readon:hover, .readmore:hover, button.validate:hover, #member-profile a:hover, #member-registration a:hover, .formelm-buttons button:hover, .btn-primary:hover {
+	background:#2a7b99;
+	box-shadow:0 0 6px #AAA;
+	-o-box-shadow:0 0 6px #AAA;
+	-moz-box-shadow:0 0 6px #AAA;
+	-webkit-box-shadow:0 0 6px #AAA
+}
+.button:active, .readon:active, .readmore:active, button.validate:active, #member-profile a:active, #member-registration a:active, .formelm-buttons button:active, .btn-primary:active {
+	background:#2a7b99;
+	-moz-box-shadow:inset 0 1px 5px rgba(0, 0, 0, 0.3), 0 1px 0 white;
+	-ms-box-shadow:inset 0 1px 5px rgba(0, 0, 0, 0.3), 0 1px 0 white;
+	-webkit-box-shadow:inset 0 1px 5px rgba(0, 0, 0, 0.3), 0 1px 0 white;
+	box-shadow:inset 0 1px 5px rgba(0, 0, 0, 0.3), 0 1px 0 white
+}
+
+#rt-main ul.menu li a, #rt-main ul.menu li .item, #rt-main ul.menu li .separator {
+	display:block;
+	font-size:18px;
+	font-weight:100;
+	line-height:1.9em;
+	padding:0 0 0 10px;
+	color:#888
+}
+#rt-main ul.menu {
+	margin:0 -10px;
+	background:#fff
+}
+#rt-main ul.menu li {
+	margin:0;
+	border-bottom:1px solid #f0f0f0
+}
+#rt-main ul.menu:hover li {
+	opacity:.7;
+	-moz-opacity:.7;
+	filter:alpha(opacity=77)
+}
+#rt-main ul.menu li:hover {
+	border-bottom:1px solid #ddd
+}
+#rt-main ul.menu:hover li:hover {
+	opacity:1;
+	-moz-opacity:1;
+	filter:alpha(opacity=99)
+}
+#rt-main ul.menu ul {
+	padding:0;
+	margin:0 0 0 20px
+}
+#rt-main ul.menu ul li {
+	list-style:none;
+	padding:0
+}
+#rt-main ul.menu li.active.parent {
+	border-bottom:0;
+	background:0
+}
+#rt-main ul.menu li.active.parent ul {
+	border-top:1px solid #ddd
+}
+#rt-main ul.menu li ul li a, #rt-main ul.menu li ul li span {
+	background:transparent url(../images/jf/menus/dropdown-daddy.png) 0 50% no-repeat;
+	padding:0 0 0 10px
+}
+#rt-main ul.menu li a:hover {
+	color:#444
+}
+#rt-main ul.menu li.current a {
+	font-weight:700
+}
+#rt-footer ul.menu {
+	background:0;
+	margin:0
+}
+#rt-footer ul.menu li, #rt-footer ul.menu li:hover {
+	border-bottom:0;
+	clear:both
+}
+#rt-footer ul.menu li a, #rt-footer ul.menu li span {
+	color:#999;
+	font-size:11px;
+	font-family:Helvetica, Arial, sans-serif!important;
+	line-height:24px;
+	float:left;
+	padding:0;
+	font-weight:100
+}
+#rt-footer ul.menu li a:hover, #rt-footer ul.menu li span:hover {
+	background-color:transparent;
+	text-decoration:underline;
+	color:#aaa
+}
+#jf-toppanel {
+	position:absolute;
+	width:100%;
+	top:0;
+	z-index:444;
+	background-image:url(../images/jf/header/toppanel_bg.png);
+	z-index:99999
+}
+#jf-toppanel .jf-toppanel-container .rt-container {
+	position:inherit
+}
+#jf-toppanel .jf-toppanel-container #jf-toppanel-button {
+	position:absolute;
+	right:0;
+	width:46px;
+	height:46px;
+	bottom:-46px;
+	background-image:url(../images/jf/jf-icons/jf_toppanel_btn.png);
+	background-repeat:no-repeat;
+	text-indent:-9999999px;
+	cursor:pointer;
+	background-position:0 0;
+	opacity:.8
+}
+#jf-toppanel .jf-toppanel-container #jf-toppanel-button:hover {
+	background-position:0 -46px;
+	opacity:1
+}
+#jf-toppanel .jf-toppanel-container #jf-toppanel-button.opened {
+	background-position:-46px 0;
+	opacity:1
+}
+#jf-toppanel .jf-toppanel-container #jf-toppanel-button.opened:hover {
+	background-position:-46px -46px;
+	opacity:1
+}
+#jf-toppanel .jf-toppanel-container #jf-toppanel-content {
+	display:none;
+	overflow:hidden
+}
+#jf-toppanel .jf-toppanel-container #jf-toppanel-content .rt-block {
+	background:rgba(0, 0, 0, 0.04);
+	border-radius:2px;
+	-moz-border-radius:2px;
+	-o-border-radius:2px;
+	-webkit-border-radius:2px
+}
+#jf-toppanel .jf-toppanel-container #jf-toppanel-content .rt-block:hover {
+	background:rgba(0, 0, 0, 0.1)
+}
+#jf-toppanel .jf-toppanel-container #jf-toppanel-content .rt-grid-4 .rt-block {
+	margin-left:7.5px;
+	margin-right:7.5px;
+	margin:20px 0
+}
+#jf-toppanel .jf-toppanel-container #jf-toppanel-content .title {
+	color:white;
+	text-shadow:none;
+	border-bottom:0;
+	box-shadow:none;
+	text-align:center;
+	border:2px solid #9c9797;
+	border-width:0 2px;
+	background:rgba(0, 0, 0, 0.2);
+	padding:10px 0 12px 0;
+	line-height:20px;
+	text-transform:uppercase;
+	margin-top:-5px;
+	letter-spacing:1px
+}
+#jf-toppanel .jf-toppanel-container #jf-toppanel-content p {
+	margin:0
+}
+#rt-top {
+	border-bottom:1px solid #DDD
+}
+#rt-top .rt-container {
+	padding:10px 0
+}
+#rt-utility .rt-container {
+	padding:10px 0
+}
+#rt-feature .rt-block {
+	padding:15px 15px 0 15px
+}
+#rt-maintop {
+	margin-bottom:20px;
+	padding:10px 0
+}
+.component-content .actions {
+	position:absolute;
+	right:10px
+}
+.component-content .actions .edit-icon img {
+	display:block
+}
+#jf_tip .jf_tip_container .jf_tip_content .custom {
+	background-image:url(../images/jf/jf-icons/jf_usertip_sec_icon.png);
+	background-repeat:no-repeat;
+	background-position:1.5% 50%
+}
+body {
+	background:#f5f5f5!important
+}
+.font-size-is-default {
+	font-size:12px
+}
+.button, .readon, .readmore, button.validate, #member-profile a, #member-registration a, .formelm-buttons button {
+	text-shadow:none;
+	box-shadow:none
+}
+.button, .readon, .readmore, button.validate, #member-profile a, #member-registration a, .formelm-buttons button {
+	line-height:20px
+}
+form {
+	margin:0
+}
+table {
+	background:0
+}
+textarea:focus, input[type="text"]:focus, input[type="password"]:focus, input[type="datetime"]:focus, input[type="datetime-local"]:focus, input[type="date"]:focus, input[type="month"]:focus, input[type="time"]:focus, input[type="week"]:focus, input[type="number"]:focus, input[type="email"]:focus, input[type="url"]:focus, input[type="search"]:focus, input[type="tel"]:focus, input[type="color"]:focus, .uneditable-input:focus {
+	border-color:inherit;
+	outline:0;
+	-webkit-box-shadow:none;
+	-moz-box-shadow:none;
+	box-shadow:none
+}
+textarea, input[type="text"], input[type="password"], input[type="datetime"], input[type="datetime-local"], input[type="date"], input[type="month"], input[type="time"], input[type="week"], input[type="number"], input[type="email"], input[type="url"], input[type="search"], input[type="tel"], input[type="color"], .uneditable-input {
+	background-color:white;
+	border:1px solid #ccc;
+	border-radius:0;
+	box-shadow:none;
+	-webkit-transition:none;
+	-moz-transition:none;
+	-ms-transition:none;
+	-o-transition:none;
+	transition:none
+}
+a {
+	-webkit-transition:none;
+	-moz-transition:none;
+	-o-transition:none;
+	-ms-transition:none;
+	transition:none
+}
+@media only screen and (max-width:480px) {
+#jf-header .rt-container {
+height:100%
+}
+#top-shadow-down {
+opacity:.5
+}
+#jf-scrolltop {
+display:none!important
+}
+#jf-preloader #jf-indicator, #jf-preloader #jf-progress {
+top:290px
+}
+#jf-preloader #jf-preloader-logo {
+top:60px
+}
+#jf-breadcrumbs-info .jf-breadcrumbs-info-container {
+background:#fff;
+margin:5px auto 20px auto;
+padding:5px 0;
+height:auto;
+line-height:24px
+}
+#jf-info {
+top:-7px;
+right:-10px
+}
+#rt-breadcrumbs .rt-container .jf-breadcrumbs-padding {
+padding:2px
+}
+#jf-login {
+margin-right:0
+}
+#jf-login .jf-login-content .jf-login-title {
+margin:5px 0 20px 0
+}
+#jf-login .jf-login-content .jf-login-forgot a, #jf-login .jf-login-content .jf-login-activation a {
+padding:6px 9px;
+font-size:15px;
+letter-spacing:0;
+width:auto
+}
+#jf-login .jf-login-content .jf-login-activation, #jf-login .jf-login-content .jf-login-forgot {
+margin:0
+}
+#jf-login .jf-login-content .jf-login-forgot {
+margin:-10px 0 0 0
+}
+#jf-login .jf-login-content .jf-login-register {
+margin:15px -20px -20px -20px;
+padding:10px
+}
+#jf-login .jf-login-content .jf-login-register a {
+font-size:16px
+}
+#jf-login .jf-login-content form {
+width:260px
+}
+#jf-login .jf-login-content #form-login-username .jf-login-username-icon span, #jf-login .jf-login-content #form-login-password .jf-login-password-icon span {
+width:58px;
+background-position:50% 50%
+}
+#jf-login .jf-login-content #form-login-username #modlgn-username, #jf-login .jf-login-content #form-login-password #modlgn-passwd {
+width:158px
+}
+#jf-login .jf-login-content .jf-login-authorization-button {
+width:60px;
+-webkit-border-radius:2px;
+-moz-border-radius:2px;
+border-radius:2px;
+height:30px;
+line-height:31px
+}
+#jf-login .jf-login-content #form-login-remember label {
+font-size:14px
+}
+#jf-login .jf-login-loggedcont.s-jf-js-login-v .jf-login-loggedcont-loader table tr td .section2 {
+min-width:178px
+}
+#jf-login .jf-js-login-first .jf-login-loggedcont-tick {
+right:85px
+}
+#jf-login .jf-js-login-first .jf-login-loggedcont.s-jf-js-login-v {
+width:300px;
+right:-47px
+}
+#jf-login .jf-js-login-first .jf-login-loggedcont-tick {
+right:52px
+}
+#jf-login .jf-js-login-second .jf-login-loggedcont.s-jf-js-login-v {
+width:200px
+}
+#jf-login .jf-login-greeting .login-greeting {
+padding:5px;
+text-indent:-999px;
+width:50px
+}
+#jf-loginbackout {
+opacity:.9;
+-moz-opacity:.9;
+filter:alpha(opacity=99)
+}
+.jf-login-imp-icon {
+background:url(../images/jf/mobile/jf-login-iphone.png) no-repeat top left;
+width:15px;
+height:15px;
+display:block;
+top:6px;
+position:absolute;
+left:10px
+}
+#jf-js-login {
+margin-right:0!important
+}
+#jf-js-login .jf-js-login-content .jf-js-login-title {
+margin:5px 0 20px 0!important;
+display:none
+}
+#jf-js-login .jf-js-login-content .jf-js-login-forgot a, #jf-js-login .jf-js-login-content .jf-js-login-activation a {
+padding:6px 9px!important;
+font-size:15px!important;
+letter-spacing:0!important;
+width:auto!important
+}
+#jf-js-login .jf-js-login-content .jf-js-login-activation, #jf-js-login .jf-js-login-content .jf-js-login-forgot {
+margin:0!important
+}
+#jf-js-login .jf-js-login-content .jf-js-login-forgot {
+margin:-10px 0 0 0!important
+}
+#jf-js-login .jf-js-login-content .jf-js-login-register {
+margin:-10px -20px -20px -20px!important;
+padding:10px!important;
+border-top:none!important
+}
+#jf-js-login .jf-js-login-content #form-login-password, #jf-js-login .jf-js-login-content #form-login-username {
+margin:0 0 10px 0!important
+}
+#jf-js-login .jf-js-login-content .jf-js-login-register a {
+font-size:16px!important
+}
+#jf-js-login .jf-js-login-content form {
+width:260px!important
+}
+#jf-js-login .jf-js-login-content #form-login-username .jf-js-login-username-icon span, #jf-js-login .jf-js-login-content #form-login-password .jf-js-login-password-icon span {
+width:58px!important;
+background-position:50% 50%!important
+}
+#jf-js-login .jf-js-login-content #form-login-username #modlgn-username, #jf-js-login .jf-js-login-content #form-login-password #modlgn-passwd {
+width:158px!important
+}
+#jf-js-login .jf-js-login-content .jf-js-login-authorization-button {
+width:60px!important;
+-webkit-border-radius:2px!important;
+-moz-border-radius:2px!important;
+border-radius:2px!important;
+height:30px!important;
+line-height:31px!important
+}
+#jf-js-login .jf-js-login-content #form-login-remember label {
+font-size:14px!important
+}
+#jf-js-login .jf-js-login-loggedcont.s-jf-js-login-v .jf-js-login-loggedcont-loader table tr td .section2 {
+min-width:178px!important
+}
+#jf-js-login .jf-js-login-first .jf-js-login-loggedcont-tick {
+right:85px!important
+}
+#jf-js-login .jf-js-login-first .jf-js-login-loggedcont.s-jf-js-login-v {
+width:300px!important;
+right:-47px!important
+}
+#jf-js-login .jf-js-login-first .jf-js-login-loggedcont-tick {
+right:52px!important
+}
+#jf-js-login .jf-js-login-second .jf-js-login-loggedcont.s-jf-js-login-v {
+width:200px!important
+}
+#jf-js-login .jf-js-login-greeting .login-greeting {
+padding:5px!important;
+text-indent:-999px!important;
+width:50px!important
+}
+#jf-js-loginbackout {
+opacity:.9;
+-moz-opacity:.9;
+filter:alpha(opacity=99)
+}
+.jf-js-login-imp-icon {
+background:url(../images/jf/mobile/jf-login-iphone.png) no-repeat top left!important;
+width:15px!important;
+height:15px!important;
+display:block!important;
+top:6px!important;
+position:absolute!important;
+left:10px!important
+}
+#jf-search .jf-search-content {
+left:-110px
+}
+#jf-search .jf-search-content #mod-search-searchword {
+width:65px;
+padding-right:25px
+}
+#jf-language {
+display:none
+}
+#rt-showcase .rt-container .rt-grid-2.rt-alpha .rt-block, #rt-showcase .rt-container .rt-grid-3.rt-alpha .rt-block, #rt-showcase .rt-container .rt-grid-4.rt-alpha .rt-block, #rt-showcase .rt-container .rt-grid-6.rt-alpha .rt-block, #rt-showcase .rt-container .rt-grid-12.rt-alpha .rt-block {
+border-right:1px solid #d7d7d7
+}
+#rt-showcase .rt-container .rt-grid-2.rt-omega .rt-block, #rt-showcase .rt-container .rt-grid-3.rt-omega .rt-block, #rt-showcase .rt-container .rt-grid-4.rt-omega .rt-block, #rt-showcase .rt-container .rt-grid-6.rt-omega .rt-block, #rt-showcase .rt-container .rt-grid-12.rt-omega .rt-block {
+border-left:1px solid #d7d7d7
+}
+#jf-welcome {
+display:none
+}
+#jf-header .rt-container .rt-grid-4 {
+text-align:center
+}
+#jf-logo {
+display:inline-block;
+float:none
+}
+#jf-logomodalbutton {
+display:inline-block;
+float:none;
+top:-12px
+}
+#rt-breadcrumbs .rt-container .jf-info {
+top:-7px!important;
+right:-6px!important;
+padding:4px 0!important
+}
+.jf-info-text-wrap {
+height:100%!important;
+min-height:36px
+}
+}
+@media only screen and (min-width:321px) and (max-width:480px) {
+#jf-preloader #jf-indicator, #jf-preloader #jf-progress {
+top:250px
+}
+#jf-preloader #jf-preloader-logo {
+top:20px
+}
+#jf-login .jf-login-content form {
+width:375px
+}
+#jf-login .jf-login-content .jf-login-title {
+display:none
+}
+#jf-login .jf-login-content #form-login-username .jf-login-username-icon span, #jf-login .jf-login-content #form-login-password .jf-login-password-icon span {
+width:78px
+}
+#jf-login .jf-login-content .jf-login-forgot a, #jf-login .jf-login-content .jf-login-activation a {
+width:160px
+}
+#jf-login .jf-login-content #form-login-username #modlgn-username, #jf-login .jf-login-content #form-login-password #modlgn-passwd {
+width:253px
+}
+#jf-scrolltop {
+display:none!important
+}
+}
+
+@media only screen and (min-width:768px) and (max-width:959px) {
+#jf-scrolltop {
+right:10px
+}
+#jf-scrolltop .jf-scrolltop-block a {
+width:50px
+}
+.menutop li.root>.item>span {
+padding:0 8px!important
+}
+.menutop li.parent.root .item .daddyicon {
+padding:0 0 0 0!important
+}
+.menutop li.parent.root .item>span {
+padding:0 16px 0 8px!important
+}
+.menutop li.root>.item {
+font-size:16px!important
+}
+}
+@media only screen and (min-width:960px) and (max-width:1199px) {
+#jf-scrolltop {
+right:20px
+}
+#jf-scrolltop .jf-scrolltop-block a {
+width:50px
+}
+}
+@media only screen and (min-width:1200px) and (max-width:1300px) {
+#jf-scrolltop {
+right:40px
+}
+}
+@media only screen and (min-width:768px) and (max-width:959px) {
+.camera_caption .jf_cam_title {
+font-size:32px!important;
+line-height:32px!important
+}
+.camera_caption .jf_cam_descr {
+font-size:20px!important;
+line-height:20px!important
+}
+.camera_caption .jf_cam_btn {
+font-size:20px!important
+}
+}
+@media only screen and (min-width:481px) and (max-width:767px) {
+.camera_caption .jf_cam_title {
+font-size:32px!important;
+line-height:32px!important
+}
+.camera_caption .jf_cam_descr {
+font-size:20px!important;
+line-height:20px!important
+}
+.camera_caption .jf_cam_btn {
+font-size:20px!important
+}
+}
+@media only screen and (min-width:321px) and (max-width:480px) {
+.camera_caption>div {
+padding:10px 20px 10px 10px!important
+}
+.camera_caption .jf_cam_title {
+font-size:24px!important;
+line-height:24px!important
+}
+.camera_caption .jf_cam_descr {
+font-size:18px!important;
+line-height:18px!important;
+margin:5px 0 0 0!important
+}
+.camera_caption .jf_cam_btn {
+font-size:16px!important;
+padding:2px 24px 3px 12px!important
+}
+}
+@media only screen and (min-width:0) and (max-width:320px) {
+.camera_caption>div {
+padding:10px 20px 10px 10px!important
+}
+.camera_caption .jf_cam_title {
+font-size:18px!important;
+line-height:18px!important
+}
+.camera_caption .jf_cam_descr {
+font-size:16px!important;
+line-height:18px!important;
+margin:5px 0 0 0!important
+}
+.camera_caption .jf_cam_btn {
+font-size:16px!important;
+padding:1px 20px 2px 6px!important;
+margin:10px 0 0 0!important
+}
+}
