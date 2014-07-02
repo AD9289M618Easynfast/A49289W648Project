@@ -53,11 +53,11 @@ get_header();
                 <!--template 2-->
                 <div class="template-2-wrapper">
                     <h2><?php echo $theTitle ?></h2>
-                    <img src="<?php echo $theImageLeft ?>" alt="template 2 images" width="168" height="200"/>
+                    <img src="<?php echo $imagePath;echo $theImageLeft ?>" alt="template 2 images" width="168" height="200"/>
                     <div class="template-2-content">
                         <p><?php echo $theContentTop ?></p>
-                        <img src="<?php echo $theImageCenter ?>" alt="template image" width="89" height="132"/>
-                        <img src="<?php echo $theImageRight ?>" alt="template image" width="89" height="132"/>
+                        <img src="<?php echo $imagePath;echo $theImageCenter ?>" alt="template image" width="89" height="132"/>
+                        <img src="<?php echo $imagePath;echo $theImageRight ?>" alt="template image" width="89" height="132"/>
                     </div>
                     <div class="clear"></div>
                     <p><?php echo $theContentBottom ?></p>
@@ -69,8 +69,8 @@ get_header();
                     <h2><?php echo $theTitle ?></h2>
                     <h3><?php echo $theSubTitle ?></h3>
                     <div>
-                        <img src="<?php echo $theImageTop ?>" width="56" height="81" alt="template images"/>
-                        <img src="<?php echo $theImageBottom ?>" width="56" height="81" alt="template images"/>
+                        <img src="<?php echo $imagePath;echo $theImageTop ?>" width="56" height="81" alt="template images"/>
+                        <img src="<?php echo $imagePath;echo $theImageBottom ?>" width="56" height="81" alt="template images"/>
                     </div>
                     <p>
                         <?php echo $theContentRow1 ?><br/>
@@ -89,25 +89,25 @@ get_header();
 
                 <ul>
                     <li>
-                        <img src="<?php echo $theImageColumn1 ?>" alt="logo 1"/>
+                        <img src="<?php echo $imageLogoPath;echo $theImageColumn1 ?>" alt="logo 1"/>
                         <p>
                             <?php echo $theContentColumn1 ?>
                         </p>
                     </li>
                     <li>
-                        <img src="<?php echo $theImageColumn2 ?>" alt="logo 1"/>
+                        <img src="<?php echo $imageLogoPath;echo $theImageColumn2 ?>" alt="logo 1"/>
                         <p>
                             <?php echo $theContentColumn2 ?>
                         </p>
                     </li>
                     <li>
-                        <img src="<?php echo $theImageColumn3 ?>" alt="logo 1"/>
+                        <img src="<?php echo $imageLogoPath;echo $theImageColumn3 ?>" alt="logo 1"/>
                         <p>
                             <?php echo $theContentColumn3 ?>
                         </p>
                     </li>
                     <li>
-                        <img src="<?php echo $theImageColumn4 ?>" alt="logo 1"/>
+                        <img src="<?php echo $imageLogoPath;echo $theImageColumn4 ?>" alt="logo 1"/>
                         <p>
                             <?php echo $theContentColumn4 ?>
                         </p>
@@ -119,8 +119,8 @@ get_header();
             <!--template 5-->
             <div class="template-5-wrapper">
                 <h2><?php echo $theTitle ?></h2>
-                <img class="arrow-right" src="<?php echo $theImageTop ?>" alt="arrow right" width="62" height="138"/>
-                <img src="<?php echo $theImageBottom ?>" width="181" height="177" alt="template image"/>
+                <img class="arrow-right" src="<?php echo $imagePath;echo $theImageTop ?>" alt="arrow right" width="62" height="138"/>
+                <img src="<?php echo $imagePath;echo $theImageBottom ?>" width="181" height="177" alt="template image"/>
                 <p>
                     <?php echo $theContentRow1 ?>
                 </p>
