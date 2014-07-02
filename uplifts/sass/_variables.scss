@@ -1,0 +1,23 @@
+
+%block-center {
+    display: block;
+    margin: 0 auto;
+}
+
+%float-left {
+    float: left;
+}
+
+%float-right {
+    float: right;
+}
+
+%clear-both {
+    clear: both;
+}
+
+%section-wrapper {
+    overflow: visible;
+    padding: 5px 15px;
+    position: relative;
+}

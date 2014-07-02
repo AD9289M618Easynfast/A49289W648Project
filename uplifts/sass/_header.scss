@@ -1,0 +1,86 @@
+body {
+    background-image: url(../images/bg/bg.png);
+    font-family: arial;
+    font-weight: normal;
+}
+p {
+    font-size: 13px;
+    line-height: 15px;
+}
+.clear {
+    clear: both;
+}
+
+#wrapper {
+    background-color: #608de0;
+    background-image: url("../images/bg/bg-header.jpg"), url("../images/bg/bg-content-bottom.png");
+    background-position: center top, center bottom;
+    background-repeat: repeat-x;
+    box-shadow: 0 0 11px black;
+    margin: 0 auto;
+    min-height: 500px;
+    padding: 35px 0;
+    width: 788px;
+}
+#header {
+}
+#header > .logo-wrapper {
+    margin-bottom: 20px;
+    overflow: auto;
+    padding: 0 25px;
+
+    > img {
+        @extend %float-left;
+    }
+    > h1 img {
+        @extend %float-right;
+        margin-right: 90px;
+    }
+}
+
+#header > .banner-wrapper {
+    position: relative;
+    height: 465px;
+
+    .slogan-holder {
+        left: 70px;
+        position: relative;
+        top: 30px;
+    }
+    .floating-offer {
+        left: -60px;
+        position: absolute;
+        top: 170px;
+    }
+    h2 {
+        font-size: 30px;
+        font-weight: bolder;
+        line-height: 20px;
+    }
+}
+.main-nav {
+    left: 230px;
+    position: relative;
+    top: 55px;
+}
+.main-nav > li {
+    background-image: url("../images/icon/icon-hand.png");
+    background-repeat: no-repeat;
+    line-height: 28px;
+    margin-bottom: 5px;
+    padding-left: 30px;
+
+    a {
+        color: #949ba3;
+        display: block;
+        font-weight: bold;
+        text-decoration: none;
+    }
+}
+#content {
+    background-color: white;
+    border-radius: 20px;
+    margin: 20px;
+    min-height: 500px;
+    padding: 20px;
+}

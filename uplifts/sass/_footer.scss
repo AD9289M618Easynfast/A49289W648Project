@@ -1,0 +1,31 @@
+#footer {
+    margin: 50px 0 0;
+    .footer-nav {
+        margin: 0 auto;
+        overflow: auto;
+        padding: 5px 0;
+        width: 500px;
+
+        > li:first-child {
+            border: medium none;
+        }
+        > li {
+            border-left: 1px solid white;
+            float: left;
+            height: 12px;
+            line-height: 10px;
+            padding: 0 15px;
+        }
+        a {
+            color: white;
+            font-size: 13px;
+            text-decoration: none;
+        }
+    }
+    > p {
+        color: white;
+        font-size: 14px;
+        margin-top: 20px;
+        text-align: center;
+    }
+}

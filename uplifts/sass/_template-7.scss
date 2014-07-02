@@ -1,0 +1,16 @@
+.template-7-wrapper {
+    position: relative;
+
+    > h2 {
+        text-align: center;
+
+    }
+    .arrow-left {
+        left: -21px;
+        position: absolute;
+    }
+    .arrow-right {
+        position: absolute;
+        right: -22px;
+    }
+}
