@@ -34,13 +34,6 @@
     global $theContentColumn3;
     global $theContentColumn4;
 
-    global $theColumn1Row1t6;
-    global $theColumn1Row2t6;
-    global $theColumn1Row3t6;
-    global $theColumn2Row1t6;
-    global $theColumn2Row2t6;
-    global $theColumn2Row3t6;
-
     global $theContentRow1;
     global $theContentRow2;
     global $theContentRow3;
@@ -52,6 +45,7 @@
     global $theContentRow9;
     global $theContentRow10;
     global $theContentRow11;
+    global $templatePath;
 
     ?>>
         <meta charset="<?php bloginfo('charset'); ?>" />
