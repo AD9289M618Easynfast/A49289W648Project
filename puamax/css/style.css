@@ -209,6 +209,172 @@ b, strong {
       #container .content-wrap .content-wrap-right .content-right-footer img {
         display: block;
         margin: 0 auto 25px; }
+    #container .content-wrap .content-confirm-order {
+      width: 950px;
+      margin: 15px auto 40px; }
+      #container .content-wrap .content-confirm-order .confirm-title {
+        color: #FFFFFF;
+        display: block;
+        text-align: center;
+        font-size: 30px;
+        font-weight: bold;
+        margin-bottom: 15px; }
+      #container .content-wrap .content-confirm-order .confirm-number, #container .content-wrap .content-confirm-order .address-wrapper, #container .content-wrap .content-confirm-order .address-wrapper .billing-address, #container .content-wrap .content-confirm-order .address-wrapper .shipping-address, #container .content-wrap .content-confirm-order .product-order-wrapper, #container .content-wrap .content-confirm-order .billing-price-wrapper, #container .content-wrap .content-confirm-order .content-footer {
+        overflow: auto;
+        background-color: #E7EBE7;
+        filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr=#FFFFFF, endColorstr=#E7EBE7);
+        background-image: -moz-linear-gradient(top, white 0%, #e7ebe7 100%);
+        background-image: -webkit-linear-gradient(top, white 0%, #e7ebe7 100%);
+        background-image: -ms-linear-gradient(top, white 0%, #e7ebe7 100%);
+        background-image: linear-gradient(top, white 0%, #e7ebe7 100%);
+        background-image: -o-linear-gradient(top, white 0%, #e7ebe7 100%);
+        background-image: -webkit-gradient(linear, right top, right bottom, color-stop(0%, white), color-stop(100%, #e7ebe7));
+        width: 98%;
+        border: 1px solid #FFFFFF;
+        border-radius: 10px;
+        padding: 8px;
+        margin-bottom: 10px; }
+        #container .content-wrap .content-confirm-order .confirm-number > p, #container .content-wrap .content-confirm-order .address-wrapper > p, #container .content-wrap .content-confirm-order .address-wrapper .billing-address > p, #container .content-wrap .content-confirm-order .address-wrapper .shipping-address > p, #container .content-wrap .content-confirm-order .product-order-wrapper > p, #container .content-wrap .content-confirm-order .billing-price-wrapper > p, #container .content-wrap .content-confirm-order .content-footer > p {
+          display: block;
+          text-align: left;
+          color: #CE0000;
+          font-size: 15px;
+          margin-top: 10px;
+          float: left;
+          margin-left: 10px; }
+          #container .content-wrap .content-confirm-order .confirm-number > p span, #container .content-wrap .content-confirm-order .address-wrapper > p span, #container .content-wrap .content-confirm-order .address-wrapper .billing-address > p span, #container .content-wrap .content-confirm-order .address-wrapper .shipping-address > p span, #container .content-wrap .content-confirm-order .product-order-wrapper > p span, #container .content-wrap .content-confirm-order .billing-price-wrapper > p span, #container .content-wrap .content-confirm-order .content-footer > p span {
+            color: #313431;
+            font-weight: bold; }
+        #container .content-wrap .content-confirm-order .confirm-number > a img, #container .content-wrap .content-confirm-order .address-wrapper > a img, #container .content-wrap .content-confirm-order .address-wrapper .billing-address > a img, #container .content-wrap .content-confirm-order .address-wrapper .shipping-address > a img, #container .content-wrap .content-confirm-order .product-order-wrapper > a img, #container .content-wrap .content-confirm-order .billing-price-wrapper > a img, #container .content-wrap .content-confirm-order .content-footer > a img {
+          float: right; }
+      #container .content-wrap .content-confirm-order .address-wrapper {
+        background-color: #000000;
+        background-image: none;
+        border: 0;
+        padding: 0;
+        width: 100%;
+        margin: 0; }
+        #container .content-wrap .content-confirm-order .address-wrapper .billing-address {
+          width: 47%;
+          float: left;
+          margin-right: 10px;
+          min-height: 90px; }
+        #container .content-wrap .content-confirm-order .address-wrapper .shipping-address {
+          width: 48%;
+          float: left;
+          min-height: 90px; }
+        #container .content-wrap .content-confirm-order .address-wrapper dl {
+          padding: 10px; }
+          #container .content-wrap .content-confirm-order .address-wrapper dl dt {
+            font-size: 14px;
+            font-weight: bold;
+            color: #313031;
+            margin-bottom: 5px; }
+          #container .content-wrap .content-confirm-order .address-wrapper dl dd {
+            padding-left: 30px;
+            font-size: 15px;
+            color: #CE0000; }
+      #container .content-wrap .content-confirm-order .product-order-wrapper .confirm-order-product {
+        width: 98%;
+        margin: 5px auto;
+        background-color: #FFFFFF; }
+        #container .content-wrap .content-confirm-order .product-order-wrapper .confirm-order-product .table-header-class, #container .content-wrap .content-confirm-order .product-order-wrapper .confirm-order-product .qty-column-head, #container .content-wrap .content-confirm-order .product-order-wrapper .confirm-order-product .descip-column-head, #container .content-wrap .content-confirm-order .product-order-wrapper .confirm-order-product .total-column-head {
+          background-color: #FF0000;
+          filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr=#FF0000, endColorstr=#B50000);
+          background-image: -moz-linear-gradient(top, red 0%, #b50000 100%);
+          background-image: -webkit-linear-gradient(top, red 0%, #b50000 100%);
+          background-image: -ms-linear-gradient(top, red 0%, #b50000 100%);
+          background-image: linear-gradient(top, red 0%, #b50000 100%);
+          background-image: -o-linear-gradient(top, red 0%, #b50000 100%);
+          background-image: -webkit-gradient(linear, right top, right bottom, color-stop(0%, red), color-stop(100%, #b50000));
+          height: 40px;
+          color: #F7F7F7;
+          vertical-align: middle; }
+        #container .content-wrap .content-confirm-order .product-order-wrapper .confirm-order-product .qty-column-head {
+          width: 50px; }
+        #container .content-wrap .content-confirm-order .product-order-wrapper .confirm-order-product .total-column-head {
+          width: 150px; }
+        #container .content-wrap .content-confirm-order .product-order-wrapper .confirm-order-product td {
+          border: 1px solid #BDBABD; }
+        #container .content-wrap .content-confirm-order .product-order-wrapper .confirm-order-product .qty-column {
+          width: 50px;
+          text-align: center; }
+        #container .content-wrap .content-confirm-order .product-order-wrapper .confirm-order-product .qty-column-detail, #container .content-wrap .content-confirm-order .product-order-wrapper .confirm-order-product .total-column-detail {
+          text-align: center;
+          vertical-align: top; }
+          #container .content-wrap .content-confirm-order .product-order-wrapper .confirm-order-product .qty-column-detail p, #container .content-wrap .content-confirm-order .product-order-wrapper .confirm-order-product .total-column-detail p {
+            margin: 0;
+            width: 100%;
+            text-align: center;
+            padding-top: 15px;
+            font-size: 13px;
+            color: #CE0000;
+            font-weight: bold; }
+        #container .content-wrap .content-confirm-order .product-order-wrapper .confirm-order-product .descip-column-detail img {
+          margin-top: 16px;
+          margin-left: 25px;
+          margin-bottom: 10px;
+          float: left; }
+        #container .content-wrap .content-confirm-order .product-order-wrapper .confirm-order-product .descip-column-detail dl {
+          float: left;
+          margin-top: 16px;
+          margin-left: 20px; }
+          #container .content-wrap .content-confirm-order .product-order-wrapper .confirm-order-product .descip-column-detail dl dt {
+            font-size: 14px;
+            font-weight: bold;
+            color: #313031;
+            margin-bottom: 5px; }
+          #container .content-wrap .content-confirm-order .product-order-wrapper .confirm-order-product .descip-column-detail dl dd {
+            padding-left: 30px;
+            font-size: 15px;
+            color: #CE0000; }
+        #container .content-wrap .content-confirm-order .product-order-wrapper .confirm-order-product .total-column-detail p {
+          margin: 0;
+          width: 100%;
+          text-align: center;
+          padding-top: 15px;
+          font-size: 13px;
+          color: #CE0000;
+          font-weight: bold; }
+      #container .content-wrap .content-confirm-order .product-order-wrapper .confirm-order-footer {
+        font-size: 14px;
+        color: #313431;
+        float: right;
+        margin: 15px 7px; }
+        #container .content-wrap .content-confirm-order .product-order-wrapper .confirm-order-footer .order-footer-title {
+          width: 245px;
+          text-align: right; }
+        #container .content-wrap .content-confirm-order .product-order-wrapper .confirm-order-footer .order-footer-content {
+          width: 150px; }
+        #container .content-wrap .content-confirm-order .product-order-wrapper .confirm-order-footer p {
+          text-align: center; }
+        #container .content-wrap .content-confirm-order .product-order-wrapper .confirm-order-footer span {
+          color: #CE0000; }
+      #container .content-wrap .content-confirm-order .billing-price-wrapper .place-new-order {
+        float: left;
+        margin-top: 5px; }
+      #container .content-wrap .content-confirm-order .billing-price-wrapper .total-text, #container .content-wrap .content-confirm-order .billing-price-wrapper .total-price {
+        float: right;
+        font-size: 28px;
+        color: #313431;
+        font-weight: bold;
+        margin-right: 50px;
+        margin-top: 5px;
+        padding: 5px 0; }
+      #container .content-wrap .content-confirm-order .content-footer ul li.confirm-card {
+        float: left; }
+        #container .content-wrap .content-confirm-order .content-footer ul li.confirm-card img {
+          margin-top: 25px; }
+      #container .content-wrap .content-confirm-order .content-footer ul li.money-back-logo {
+        float: left; }
+      #container .content-wrap .content-confirm-order .content-footer ul li.money-back-text {
+        float: left; }
+        #container .content-wrap .content-confirm-order .content-footer ul li.money-back-text p {
+          width: 350px;
+          font-size: 13px;
+          display: block;
+          vertical-align: middle;
+          margin-top: 10px; }
   #container .footer-wrap {
     background-color: #000000;
     border: 2px solid #292429;

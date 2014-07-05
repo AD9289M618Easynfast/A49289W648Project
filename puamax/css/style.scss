@@ -231,6 +231,255 @@
 				margin: 0 auto 25px;
 			}
 		}
+
+		.content-confirm-order{
+			width: 950px;
+			margin: 15px auto 40px;
+
+			.confirm-title{
+				color: #FFFFFF;
+				display: block;
+				text-align: center;
+				font-size: 30px;
+				font-weight: bold;
+				margin-bottom: 15px;
+			}
+			.confirm-number{
+				overflow: auto;
+				background-color:#E7EBE7;
+				filter:progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr=#FFFFFF, endColorstr=#E7EBE7);
+				background-image:-moz-linear-gradient(top, #FFFFFF 0%, #E7EBE7 100%);
+				background-image:-webkit-linear-gradient(top, #FFFFFF 0%, #E7EBE7 100%);
+				background-image:-ms-linear-gradient(top, #FFFFFF 0%, #E7EBE7 100%);
+				background-image:linear-gradient(top, #FFFFFF 0%, #E7EBE7 100%);
+				background-image:-o-linear-gradient(top, #FFFFFF 0%, #E7EBE7 100%);
+				background-image:-webkit-gradient(linear, right top, right bottom, color-stop(0%,#FFFFFF), color-stop(100%,#E7EBE7));
+				width: 98%;
+				border: 1px solid #FFFFFF;
+				border-radius: 10px;
+				padding:8px;
+				margin-bottom: 10px;
+				> p{
+					display: block;
+					text-align: left;
+					color: #CE0000;
+					font-size: 15px;
+					margin-top: 10px;
+					float: left;
+					margin-left: 10px;
+					span{
+						color: #313431;
+						font-weight: bold;
+					}
+				}
+				> a img {
+					float:right;
+				}
+			}
+			.address-wrapper{
+				@extend .confirm-number;
+				background-color: #000000;
+				background-image:none;
+				border: 0;
+				padding: 0;
+				width: 100%;
+				margin: 0;
+				.billing-address{
+					@extend .confirm-number;
+					width: 47%;
+					float:left;
+					margin-right: 10px;
+					min-height: 90px;
+				}
+
+				.shipping-address{
+					@extend .confirm-number;
+					width: 48%;
+					float:left;
+					min-height: 90px;
+
+				}
+				dl{
+					padding:10px;
+
+					dt{
+						font-size: 14px;
+						font-weight: bold;
+						color: #313031;
+						margin-bottom: 5px;
+					}
+
+					dd{
+						padding-left: 30px;
+						font-size: 15px;
+						color: #CE0000;
+					}
+				}
+			}
+			.product-order-wrapper{
+				@extend .confirm-number;
+				
+				.confirm-order-product{
+					width: 98%;
+					margin: 5px auto;
+					background-color: #FFFFFF;
+					.table-header-class{
+						background-color:#FF0000;
+						filter:progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr=#FF0000, endColorstr=#B50000);
+						background-image:-moz-linear-gradient(top, #FF0000 0%, #B50000 100%);
+						background-image:-webkit-linear-gradient(top, #FF0000 0%, #B50000 100%);
+						background-image:-ms-linear-gradient(top, #FF0000 0%, #B50000 100%);
+						background-image:linear-gradient(top, #FF0000 0%, #B50000 100%);
+						background-image:-o-linear-gradient(top, #FF0000 0%, #B50000 100%);
+						background-image:-webkit-gradient(linear, right top, right bottom, color-stop(0%,#FF0000), color-stop(100%,#B50000));
+						height: 40px;
+						color: #F7F7F7;
+						vertical-align: middle;
+					}
+					.qty-column-head{
+						@extend .table-header-class;
+						width: 50px;
+					}
+					.descip-column-head{
+						@extend .table-header-class;
+					}
+					.total-column-head{
+						@extend .table-header-class;
+						width: 150px;
+					}
+
+					td{
+						border:1px solid #BDBABD;
+					}
+					.qty-column{
+						width:  50px;
+						text-align: center;
+					}
+					.qty-column-detail{
+						text-align: center;
+						vertical-align: top;
+						p{
+							margin: 0;
+							width: 100%;
+							text-align: center;
+							padding-top: 15px;
+							font-size: 13px;
+							color: #CE0000;
+							font-weight: bold;
+						}
+					}
+					.descip-column-detail{
+						img{
+							margin-top: 16px;
+							margin-left: 25px;
+							margin-bottom: 10px;
+							float: left;
+						}
+						dl{
+							float: left;
+							margin-top: 16px;
+							margin-left: 20px;
+							dt{
+								font-size: 14px;
+								font-weight: bold;
+								color: #313031;
+								margin-bottom: 5px;
+							}
+
+							dd{
+								padding-left: 30px;
+								font-size: 15px;
+								color: #CE0000;
+							}
+						}
+					}
+					.total-column-detail{
+						@extend .qty-column-detail;
+						p{
+							margin: 0;
+							width: 100%;
+							text-align: center;
+							padding-top: 15px;
+							font-size: 13px;
+							color: #CE0000;
+							font-weight: bold;
+						}
+					}
+
+				}
+				.confirm-order-footer{
+					font-size: 14px;
+					color: #313431;
+					float: right;
+					margin: 15px 7px;
+					.order-footer-title{
+						width: 245px;
+						text-align: right;
+					}
+					.order-footer-content{
+						width: 150px;
+
+					}
+					p{
+						text-align: center;
+					}
+					span{
+						color: #CE0000;
+					}
+				}
+
+			}
+			.billing-price-wrapper{
+				@extend .confirm-number;
+				.place-new-order{
+					float:left;
+					margin-top: 5px;
+				}
+				.total-text{
+					float:right;
+					font-size: 28px;
+					color: #313431;
+					font-weight: bold;
+					margin-right: 50px;
+					margin-top:5px;
+					padding: 5px 0;
+				}
+				.total-price{
+					@extend .total-text;
+					
+				}
+
+			}
+			.content-footer{
+				@extend .confirm-number;
+
+				ul {
+
+					li.confirm-card{
+						float:left;
+						img{
+							margin-top: 25px;
+						}
+
+					}
+					li.money-back-logo{
+						float:left;
+					}
+					li.money-back-text{
+						float:left;
+						p{
+							width: 350px;
+							font-size: 13px;
+							display: block;
+							vertical-align: middle;
+							margin-top: 10px;
+						}
+
+					} 
+
+				}
+			}
+		}
 	}
 
 	.footer-wrap{
