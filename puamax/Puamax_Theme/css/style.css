@@ -1,0 +1,393 @@
+/*reset css*/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  border: 0 none;
+  margin: 0;
+  padding: 0;
+  vertical-align: baseline; }
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  font-weight: normal; }
+
+a {
+  cursor: pointer; }
+
+ol, ul, li {
+  list-style: none outside none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after, q:before, q:after {
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+b, strong {
+  font-weight: bold; }
+
+.clear {
+  clear: both; }
+
+/*main style css*/
+#wrapper {
+  background: url("../images/bg.png");
+  width: 100%;
+  padding-bottom: 100px; }
+
+#container {
+  width: 1015px;
+  margin: 0 auto;
+  font-family: arial; }
+  #container .header-wrap {
+    position: relative;
+    margin-bottom: 25px;
+    width: 1010px; }
+    #container .header-wrap .header {
+      background-color: #000000;
+      background-image: url("../images/img-head-slogan.jpg");
+      background-position: center center;
+      background-repeat: no-repeat;
+      border-left: 2px solid #292429;
+      border-bottom: 2px solid #292429;
+      border-right: 2px solid #292429;
+      border-bottom-right-radius: 15px;
+      border-bottom-left-radius: 15px;
+      width: 995px;
+      overflow: visible;
+      min-height: 165px; }
+      #container .header-wrap .header .site-banner {
+        display: inline-block;
+        height: 67px;
+        text-decoration: none; }
+        #container .header-wrap .header .site-banner img {
+          position: relative;
+          top: 45px;
+          left: 55px; }
+    #container .header-wrap .image-header-product {
+      position: absolute;
+      right: 110px;
+      top: 20px; }
+    #container .header-wrap .arrow-right {
+      position: absolute;
+      top: 0;
+      right: 0; }
+  #container .content-wrap {
+    background-color: #000000;
+    border: 2px solid #292429;
+    border-radius: 15px;
+    width: 995px;
+    overflow: auto;
+    margin-bottom: 25px; }
+    #container .content-wrap .content-wrap-left {
+      width: 675px;
+      float: left; }
+      #container .content-wrap .content-wrap-left .package-area {
+        position: relative;
+        background-color: #F7F3F7;
+        width: 647px;
+        margin: 15px;
+        border: 1px solid #F7F3F7;
+        border-radius: 5px;
+        min-height: 250px; }
+        #container .content-wrap .content-wrap-left .package-area .package-area-top {
+          position: absolute;
+          width: 625px;
+          top: 10px;
+          left: 10px;
+          background-color: #FF0000;
+          filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr=#FF0000, endColorstr=#B50000);
+          background-image: -moz-linear-gradient(top, red 0%, #b50000 100%);
+          background-image: -webkit-linear-gradient(top, red 0%, #b50000 100%);
+          background-image: -ms-linear-gradient(top, red 0%, #b50000 100%);
+          background-image: linear-gradient(top, red 0%, #b50000 100%);
+          background-image: -o-linear-gradient(top, red 0%, #b50000 100%);
+          background-image: -webkit-gradient(linear, right top, right bottom, color-stop(0%, red), color-stop(100%, #b50000));
+          border-radius: 5px;
+          border: 1px solid #C60000;
+          min-height: 48px; }
+          #container .content-wrap .content-wrap-left .package-area .package-area-top .check-box {
+            position: absolute;
+            top: 14px;
+            left: 11px; }
+          #container .content-wrap .content-wrap-left .package-area .package-area-top p {
+            font-size: 21px;
+            color: #FFFFFF;
+            margin-left: 45px;
+            margin-top: 11px; }
+          #container .content-wrap .content-wrap-left .package-area .package-area-top .free-shipping-bt {
+            position: absolute;
+            right: 8px;
+            top: 7px; }
+        #container .content-wrap .content-wrap-left .package-area .package-area-content {
+          position: relative;
+          padding-bottom: 30px; }
+          #container .content-wrap .content-wrap-left .package-area .package-area-content > img {
+            float: left;
+            position: relative;
+            top: 80px;
+            left: 15px; }
+          #container .content-wrap .content-wrap-left .package-area .package-area-content .one-product {
+            left: 25%; }
+          #container .content-wrap .content-wrap-left .package-area .package-area-content > div {
+            float: right;
+            position: relative;
+            top: 75px;
+            right: 30px; }
+            #container .content-wrap .content-wrap-left .package-area .package-area-content > div p {
+              font-size: 17px;
+              text-align: center;
+              font-weight: bold; }
+            #container .content-wrap .content-wrap-left .package-area .package-area-content > div > img {
+              display: block;
+              margin-top: 17px;
+              margin-left: 30px; }
+            #container .content-wrap .content-wrap-left .package-area .package-area-content > div a > img {
+              display: block;
+              margin-top: 17px; }
+    #container .content-wrap .content-wrap-right {
+      width: 300px;
+      float: left;
+      border: 2px solid #292429;
+      border-radius: 10px;
+      background-image: url("../images/bg-payment.jpg");
+      margin-top: 15px; }
+      #container .content-wrap .content-wrap-right > p {
+        font-size: 14px;
+        font-weight: bold;
+        color: #FFFFFF;
+        text-align: center;
+        margin-top: 15px; }
+      #container .content-wrap .content-wrap-right > table {
+        font-size: 14px;
+        color: #BDBABD;
+        width: 290px;
+        margin: 25px 5px 0px 0px; }
+        #container .content-wrap .content-wrap-right > table td {
+          height: 35px; }
+        #container .content-wrap .content-wrap-right > table .first-column {
+          width: 30%;
+          vertical-align: middle;
+          text-align: right; }
+        #container .content-wrap .content-wrap-right > table .second-column {
+          text-align: left;
+          padding-left: 4px;
+          padding-bottom: 4px; }
+        #container .content-wrap .content-wrap-right > table select.full-row, #container .content-wrap .content-wrap-right > table td select.date-class {
+          height: 30px;
+          width: 204px; }
+        #container .content-wrap .content-wrap-right > table input.full-row {
+          height: 25px;
+          width: 201px; }
+        #container .content-wrap .content-wrap-right > table td select.date-class {
+          width: 100px; }
+        #container .content-wrap .content-wrap-right > table td.cvv-input input {
+          height: 25px;
+          width: 100px; }
+        #container .content-wrap .content-wrap-right > table td.cvv-input a {
+          font-size: 13px;
+          color: #FFFFFF; }
+      #container .content-wrap .content-wrap-right p.text-safe {
+        background-image: url("../images/icon-lock.png");
+        background-position: center left;
+        background-repeat: no-repeat;
+        font-size: 12px;
+        font-weight: 100;
+        color: #BDBABD;
+        width: 83%;
+        margin: 0 auto;
+        height: 28px;
+        vertical-align: middle;
+        padding-top: 18px; }
+      #container .content-wrap .content-wrap-right .button-order img {
+        margin: 20px 0 0px 20px;
+        display: block; }
+      #container .content-wrap .content-wrap-right .content-right-footer img {
+        display: block;
+        margin: 0 auto 25px; }
+    #container .content-wrap .content-confirm-order {
+      width: 950px;
+      margin: 15px auto 40px; }
+      #container .content-wrap .content-confirm-order .confirm-title {
+        color: #FFFFFF;
+        display: block;
+        text-align: center;
+        font-size: 30px;
+        font-weight: bold;
+        margin-bottom: 15px; }
+      #container .content-wrap .content-confirm-order .confirm-number, #container .content-wrap .content-confirm-order .address-wrapper, #container .content-wrap .content-confirm-order .address-wrapper .billing-address, #container .content-wrap .content-confirm-order .address-wrapper .shipping-address, #container .content-wrap .content-confirm-order .product-order-wrapper, #container .content-wrap .content-confirm-order .billing-price-wrapper, #container .content-wrap .content-confirm-order .content-footer {
+        overflow: auto;
+        background-color: #E7EBE7;
+        filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr=#FFFFFF, endColorstr=#E7EBE7);
+        background-image: -moz-linear-gradient(top, white 0%, #e7ebe7 100%);
+        background-image: -webkit-linear-gradient(top, white 0%, #e7ebe7 100%);
+        background-image: -ms-linear-gradient(top, white 0%, #e7ebe7 100%);
+        background-image: linear-gradient(top, white 0%, #e7ebe7 100%);
+        background-image: -o-linear-gradient(top, white 0%, #e7ebe7 100%);
+        background-image: -webkit-gradient(linear, right top, right bottom, color-stop(0%, white), color-stop(100%, #e7ebe7));
+        width: 98%;
+        border: 1px solid #FFFFFF;
+        border-radius: 10px;
+        padding: 8px;
+        margin-bottom: 10px; }
+        #container .content-wrap .content-confirm-order .confirm-number > p, #container .content-wrap .content-confirm-order .address-wrapper > p, #container .content-wrap .content-confirm-order .address-wrapper .billing-address > p, #container .content-wrap .content-confirm-order .address-wrapper .shipping-address > p, #container .content-wrap .content-confirm-order .product-order-wrapper > p, #container .content-wrap .content-confirm-order .billing-price-wrapper > p, #container .content-wrap .content-confirm-order .content-footer > p {
+          display: block;
+          text-align: left;
+          color: #CE0000;
+          font-size: 15px;
+          margin-top: 10px;
+          float: left;
+          margin-left: 10px; }
+          #container .content-wrap .content-confirm-order .confirm-number > p span, #container .content-wrap .content-confirm-order .address-wrapper > p span, #container .content-wrap .content-confirm-order .address-wrapper .billing-address > p span, #container .content-wrap .content-confirm-order .address-wrapper .shipping-address > p span, #container .content-wrap .content-confirm-order .product-order-wrapper > p span, #container .content-wrap .content-confirm-order .billing-price-wrapper > p span, #container .content-wrap .content-confirm-order .content-footer > p span {
+            color: #313431;
+            font-weight: bold; }
+        #container .content-wrap .content-confirm-order .confirm-number > a img, #container .content-wrap .content-confirm-order .address-wrapper > a img, #container .content-wrap .content-confirm-order .address-wrapper .billing-address > a img, #container .content-wrap .content-confirm-order .address-wrapper .shipping-address > a img, #container .content-wrap .content-confirm-order .product-order-wrapper > a img, #container .content-wrap .content-confirm-order .billing-price-wrapper > a img, #container .content-wrap .content-confirm-order .content-footer > a img {
+          float: right; }
+      #container .content-wrap .content-confirm-order .address-wrapper {
+        background-color: #000000;
+        background-image: none;
+        border: 0;
+        padding: 0;
+        width: 100%;
+        margin: 0; }
+        #container .content-wrap .content-confirm-order .address-wrapper .billing-address {
+          width: 47%;
+          float: left;
+          margin-right: 10px;
+          min-height: 90px; }
+        #container .content-wrap .content-confirm-order .address-wrapper .shipping-address {
+          width: 48%;
+          float: left;
+          min-height: 90px; }
+        #container .content-wrap .content-confirm-order .address-wrapper dl {
+          padding: 10px; }
+          #container .content-wrap .content-confirm-order .address-wrapper dl dt {
+            font-size: 14px;
+            font-weight: bold;
+            color: #313031;
+            margin-bottom: 5px; }
+          #container .content-wrap .content-confirm-order .address-wrapper dl dd {
+            padding-left: 30px;
+            font-size: 15px;
+            color: #CE0000; }
+      #container .content-wrap .content-confirm-order .product-order-wrapper .confirm-order-product {
+        width: 98%;
+        margin: 5px auto;
+        background-color: #FFFFFF; }
+        #container .content-wrap .content-confirm-order .product-order-wrapper .confirm-order-product .table-header-class, #container .content-wrap .content-confirm-order .product-order-wrapper .confirm-order-product .qty-column-head, #container .content-wrap .content-confirm-order .product-order-wrapper .confirm-order-product .descip-column-head, #container .content-wrap .content-confirm-order .product-order-wrapper .confirm-order-product .total-column-head {
+          background-color: #FF0000;
+          filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr=#FF0000, endColorstr=#B50000);
+          background-image: -moz-linear-gradient(top, red 0%, #b50000 100%);
+          background-image: -webkit-linear-gradient(top, red 0%, #b50000 100%);
+          background-image: -ms-linear-gradient(top, red 0%, #b50000 100%);
+          background-image: linear-gradient(top, red 0%, #b50000 100%);
+          background-image: -o-linear-gradient(top, red 0%, #b50000 100%);
+          background-image: -webkit-gradient(linear, right top, right bottom, color-stop(0%, red), color-stop(100%, #b50000));
+          height: 40px;
+          color: #F7F7F7;
+          vertical-align: middle; }
+        #container .content-wrap .content-confirm-order .product-order-wrapper .confirm-order-product .qty-column-head {
+          width: 50px; }
+        #container .content-wrap .content-confirm-order .product-order-wrapper .confirm-order-product .total-column-head {
+          width: 150px; }
+        #container .content-wrap .content-confirm-order .product-order-wrapper .confirm-order-product td {
+          border: 1px solid #BDBABD; }
+        #container .content-wrap .content-confirm-order .product-order-wrapper .confirm-order-product .qty-column {
+          width: 50px;
+          text-align: center; }
+        #container .content-wrap .content-confirm-order .product-order-wrapper .confirm-order-product .qty-column-detail, #container .content-wrap .content-confirm-order .product-order-wrapper .confirm-order-product .total-column-detail {
+          text-align: center;
+          vertical-align: top; }
+          #container .content-wrap .content-confirm-order .product-order-wrapper .confirm-order-product .qty-column-detail p, #container .content-wrap .content-confirm-order .product-order-wrapper .confirm-order-product .total-column-detail p {
+            margin: 0;
+            width: 100%;
+            text-align: center;
+            padding-top: 15px;
+            font-size: 13px;
+            color: #CE0000;
+            font-weight: bold; }
+        #container .content-wrap .content-confirm-order .product-order-wrapper .confirm-order-product .descip-column-detail img {
+          margin-top: 16px;
+          margin-left: 25px;
+          margin-bottom: 10px;
+          float: left; }
+        #container .content-wrap .content-confirm-order .product-order-wrapper .confirm-order-product .descip-column-detail dl {
+          float: left;
+          margin-top: 16px;
+          margin-left: 20px; }
+          #container .content-wrap .content-confirm-order .product-order-wrapper .confirm-order-product .descip-column-detail dl dt {
+            font-size: 14px;
+            font-weight: bold;
+            color: #313031;
+            margin-bottom: 5px; }
+          #container .content-wrap .content-confirm-order .product-order-wrapper .confirm-order-product .descip-column-detail dl dd {
+            padding-left: 30px;
+            font-size: 15px;
+            color: #CE0000; }
+        #container .content-wrap .content-confirm-order .product-order-wrapper .confirm-order-product .total-column-detail p {
+          margin: 0;
+          width: 100%;
+          text-align: center;
+          padding-top: 15px;
+          font-size: 13px;
+          color: #CE0000;
+          font-weight: bold; }
+      #container .content-wrap .content-confirm-order .product-order-wrapper .confirm-order-footer {
+        font-size: 14px;
+        color: #313431;
+        float: right;
+        margin: 15px 7px; }
+        #container .content-wrap .content-confirm-order .product-order-wrapper .confirm-order-footer .order-footer-title {
+          width: 245px;
+          text-align: right; }
+        #container .content-wrap .content-confirm-order .product-order-wrapper .confirm-order-footer .order-footer-content {
+          width: 150px; }
+        #container .content-wrap .content-confirm-order .product-order-wrapper .confirm-order-footer p {
+          text-align: center; }
+        #container .content-wrap .content-confirm-order .product-order-wrapper .confirm-order-footer span {
+          color: #CE0000; }
+      #container .content-wrap .content-confirm-order .billing-price-wrapper .place-new-order {
+        float: left;
+        margin-top: 5px; }
+      #container .content-wrap .content-confirm-order .billing-price-wrapper .total-text, #container .content-wrap .content-confirm-order .billing-price-wrapper .total-price {
+        float: right;
+        font-size: 28px;
+        color: #313431;
+        font-weight: bold;
+        margin-right: 50px;
+        margin-top: 5px;
+        padding: 5px 0; }
+      #container .content-wrap .content-confirm-order .content-footer ul li.confirm-card {
+        float: left; }
+        #container .content-wrap .content-confirm-order .content-footer ul li.confirm-card img {
+          margin-top: 25px; }
+      #container .content-wrap .content-confirm-order .content-footer ul li.money-back-logo {
+        float: left; }
+      #container .content-wrap .content-confirm-order .content-footer ul li.money-back-text {
+        float: left; }
+        #container .content-wrap .content-confirm-order .content-footer ul li.money-back-text p {
+          width: 350px;
+          font-size: 13px;
+          display: block;
+          vertical-align: middle;
+          margin-top: 10px; }
+  #container .footer-wrap {
+    background-color: #000000;
+    border: 2px solid #292429;
+    border-radius: 15px;
+    width: 995px;
+    min-height: 165px;
+    position: relative;
+    color: #FFFFFF;
+    font-size: 12px; }
+    #container .footer-wrap > p {
+      width: 95%;
+      margin: 35px auto 25px;
+      text-align: center; }
+    #container .footer-wrap .footer-copyright {
+      position: relative;
+      text-align: center; }
