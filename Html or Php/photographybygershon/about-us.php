@@ -6,7 +6,9 @@ include 'template/header.php';
 ?>
 
 <div class="<?php echo $sectionWrapper ?>">
-    <img src="images/about_02.png" alt="about-us" width="459" height="343" class="left-image-about-us"/>
+    <div class="left-content-about-wrapper">
+        <img src="images/about_02.png" alt="about-us" width="460" height="343" class="left-image-about-us"/>
+    </div>
     <div class="right-content-about-wrapper">
         <img src="images/about_03.png" alt="about-gershon-kelman" width="439" height="66" class="right-content-title" />
         <p class="right-content">
