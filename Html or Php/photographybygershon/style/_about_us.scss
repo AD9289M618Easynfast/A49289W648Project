@@ -1,0 +1,51 @@
+.about-content-wrapper{
+    min-height: 550px;
+    .left-content-about-wrapper {
+        width: 460px;
+        float: left;
+    }
+    .right-content-about-wrapper {
+        width: 439px;
+        float: left;
+        .right-content {
+            width: 410px;
+            margin: 0 auto;
+        }
+
+    }
+}
+@media screen and (max-width: 930px) {
+    .about-content-wrapper{
+        .left-content-about-wrapper {
+            width: 60%;
+            height: auto;
+            margin: 0 auto;
+            float: none;
+            .left-image-about-us {
+                width: 100%;
+                height: auto;
+                max-width: 460px;
+            }
+        }
+        .right-content-about-wrapper {
+            width: 56%;
+            margin: 0 auto;
+            float: none;
+            .right-content-title{
+                width: 100%;
+                max-width: 439px;
+                height: auto;
+            }
+            .right-content {
+                width: 90%;
+                margin-left: 15px;
+                max-width: 410px;
+            }
+
+        }
+    }
+}
+
+
+
+
