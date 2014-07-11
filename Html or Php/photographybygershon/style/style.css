@@ -1379,3 +1379,54 @@ body {
       width: 100%;
       max-width: 475px;
       height: auto; } }
+.mailing-content-wrapper {
+  width: 100%; }
+  .mailing-content-wrapper .left-content-mailing-wrapper {
+    float: left;
+    width: 51%; }
+    .mailing-content-wrapper .left-content-mailing-wrapper .mailing-info {
+      margin-top: 10px;
+      width: 86%; }
+      .mailing-content-wrapper .left-content-mailing-wrapper .mailing-info p {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 14px;
+        margin-left: 3px;
+        margin-top: 5px; }
+        .mailing-content-wrapper .left-content-mailing-wrapper .mailing-info p span {
+          font-family: "Arial Black", Gadget, sans-serif; }
+        .mailing-content-wrapper .left-content-mailing-wrapper .mailing-info p a {
+          color: #999;
+          text-decoration: underline;
+          margin-left: 2px; }
+  .mailing-content-wrapper .right-content-mailing-wrapper {
+    width: 48%;
+    float: left; }
+
+@media screen and (max-width: 930px) {
+  .mailing-content-wrapper .left-content-mailing-wrapper {
+    width: 100%;
+    height: auto;
+    margin: 5px auto;
+    float: none; }
+    .mailing-content-wrapper .left-content-mailing-wrapper .left-content-title {
+      max-width: 376px;
+      display: block;
+      margin: 0 auto; }
+    .mailing-content-wrapper .left-content-mailing-wrapper .mailing-info {
+      width: 313px;
+      display: block;
+      margin: 0 auto; }
+      .mailing-content-wrapper .left-content-mailing-wrapper .mailing-info p {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 14px;
+        margin-left: 3px; }
+  .mailing-content-wrapper .right-content-mailing-wrapper {
+    width: 60%;
+    margin: 0 auto;
+    float: none; }
+    .mailing-content-wrapper .right-content-mailing-wrapper .right-content {
+      display: block;
+      margin: 0 auto;
+      width: 100%;
+      max-width: 475px;
+      height: auto; } }
