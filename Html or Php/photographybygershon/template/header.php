@@ -17,14 +17,14 @@
                         <img src="images/icon/icon-menu.png" width="32" height="32"/>
                     </a>
                     <ul class="main-nav">
-                        <li><a href="#">Home</a></li>
+                        <li><a href="/">Home</a></li>
                         <li><a href="about-us.php">About</a></li>
                         <li><a href="#">Blog</a></li>
                         <li><a href="#">Exhibitions</a></li>
                         <li><a href="#">Portfolio</a></li>
                         <li><a href="#">Media</a></li>
-                        <li><a href="mailinglist.php">Mailing List</a></li>
-                        <li><a href="contact.php">Contact</a></li>
+                        <li><a href="mailing-list.php">Mailing List</a></li>
+                        <li><a href="contact-us.php">Contact</a></li>
                     </ul>
                 </div>
                 <div class="clear"></div>
