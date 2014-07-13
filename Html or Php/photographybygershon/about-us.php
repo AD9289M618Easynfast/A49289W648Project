@@ -6,11 +6,9 @@ include 'template/header.php';
 ?>
 
 <div class="<?php echo $sectionWrapper ?>">
-    <div class="left-content-about-wrapper">
-        <img src="images/about_02.png" alt="about-us" width="460" height="343" class="left-image-about-us"/>
-    </div>
+    <img src="images/img-about-us.jpg" alt="about-us" width="450" height="336" class="left-image-about-us"/>
     <div class="right-content-about-wrapper">
-        <img src="images/about_03.png" alt="about-gershon-kelman" width="439" height="66" class="right-content-title" />
+        <p class="right-title">ABOUT GERSHON KELMAN</p>
         <p class="right-content">
             Gershon Kelman has been doing freelance photography for 30 years. 
             He has dyslexia and he once came across information about this condition in which he could relate.<br />
