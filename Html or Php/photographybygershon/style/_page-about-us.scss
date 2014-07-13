@@ -1,0 +1,55 @@
+.about-content-wrapper{
+    min-height: 550px;
+    margin-top:10px;
+
+    .img-about-us {
+        box-shadow: 0 0 15px black;
+        display: block;
+        float: left;
+        height: auto;
+        margin-right: 2.5%;
+        max-width: 450px;
+        width: 50%;
+    }
+    .content-about-us {
+        float: right;
+        width: 45%;
+        text-align: justify;
+        .title{
+            border-bottom: 3px solid #666666;
+            padding-bottom: 5px;
+            color: #666666;
+            font-size: 28px;
+            margin-bottom: 10px;
+            text-decoration: none;
+            text-transform: uppercase;
+        }
+        > p {
+            margin-top: 15px;
+        }
+    }
+}
+@media screen and (max-width: 930px) {
+    .about-content-wrapper{
+        .img-about-us {
+            float: none;
+            margin: 0 auto 25px;
+            width: 100%;
+        }
+        .content-about-us {
+            float: none;
+            display: block;
+            margin: 10px auto;
+            width: 100% !important;
+            max-width: 450px;
+
+            .title{
+                font-size: 20px;
+            }
+        }
+    }
+}
+
+
+
+

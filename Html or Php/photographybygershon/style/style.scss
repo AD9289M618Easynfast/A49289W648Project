@@ -2,15 +2,20 @@
 @import "_prettyPhoto.scss";
 /*import bxSlider Library*/
 @import "_bxSlider.scss";
-
+/*import reset css*/
+@import "_reset.scss";
 
 /*import website style*/
-@import "_reset.scss";
-@import "_header_footer.scss";
-@import "_page_home.scss";
-@import "_about_us.scss";
-@import "_contact.scss";
-@import "_maillinglist.scss";
-
-
-
+@import "_header-footer.scss";
+/*import page Home*/
+@import "_page-home.scss";
+/*import page About Us*/
+@import "_page-about-us.scss";
+/*import page Exhibitions*/
+@import "_page-exhibitions.scss";
+/*import page Portfolio*/
+/*TODO*/
+/*import page Mailing List*/
+@import "_page-mailling-list.scss";
+/*import page Contact Us*/
+@import "_page-contact-us.scss";
