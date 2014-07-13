@@ -1,166 +1,125 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>Right is Right</title>
-<style>
-	body{
-		width:100%;
-		
-	}
-	
-	a{
-		color:#fff;
-		font-weight:normal;
-		font-size:80%;
-		text-decoration:none;
-	}
-	
-	.ly img{
-		width:10%;
-		height:10%;
-	}
-	
-	.ly{
-		width:100%;
-		height:100%;
-		text-align:center;
-		padding:1%;
-		display:block;
-		vertical-align:middle;
-	}
-	
-	.ly div{
-		width:10%;
-		height:10%;
-		text-align:center;
-		padding:1%;
-		display:inline;
-		vertical-align:middle;
-	}
-	
-	/*
-	#thumbs{
-		width:100%;
-		height:100%;
-		margin:0 auto;
-	}
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>Right is Right</title>
+        <style type="text/css">
+            body{
+                width:100%;
 
-	#thumbs td{
-		text-align:center;
-		width:12%;
-		height:20%;
-	}
-	
-	#thumbs img{
-		max-width:12%;
-		height:auto;
-		padding:1%;
-	}
-	*/
-	#pic{
-		display:none;
-	}
-</style>
-<script>
-	function showPic( src ){
-		$("#content").hide();
-		$("#pic img").attr("src","images/lyrics/"+src);
-		$("#pic").show();
-	}
-	
-	function hidePic(){
-		$("#pic").hide();
-		$("#content").show();
-	}
-</script>
-<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+            }
+            a {
+                color:#fff;
+                font-weight:normal;
+                font-size:80%;
+                text-decoration:none;
+            }
 
-  ga('create', 'UA-46263336-1', 'blakhat.tv');
-  ga('send', 'pageview');
+            .ly img {
+                width:10%;
+                height:10%;
+            }
 
-</script>
-</head>
+            .ly {
+                width:100%;
+                height:100%;
+                text-align:center;
+                padding:1%;
+                display:block;
+                vertical-align:middle;
+            }
 
-<body>
-<div id="content">
-	<div id="first" class="ly">
-    	<a href="javascript:void(0);" onclick="showPic('Bandit_TextingAway.jpg');"><img src="images/lyrics/thumbs/Bandit_TextingAway.jpg" /></a>
-    </div>
-	<div id="second" class="ly">
-    	<a href="javascript:void(0);" onclick="showPic('Bandit_FreedomFromFollowing.jpg');"><img src="images/lyrics/thumbs/Bandit_FreedomFromFollowing.jpg" /></a>
-    </div>
-    <div id="third" class="ly">
-    	<a href="javascript:void(0);" onclick="showPic('Bandit_YouMadeYourBed.jpg');"><img src="images/lyrics/thumbs/Bandit_YouMadeYourBed.jpg" /></a>
-    </div>
-    <div id="fourth" class="ly">
-    	<div>
-    		<a href="javascript:void(0);" onclick="showPic('Bandit_WhatsYourTruth.jpg');"><img src="images/lyrics/thumbs/Bandit_WhatsYourTruth.jpg" /></a>
+            .ly div{
+                width:10%;
+                height:10%;
+                text-align:center;
+                padding:1%;
+                display:inline;
+                vertical-align:middle;
+            }
+            #pic{
+                display:none;
+            }
+        </style>
+        <script type="text/javascript">
+            (function(i, s, o, g, r, a, m) {
+                i['GoogleAnalyticsObject'] = r;
+                i[r] = i[r] || function() {
+                    (i[r].q = i[r].q || []).push(arguments)
+                }, i[r].l = 1 * new Date();
+                a = s.createElement(o),
+                        m = s.getElementsByTagName(o)[0];
+                a.async = 1;
+                a.src = g;
+                m.parentNode.insertBefore(a, m)
+            })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+            ga('create', 'UA-46263336-1', 'blakhat.tv');
+            ga('send', 'pageview');
+
+            function showPic(src) {
+                $("#content").hide();
+                $("#pic img").attr("src", "images/lyrics/" + src);
+                $("#pic").show();
+            }
+
+            function hidePic() {
+                $("#pic").hide();
+                $("#content").show();
+            }
+        </script>
+    </head>
+
+    <body>
+        <div id="content">
+            <div id="first" class="ly">
+                <a href="javascript:void(0);" onclick="showPic('Bandit_TextingAway.jpg');"><img src="images/lyrics/thumbs/Bandit_TextingAway.jpg" /></a>
+            </div>
+            <div id="second" class="ly">
+                <a href="javascript:void(0);" onclick="showPic('Bandit_FreedomFromFollowing.jpg');"><img src="images/lyrics/thumbs/Bandit_FreedomFromFollowing.jpg" /></a>
+            </div>
+            <div id="third" class="ly">
+                <a href="javascript:void(0);" onclick="showPic('Bandit_YouMadeYourBed.jpg');"><img src="images/lyrics/thumbs/Bandit_YouMadeYourBed.jpg" /></a>
+            </div>
+            <div id="fourth" class="ly">
+                <div>
+                    <a href="javascript:void(0);" onclick="showPic('Bandit_WhatsYourTruth.jpg');"><img src="images/lyrics/thumbs/Bandit_WhatsYourTruth.jpg" /></a>
+                </div>
+                <div>
+                    <a href="javascript:void(0);" onclick="showPic('Bandit_LostMyMind.jpg');"><img src="images/lyrics/thumbs/Bandit_LostMyMind.jpg" /></a>
+                </div>
+                <div>
+                    <a href="javascript:void(0);" onclick="showPic('Bandit_SoWrongSoLong.jpg');"><img src="images/lyrics/thumbs/Bandit_SoWrongSoLong.jpg" /></a>
+                </div>
+                <div>
+                    <a href="javascript:void(0);" onclick="showPic('Bandit_She_s_So_Cold.jpg');"><img src="images/lyrics/thumbs/Bandit_She_s_So_Cold.jpg" /></a>
+                </div>
+                <div>
+                    <a href="javascript:void(0);" onclick="showPic('Bandit_Never.jpg');"><img src="images/lyrics/thumbs/Bandit_Never.jpg" /></a>
+                </div>
+                <div>
+                    <!-- <a href="javascript:void(0);" onclick="showPic('Bandit_ItsNotWhatYouSee.jpg');"><img src="images/lyrics/thumbs/Bandit_ItsNotWhatYouSee.jpg" /></a> -->
+                    <a href="javascript:void(0);" onclick="showPic('Bandit_NoRestForWicked.jpg');"><img src="images/lyrics/thumbs/Bandit_NoRestForWicked.jpg" /></a>
+                </div>
+                <div>
+                    <a href="javascript:void(0);" onclick="showPic('Bandit_SweetCauseOfPain.jpg');"><img src="images/lyrics/thumbs/Bandit_SweetCauseOfPain.jpg" /></a>
+                </div>
+            </div>
+
+            <div id="fifth" class="ly">
+                <a href="javascript:void(0);" onclick="showPic('Bandit_NoVoice.jpg');"><img src="images/lyrics/thumbs/Bandit_NoVoice.jpg" /></a>
+            </div>
+
+            <div id="sixth" class="ly">
+                <a href="javascript:void(0);" onclick="showPic('Bandit_PigsGetSlaughtered.jpg');"><img src="images/lyrics/thumbs/Bandit_PigsGetSlaughtered.jpg" /></a>
+            </div>
+            <div id="seventh" class="ly">
+                <a href="javascript:void(0);" onclick="showPic('Bandit_NamelessFaces.jpg');"><img src="images/lyrics/thumbs/Bandit_NamelessFaces.jpg" /></a>
+            </div>
         </div>
-        <div>
-    		<a href="javascript:void(0);" onclick="showPic('Bandit_LostMyMind.jpg');"><img src="images/lyrics/thumbs/Bandit_LostMyMind.jpg" /></a>
+        <div id="pic">
+            <a href="javascript:void(0);" onclick="hidePic();">&lt;&lt; Go Back</a><br /><br />
+            <img src="" style="max-width:100%; height:auto"/>
         </div>
-        <div>
-    		<a href="javascript:void(0);" onclick="showPic('Bandit_SoWrongSoLong.jpg');"><img src="images/lyrics/thumbs/Bandit_SoWrongSoLong.jpg" /></a>
-        </div>
-        <div>
-    		<a href="javascript:void(0);" onclick="showPic('Bandit_She_s_So_Cold.jpg');"><img src="images/lyrics/thumbs/Bandit_She_s_So_Cold.jpg" /></a>
-        </div>
-        <div>
-    		<a href="javascript:void(0);" onclick="showPic('Bandit_Never.jpg');"><img src="images/lyrics/thumbs/Bandit_Never.jpg" /></a>
-        </div>
-        <div>
-    		<!-- <a href="javascript:void(0);" onclick="showPic('Bandit_ItsNotWhatYouSee.jpg');"><img src="images/lyrics/thumbs/Bandit_ItsNotWhatYouSee.jpg" /></a> -->
-            <a href="javascript:void(0);" onclick="showPic('Bandit_NoRestForWicked.jpg');"><img src="images/lyrics/thumbs/Bandit_NoRestForWicked.jpg" /></a>
-        </div>
-        <div>
-    		<a href="javascript:void(0);" onclick="showPic('Bandit_SweetCauseOfPain.jpg');"><img src="images/lyrics/thumbs/Bandit_SweetCauseOfPain.jpg" /></a>
-        </div>
-    </div>
-    
-     <div id="fifth" class="ly">
-    	<a href="javascript:void(0);" onclick="showPic('Bandit_NoVoice.jpg');"><img src="images/lyrics/thumbs/Bandit_NoVoice.jpg" /></a>
-    </div>
-    
-     <div id="sixth" class="ly">
-    	<a href="javascript:void(0);" onclick="showPic('Bandit_PigsGetSlaughtered.jpg');"><img src="images/lyrics/thumbs/Bandit_PigsGetSlaughtered.jpg" /></a>
-    </div>
-     <div id="seventh" class="ly">
-    	<a href="javascript:void(0);" onclick="showPic('Bandit_NamelessFaces.jpg');"><img src="images/lyrics/thumbs/Bandit_NamelessFaces.jpg" /></a>
-    </div>
-    <!-- 
-	<table cellpadding="0" cellspacing="0" border="0" id="thumbs">
-    	<tr>
-        	<td colspan="7"><a href="javascript:void(0);" onclick="showPic('Bandit_FreedomFromFollowing.jpg');"><img src="images/lyrics/Bandit_FreedomFromFollowing.jpg" /></a></td>
-        </tr>
-        <tr>
-        	<td colspan="7"><a href="javascript:void(0);" onclick="showPic('Bandit_YouMadeYourBed.jpg');"><img src="images/lyrics/Bandit_YouMadeYourBed.jpg" /></a></td>
-        </tr>
-        <tr>
-        	<td><a href="javascript:void(0);" onclick="showPic('Bandit_WhatsYourTruth.jpg');"><img src="images/lyrics/Bandit_WhatsYourTruth.jpg" /></a></td>
-        	<td><a href="javascript:void(0);" onclick="showPic('Bandit_LostMyMind.jpg');"><img src="images/lyrics/Bandit_LostMyMind.jpg" /></a></td>
-        	<td><a href="javascript:void(0);" onclick="showPic('Bandit_SoWrongSoLong.jpg');"><img src="images/lyrics/Bandit_SoWrongSoLong.jpg" /></a></td>
-        	<td><a href="javascript:void(0);" onclick="showPic('Bandit_She_s_So_Cold.jpg');"><img src="images/lyrics/Bandit_She_s_So_Cold.jpg" /></a></td>
-        	<td><a href="javascript:void(0);" onclick="showPic('Bandit_Never.jpg');"><img src="images/lyrics/Bandit_Never.jpg" /></a></td>
-        	<td><a href="javascript:void(0);" onclick="showPic('Bandit_ItsNotWhatYouSee.jpg');"><img src="images/lyrics/Bandit_ItsNotWhatYouSee.jpg" /></a></td>
-        	<td><a href="javascript:void(0);" onclick="showPic('Bandit_SweetCauseOfPain.jpg');"><img src="images/lyrics/Bandit_SweetCauseOfPain.jpg" /></a></td>
-        </tr>
-        <tr>
-        	<td colspan="7"><a href="javascript:void(0);" onclick="showPic('Bandit_NoVoice.jpg');"><img src="images/lyrics/Bandit_NoVoice.jpg" /></a></td>
-        </tr>
-        <tr>
-        	<td colspan="7"><a href="javascript:void(0);" onclick="showPic('Bandit_PigsGetSlaughtered.jpg');"><img src="images/lyrics/Bandit_PigsGetSlaughtered.jpg" /></a></td>
-        </tr>
-    </table>
-    -->
-</div>
-<div id="pic">
-	<a href="javascript:void(0);" onclick="hidePic();">&lt;&lt; Go Back</a><br /><br />
-	<img src="" style="max-width:100%; height:auto"/>
-</div>
-</body>
+    </body>
 </html>

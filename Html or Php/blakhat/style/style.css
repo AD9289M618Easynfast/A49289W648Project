@@ -1,0 +1,950 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-weight: inherit;
+    font-style: inherit;
+    font-size: 100%;
+    font-family: inherit;
+    vertical-align: baseline;
+}
+/* remember to define focus styles! */
+:focus {
+    outline: 0;
+}
+body {
+    line-height: 1;
+    color: black;
+    background: white;
+}
+ol, ul {
+    list-style: none;
+}
+/* tables still need 'cellspacing="0"' in the markup */
+table {
+    border-collapse: separate;
+    border-spacing: 0;
+}
+caption, th, td {
+    text-align: left;
+    font-weight: normal;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: "";
+}
+blockquote, q {
+    quotes: "" "";
+}
+@font-face {
+    font-family: 'arialblack';
+    src: url('../fonts/ariblk-webfont.eot');
+    src: url('../fonts/ariblk-webfont.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/ariblk-webfont.woff') format('woff'),
+        url('../fonts/ariblk-webfont.ttf') format('truetype'),
+        url('../fonts/ariblk-webfont.svg#arialblack') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+.fancybox-skin{
+    background-color:#000 !important;
+
+}
+
+html,  body{
+    width:100%;
+    height:100%;
+    /* font-family: "Arial Black", Verdana, Geneva, sans-serif; */
+    font-family: "arialblack", Verdana, Geneva, sans-serif;
+    background-color:#fff;
+}
+
+body{
+    overflow:auto;
+}
+
+blockquote {
+    margin: 1em 3em;
+    color: #999;
+    border-left: 2px solid #999;
+    padding-left: 1em; }
+
+#container {
+    background: url("../images/background-image.png") no-repeat scroll center center #fff;
+    bottom: 0;
+    height: 600px;
+    left: 0;
+    margin: auto;
+    padding: 0;
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 1000px;
+    z-index: 3;
+}
+
+.word{
+    position:absolute;
+    font-size:666%;
+    color:#000;
+    display:none;
+}
+
+.truth{
+    bottom:-1%;
+    left:0.5%;
+}
+
+.life{
+    bottom:27%;
+    left:0%;
+    font-size:658%;
+}
+
+.control{
+    bottom:12.5%;
+    left:-0.5%;
+    font-size:525%;
+}
+
+.hell{
+    bottom:46%;
+    left:-0.5%;
+}
+
+.power{
+    top:14%;
+    right:0.5%;
+}
+
+.desire{
+    top:-2.5%;
+    right:0%;
+    font-size:683%;
+}
+
+.fame{
+    top:-1%;
+    left: 0%;
+    font-size:566%;
+}
+
+.art{
+    bottom:6%;
+    left:31%;
+    font-size:708%;
+}
+
+.mediocrity{
+    bottom:20.5%;
+    left:29%;
+    font-size:625%;
+}
+
+.lead{
+    bottom:44%;
+    right:17%;
+}
+
+.thought{
+    bottom:34%;
+    left:17%;
+    font-size:583%;
+}
+
+.nothingness{
+    top:26%;
+    left:19.5%;
+    font-size:625%;
+}
+
+.jealousy{
+    top:9%;
+    left:29.5%;
+    font-size:525%;
+}
+
+.love{
+    top:24.5%;
+    left:-0.5%;
+    font-size:550%;
+}
+
+.wealth{
+    bottom:33.5%;
+    left:55%;
+    font-size:516%;
+}
+
+.intimidation{
+    bottom:8%;
+    left:48.5%;
+    font-size:533%;
+}
+
+.eternal{
+    top:12%;
+    left:-0.5%;
+    font-size:541%;
+}
+
+.poverty{
+    bottom:47.5%;
+    left:32%;
+    font-size:433%;
+}
+
+.dark{
+    top:28%;
+    right:0%;
+    font-size:508%;
+}
+
+.question{
+    top:-2%;
+    left:25.5%;
+    font-size:558%;
+}
+
+.light{
+    bottom:49.5%;
+    right:0%;
+    font-size:441%;
+}
+
+.loss{
+    bottom:-1%;
+    right:0%;
+    font-size:491%;
+}
+
+.listen{
+    bottom:-0.5%;
+    right:18.5%;
+    font-size:416%;
+}
+
+.heroes{
+    top:21%;
+    right:34%;
+    font-size:408%;
+}
+
+.corrupt{
+    bottom:42.5%;
+    right:0%;
+    font-size:291%;
+}
+
+.imagination{
+    bottom:0%;
+    right:39%;
+    font-size:341%;
+}
+
+
+.saints{
+    top:21%;
+    left:30%;
+    font-size:266%;
+}
+
+.heaven{
+    bottom:41%;
+    left:0%;
+    font-size:291%;
+}
+
+.sinner{
+    bottom:34.5%;
+    right:0%;
+    font-size:333%;
+}
+
+.empathy{
+    top:13%;
+    right:0%;
+    font-size:250%;
+}
+
+.depth{
+    top:45%;
+    left:20%;
+    font-size:266%;
+}
+
+.faith{
+    bottom:27.5%;
+    left:19%;
+    font-size:316%;
+}
+
+.see{
+    bottom:18%;
+    right:0.5%;
+    font-size:600%;
+}
+
+.frauds{
+    bottom:28%;
+    right:0%;
+    font-size:350%;
+}
+
+.consciousness{
+    bottom:23%;
+    left:0%;
+    font-size:250%;
+}
+
+.conform{
+    bottom:17%;
+    right:24%;
+    font-size:250%;
+}
+
+.anarchy{
+    top:40%;
+    left:19%;
+    font-size:208%;
+}
+
+.challenge{
+    top:39.5%;
+    right:19%;
+    font-size:208%;
+}
+
+.justice{
+    bottom:17%;
+    left:40%;
+    font-size:316%;
+}
+
+.culture{
+    top:12%;
+    right:17%;
+    font-size:250%;
+}
+
+.drive{
+    top:22%;
+    left:18%;
+    font-size:316%;
+}
+
+.voice{
+    bottom:43%;
+    left:32%;
+    font-size:316%;
+}
+
+.sellout{
+    top:38%;
+    left:38%;
+    font-size:291%;
+}
+
+.taste{
+    bottom:41%;
+    right:27%;
+    font-size:250%;
+}
+
+.genius{
+    bottom:30%;
+    right:30%;
+    font-size:333%;
+}
+
+.look{
+    top:35%;
+    left:5%;
+    font-size:316%;
+}
+
+.follow{
+    top:10%;
+    left:15%;
+    font-size:316%;
+}
+
+.hate{
+    bottom:18%;
+    left:29%;
+    font-size:300%;
+}
+
+.past{
+    top:25%;
+    right:20%;
+    font-size:333%;
+}
+
+.present{
+    bottom:9%;
+    left:5%;
+    font-size:333%;
+}
+
+.future{
+    top:7%;
+    right:35%;
+    font-size:375%;
+}
+
+.god{
+    bottom:8%;
+    left:25.5%;
+    font-size:333%;
+}
+
+.fear{
+    top:26.5%;
+    left:26%;
+    font-size:250%;
+}
+
+.romance{
+    top:18%;
+    left:45%;
+    font-size:291%;
+}
+
+.steal{
+    top:9%;
+    left:32%;
+    font-size:316%;
+}
+
+.look{
+    top:35%;
+    left:5%;
+    font-size:333%;
+}
+
+.death{
+    bottom:30%;
+    left:32%;
+    font-size:400%;
+}
+
+.pain{
+    top:27%;
+    right:5%;
+    font-size:250%;
+}
+
+.fools{
+    top:22%;
+    left:2%;
+    font-size:375%;
+}
+
+.pray{
+    top:7%;
+    left:2%;
+    font-size:400%;
+}
+
+.profit{
+    top:49%;
+    left:16%;
+    font-size:400%;
+}
+
+.hear{
+    top:40%;
+    right:26%;
+    font-size:400%;
+}
+
+.failure{
+    bottom:5%;
+    right:38%;
+    font-size:333%;
+}
+
+.heavy{
+    bottom:32%;
+    left:3%;
+    font-size:333%;
+}
+
+.forever{
+    top:25%;
+    left:36%;
+    font-size:433%;
+}
+
+.bandit{
+    top:-0.5%;
+    right:16%;
+    font-size:233%;
+}
+
+.black{
+    top:37%;
+    right:0%;
+    font-size:416%;
+}
+
+.white{
+    top:32%;
+    left:23%;
+    font-size:350%;
+}
+
+.resent{
+    bottom:4%;
+    right:20%;
+    font-size:316%;
+}
+
+.indifferent{
+    bottom:18%;
+    left:0%;
+    font-size:350%;
+}
+
+.change{
+    bottom:5%;
+    right:2%;
+    font-size:350%;
+}
+
+.time{
+    bottom:7%;
+    right:20%;
+    font-size:383%;
+}
+
+.comuppace{
+    bottom:22%;
+    right:20%;
+    font-size:333%;
+}
+
+.revenge{
+    bottom:16.5%;
+    right:1%;
+    font-size:250%;
+}
+
+.faith1{
+    top:-0.5%;
+    right:1%;
+    font-size:458%;
+}
+
+.truth1{
+    top:10%;
+    right:10%;
+    font-size:500%;
+}
+
+.heavy1{
+    bottom:37%;
+    right:43%;
+    font-size:458%;
+}
+
+.nothingness1{
+    top:24%;
+    right:10%;
+    font-size:458%;
+}
+
+.genius1{
+    top:34%;
+    right:36%;
+    font-size:483%;
+}
+
+.revenge1{
+    bottom:15%;
+    left:12%;
+    font-size:250%;
+}
+
+.imagination1{
+    bottom:5%;
+    right:22%;
+    font-size:416%;
+}
+
+.question1{
+    top:34%;
+    left:0%;
+    font-size:416%;
+}
+
+.romance1{
+    top:45%;
+    right:7%;
+    font-size:416%;
+}
+
+.anarchy1{
+    bottom:32%;
+    left:24%;
+    font-size:250%;
+}
+
+.jealousy1{
+    top:35%;
+    right:2%;
+    font-size:500%;
+}
+
+.eternal1{
+    bottom:28%;
+    right:18%;
+    font-size:458%;
+}
+
+.challenge1{
+    bottom:21%;
+    left:22%;
+    font-size:333%;
+}
+
+.saints1{
+    top:-2%;
+    left:25%;
+    font-size:416%;
+}
+
+.forever1{
+    bottom:38%;
+    right:16%;
+    font-size:400%;
+}
+
+.control1{
+    bottom:40%;
+    left:13%;
+    font-size:583%;
+}
+
+.mediocrity1{
+    bottom:12%;
+    right:6%;
+    font-size:625%;
+}
+
+.pretend{
+    bottom:12%;
+    left:2%;
+    font-size:625%;
+}
+
+.lust{
+    top:3%;
+    right:28%;
+    font-size:500%;
+}
+
+.black1{
+    bottom:35%;
+    left:2%;
+    font-size:416%;
+}
+
+.commupace1{
+    bottom:35%;
+    right:28%;
+    font-size:333%;
+}
+
+.truth2{
+    bottom:34%;
+    right:4%;
+    font-size:500%;
+}
+
+.frauds1{
+    bottom:45%;
+    right:33%;
+    font-size:416%;
+}
+
+.lead1{
+    bottom:47%;
+    left:0%;
+    font-size:416%;
+}
+
+
+.fear1{
+    top:22%;
+    right:0%;
+    font-size:416%;
+}
+
+.imagination2{
+    top:16%;
+    left:16%;
+    font-size:500%;
+}
+
+.corrupt1{
+    top:16%;
+    right:5%;
+    font-size:500%;
+}
+
+.nothingness2{
+    bottom:3%;
+    left:0%;
+    font-size:583%;
+}
+
+.fools1{
+    bottom:25%;
+    right:0%;
+    font-size:500%;
+}
+
+.consciousness1{
+    top:37%;
+    left:14%;
+    font-size:583%;
+}
+
+.consciousness2{
+    bottom:24%;
+    left:0%;
+    font-size:583%;
+}
+
+.indifferent1{
+    top:-3%;
+    left:4%;
+    font-size:750%;
+}
+
+.sinner1{
+    top:8%;
+    right:0%;
+    font-size:500%;
+}
+
+.bandit1{
+    top:21%;
+    left:1.5%;
+    font-size:666%;
+}
+
+.eternal2{
+    bottom:0%;
+    right:0%;
+    font-size:333%;
+}
+
+.dark1{
+    bottom:0%;
+    right:19%;
+    font-size:416%;
+}
+
+.imagination3{
+    top:28%;
+    right:9%;
+    font-size:500%;
+}
+
+.poverty1{
+    bottom:0%;
+    right:39%;
+    font-size:500%;
+}
+
+.see1{
+    bottom:33%;
+    left:20%;
+    font-size:541%;
+}
+
+.corrupt2{
+    top:10%;
+    left:35%;
+    font-size:458%;
+}
+
+.corrupt3{
+    bottom:40%;
+    left:0%;
+    font-size:416%;
+}
+
+.present1{
+    bottom:-0.5%;
+    left:0.5%;
+    font-size:500%;
+}
+
+.genius2{
+    bottom:44%;
+    right:0%;
+    font-size:375%;
+}
+
+.see2{
+    top:36%;
+    left:28%;
+    font-size:416%;
+}
+
+.listen1{
+    top:14%;
+    left:3%;
+    font-size:416%;
+}
+
+.look1{
+    top:1%;
+    right:18%;
+    font-size:500%;
+}
+
+.look2{
+    bottom:33%;
+    right:0%;
+    font-size:500%;
+}
+
+#p1,#p2 {
+    color: white;
+    display: none;
+    font-family: Courier,"Times New Roman",Times,serif;
+    font-size: 30px;
+    height: 30px;
+    line-height: 30px;
+    padding: 0;
+    position: absolute;
+    text-align: center;
+    top: 42%;
+    width: 100%;
+}
+#social{
+    position:absolute;
+    left:5%;
+    bottom:2%;
+    display:none;
+    min-width:20%;
+}
+
+#social  a img{
+    height:15px;
+    float:left;
+    display:block;
+    padding:1%;
+}
+
+#rev{
+    position:absolute;
+    right:5%;
+    bottom:1%;
+    display:none;
+}
+
+#rev img{
+    width:78px;
+    height:40px;
+}
+.bandit-wrapper-top, .bandit-wrapper-bottom {
+    bottom: 0;
+    box-sizing: border-box;
+    display: none;
+    height: 50%;
+    left: 0;
+    margin: 0 auto;
+    right: 0;
+    z-index: 2;
+}
+.bandit-wrapper-top {
+}
+.bandit-wrapper-bottom {
+}
+.bandit-wrapper-top .link:first-child, .bandit-wrapper-bottom .link:first-child {
+    margin: 0;
+}
+.bandit-wrapper-top .link, .bandit-wrapper-bottom .link {
+    position: absolute;
+    width: 85px;
+}
+.bandit-wrapper-top .link img, .bandit-wrapper-bottom .link img {
+    height: auto;
+    width: 100%;
+}
+.bandit-wrapper-top .link:nth-child(2n) {
+    top: 15%;
+}
+.bandit-wrapper-bottom .link:nth-child(2n+1) {
+    bottom: 10%;
+}
+#link1 {
+    left: 5%;
+}
+#link2 {
+    left: 19%;
+}
+#link3 {
+    left: 33%;
+}
+#link4 {
+    left: 47%;
+}
+#link5 {
+    left: 61%;
+}
+#link6 {
+    left: 75%;
+}
+#link7 {
+    left: 89%;
+}
+#link8 {
+    left: 5%;
+}
+#link9 {
+    left: 16%;
+}
+#link10 {
+    left: 28%;
+}
+#link11 {
+    left: 40%;
+}
+#link12 {
+    left: 53%;
+}
+#link13 {
+    left: 65%;
+}
+#link14 {
+    left: 77%;
+}
+#link15 {
+    left: 89%;
+}
+.hidden-link  {
+    opacity: 0.1;
+}
+.normal-link {
+    opacity: 0.4;
+}
+.hidden-link:hover,.normal-link:hover {
+    opacity: 1;
+}

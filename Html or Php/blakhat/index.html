@@ -1,19 +1,16 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
     <head>
-        <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;" />
-        <meta name="apple-mobile-web-app-capable" content="yes"/>
         <meta name="keywords" content="Blakhat, the blakhat, Los Angeles, rock n roll, truth, lies, bandit, pop culture, life, art, graffiti, poetry, outlaw"/>
         <meta name="description" content="This is your world. Open your eyes for the first time and see things as they truly are. Be part of their world or create your own. Freedom from following."/>
 
         <title>What is your truth?</title>
-        <link rel="stylesheet" href="reset.css" type="text/css"/>
-        <link rel="stylesheet" href="style.css" type="text/css"/>
-        <link rel="stylesheet" href="jquery.fancybox.css" type="text/css"/>
+        <link rel="stylesheet" href="style/style.css" type="text/css"/>
+        <link rel="stylesheet" href="style/jquery.fancybox.css" type="text/css"/>
         <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
 
         <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js" ></script>
-        <script type="text/javascript" src="jquery.text-effects.js" ></script>
+        <script type="text/javascript" src="js/jquery.text-effects.js" ></script>
     </head>
 
     <body>
@@ -147,52 +144,68 @@
         <div id="p2">in the dark until you see the light</div>
 
         <div class="bandit-wrapper-top">
-            <a href="listen.php" class="link fancybox.iframe" id="link1">
+            <!--link 1-->
+            <a href="video-truth-hurts.html" class="link fancybox.ajax normal-link" id="link1">
+                <img src="images/JBandit-TruthHurts.png" alt="Videos Truth Hurts Links"/>
+            </a>
+            <!--link 2-->
+            <a href="listen.php" class="link fancybox.iframe normal-link" id="link2">
                 <img src="images/JBandit-ListenREV.png" alt="Listen Bandit"/>
             </a>
-            <a href="truth.php" class="link fancybox.ajax" id="link2">
-                <img src="images/JBandit-TruthHurts.png" alt="The Truth Hurt Bandit"/>
-            </a>
-            <a href="right.html"class="link fancybox.ajax" id="link3">
-                <img src="images/JBandit-RightIsRight.png" alt="Right is Right Bandit"/>
-            </a>
-            <a href="step.html" class="link fancybox.iframe" id="link4">
-                <img src="images/JBandit-StepOuttaLina.png" alt="Don't Step Out of the Line Bandit"/>
-            </a>
-            <a href="ylman.html" class="link fancybox.ajax" id="link5">
-                <img src="images/JBandit-LoveTheManREV.png" alt="Love the Man Bandit" />
-            </a>
-            <a href="heads_roll.html" class="link fancybox.ajax" id="link6">
-                <img src="images/JBandit-HeadsWillRoll.png" alt="Head will Roll Bandit"/>
-            </a>
-            <a href="eyeforeye.html" class="link fancybox.ajax" id="link7">
-                <img src="images/JBandit-EyeForAnEye.png" alt="Eye for an Eye Bandit"/>
-            </a>
-        </div>
-        <div class="bandit-wrapper-bottom">
-            <a href="hidden_video1.html" class="link fancybox.ajax" id="link8">
-                <img src="images/JBandit.png" alt="Videos 1 Link"/>
-            </a>
-            <a href="hidden_video2.html" class="link fancybox.ajax" id="link9">
+            <!--link 3-->
+            <a href="video-hidden_video2.html" class="link fancybox.ajax hidden-link" id="link3">
                 <img src="images/JBandit.png" alt="Videos 2 Link"/>
             </a>
-            <a href="hidden_video3.html" class="link fancybox.ajax" id="link10">
+            <!--link 4-->
+            <a href="right.html" class="link fancybox.ajax normal-link" id="link4">
+                <img src="images/JBandit-RightIsRight.png" alt="Right is Right Bandit"/>
+            </a>
+            <!--link 5-->
+            <a href="video-hidden_video3.html" class="link fancybox.ajax hidden-link" id="link5">
                 <img src="images/JBandit.png" alt="Videos 3 Link"/>
             </a>
-            <a href="hidden_video4.html" class="link fancybox.ajax" id="link11">
+            <!--link 6-->
+            <a href="video-sell-or-be-sold.html" class="link fancybox.ajax normal-link" id="link6">
+                <img src="images/JBandit-SellorBSold.png" alt="Videos Sell or be Sold Links"/>
+            </a>  
+            <!--link 7-->
+            <a href="truth.php" class="link fancybox.ajax normal-link" id="link7">
+                <img src="images/JBandit-TruthHurts.png" alt="The Truth Hurt Bandit"/>
+            </a>
+        </div>
+
+        <div class="bandit-wrapper-bottom">
+            <!--link 1-->
+            <a href="step.html" class="link fancybox.iframe normal-link" id="link8">
+                <img src="images/JBandit-StepOuttaLina.png" alt="Don't Step Out of the Line Bandit"/>
+            </a>
+            <!--link 2-->
+            <a href="video-truth.html" class="link fancybox.ajax normal-link" id="link9">
+                <img src="images/JBandit-Truth.png" alt="Videos Hurts Link"/>
+            </a>
+            <!--link 3-->
+            <a href="video-ylman.html" class="link fancybox.ajax normal-link" id="link10">
+                <img src="images/JBandit-LoveTheManREV.png" alt="Love the Man Bandit" />
+            </a>
+            <!--link 4-->
+            <a href="video-hidden_video1.html" class="link fancybox.ajax hidden-link" id="link11">
+                <img src="images/JBandit.png" alt="Videos 1 Link"/>
+            </a>
+            <!--link 5-->
+            <a href="video-heads_roll.html" class="link fancybox.ajax normal-link" id="link12">
+                <img src="images/JBandit-HeadsWillRoll.png" alt="Head will Roll Bandit"/>
+            </a>
+            <!--link 6-->
+            <a href="video-hidden_video4.html" class="link fancybox.ajax hidden-link" id="link13">
                 <img src="images/JBandit.png" alt="Videos 4 Links"/>
             </a>
-            <a href="hidden_video4.html" class="link fancybox.ajax" id="link12">
-                <img src="images/JBandit.png" alt="Videos 4 Links"/>
+            <!--link 7-->
+            <a href="video-eyeforeye.html" class="link fancybox.ajax normal-link" id="link14">
+                <img src="images/JBandit-EyeForAnEye.png" alt="Eye for an Eye Bandit"/>
             </a>
-            <a href="hidden_video4.html" class="link fancybox.ajax" id="link13">
-                <img src="images/JBandit.png" alt="Videos 4 Links"/>
-            </a>
-            <a href="hidden_video4.html" class="link fancybox.ajax" id="link14">
-                <img src="images/JBandit.png" alt="Videos 4 Links"/>
-            </a>
-            <a href="hidden_video4.html" class="link fancybox.ajax" id="link15">
-                <img src="images/JBandit.png" alt="Videos 4 Links"/>
+            <!--link 8-->
+            <a href="video-ask-no-questions.html" class="link fancybox.ajax normal-link" id="link15">
+                <img src="images/JBandit-AskNoQuestions.png" alt="Videos Ask no question Links"/>
             </a>
         </div>
 
@@ -211,8 +224,8 @@
             <img src="images/blak-hat-rev.jpg" width="78" height="40" />
         </div><!--END rev-->
 
-        <script type="text/javascript" src="jquery.fancybox.js" ></script>
-        <script type="text/javascript" src="jquery.mousewheel-3.0.6.pack.js" ></script>
+        <script type="text/javascript" src="js/jquery.fancybox.js" ></script>
+        <script type="text/javascript" src="js/jquery.mousewheel-3.0.6.pack.js" ></script>
         <script type="text/javascript">
             (function(i, s, o, g, r, a, m) {
                 i['GoogleAnalyticsObject'] = r;
@@ -269,22 +282,13 @@
 
                 var interval2 = setTimeout(function() {
                     // Append hidden links
-                    $('#container').append($("#social").show());
-                    $('#container').append($("#rev").show());
+                    $('#container').append($(".bandit-wrapper-top").fadeIn(500));
+                    $('#container').append($(".bandit-wrapper-bottom").fadeIn(500));
+                    $('#container').append($("#social").fadeIn(500));
+                    $('#container').append($("#rev").fadeIn(500));
                     $('#container').css('z-index', '1');
 
-                    if ($("document").width() < 600) {
-                        var _width = "98%";
-                    }
-                    else {
-                        var _width = "75%";
-                    }
-
                     $(".link").fancybox({
-                        maxWidth: 800,
-                        maxHeight: 600,
-                        width: _width,
-                        height: _width,
                         autoSize: false,
                         closeClick: false,
                         openEffect: 'none',

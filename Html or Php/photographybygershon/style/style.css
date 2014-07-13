@@ -1235,6 +1235,9 @@ body {
     text-align: center; }
 
 @media screen and (max-width: 930px) {
+  #wrapper {
+    max-width: 768px; }
+
   #header .logo {
     display: block;
     float: none;
