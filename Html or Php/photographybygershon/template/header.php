@@ -20,7 +20,7 @@
                         <li><a href="/">Home</a></li>
                         <li><a href="about-us.php">About</a></li>
                         <li><a href="#">Blog</a></li>
-                        <li><a href="#">Exhibitions</a></li>
+                        <li><a href="exhibitions.php">Exhibitions</a></li>
                         <li><a href="#">Portfolio</a></li>
                         <li><a href="#">Media</a></li>
                         <li><a href="mailing-list.php">Mailing List</a></li>
