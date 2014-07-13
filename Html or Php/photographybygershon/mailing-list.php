@@ -12,7 +12,7 @@ include 'template/header.php';
             <p><iframe src="http://www.foxyform.com/form.php?id=438992&sec_hash=23840be752f" width="350px" height="333px" frameborder="0"></iframe> </p>
         </div>
     </div>
-    <img src="images/mailinglist_03.png" alt="about-gershon-kelman" width="475" height="526" class="right-image-content" />
+    <img src="images/mailinglist_03.png" alt="about-gershon-kelman" width="475" height="526" class="img-contact-us" />
     <div class="clear"></div>
 </div>
 

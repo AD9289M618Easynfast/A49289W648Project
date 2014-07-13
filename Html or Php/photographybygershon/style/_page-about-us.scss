@@ -1,4 +1,4 @@
-.about-content-wrapper{
+.about-us-content-wrapper {
     min-height: 550px;
     margin-top:10px;
 
@@ -15,22 +15,14 @@
         float: right;
         width: 45%;
         text-align: justify;
-        .title{
-            border-bottom: 3px solid #666666;
-            padding-bottom: 5px;
-            color: #666666;
-            font-size: 28px;
-            margin-bottom: 10px;
-            text-decoration: none;
-            text-transform: uppercase;
-        }
         > p {
             margin-top: 15px;
         }
     }
 }
+
 @media screen and (max-width: 930px) {
-    .about-content-wrapper{
+    .about-us-content-wrapper {
         .img-about-us {
             float: none;
             margin: 0 auto 25px;
@@ -42,10 +34,6 @@
             margin: 10px auto;
             width: 100% !important;
             max-width: 450px;
-
-            .title{
-                font-size: 20px;
-            }
         }
     }
 }

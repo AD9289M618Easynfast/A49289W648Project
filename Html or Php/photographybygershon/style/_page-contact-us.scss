@@ -1,66 +1,52 @@
-.contact-content-wrapper{
-    width:100%;
-    .left-content-contact-wrapper {
-        float:left;
-        width: 50%;
-        .contact-title{
-            p{
-                color: #666666;
-                font-size: 30px;
-                font-weight: bold;
-                text-decoration: none;
-                text-transform: uppercase;
-            }
-            .social-nav {
-                margin-top: 5px;
-            }
-            .social-nav > li {
-                float: left;
-                margin-left: 3px;
-            }
-            .social-nav > li img{
-                width: 30px;
-                height: 30px;
-            }
+.contact-us-content-wrapper {
+    .social-nav {
+        float: none;
+        top: 0;
+        > li img {
+            width: 30px;
+            height: 30px;
         }
-        .contact-info{
-            margin-top:10px;
-            p{
-                font-family: Arial, Helvetica, sans-serif;
-                font-size: 14px;
-                margin-left: 3px;
-                span{
-                    font-family: "Arial Black", Gadget, sans-serif;
-                }
-                a{
-                    color: #999;
-                }
-            }
-        }
-
     }
-    .right-image-content {
-        float: left;
+    .img-contact-us {
+        box-shadow: 0 0 15px black;
+        float: right;
+        height: auto;
+        max-width: 434px;
+        width: 45%;
+    }
+}
+.content-contact-us-wrapper {
+    float:left;
+    width: 50%;
+
+
+}
+.contact-info {
+    margin-top:10px;
+    p{
+        font-family: Arial, Helvetica, sans-serif;
+        span {
+            font-family: "Arial Black", Gadget, sans-serif;
+            margin-right: 5px;
+        }
+        a {
+            text-decoration: underline;
+        }
     }
 }
 
 @media screen and (max-width: 930px) {
-    .contact-content-wrapper{
-        width:100%;
-        .left-content-contact-wrapper {
+    .contact-us-content-wrapper {
+
+        .content-contact-us-wrapper {
             float: none;
             display: block;
             width: 100% !important;
         }
-        .right-image-content {
-            margin: 0 auto;
-            max-width: 434px;
-            height: auto;
-            width: 100% !important;
+        .img-contact-us {
+            float: none;
+            display: block;
+            margin: 30px auto 0;
         }
     }
 }
-
-
-
-

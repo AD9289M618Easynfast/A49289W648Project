@@ -601,6 +601,10 @@ a { color: black; text-decoration: none; }
 
 body { color: black; font-family: Arial,Helvetica,sans-serif; font-size: 14px; }
 
+.social-nav { float: right; position: relative; top: -15px; }
+.social-nav > li:first-child { margin-left: 0; }
+.social-nav > li { float: left; margin-left: 3px; }
+
 #wrapper { margin: 0 auto; max-width: 900px; padding-top: 20px; width: 90%; }
 
 #header { border-bottom: 1px dotted silver; padding-bottom: 10px; position: relative; }
@@ -610,10 +614,9 @@ body { color: black; font-family: Arial,Helvetica,sans-serif; font-size: 14px; }
 #header .main-nav > li:first-child { margin-left: 0; }
 #header .main-nav > li { float: left; line-height: 67px; margin-left: 13px; }
 #header .main-nav a { color: #666666; font-size: 14px; font-weight: bold; text-decoration: none; text-transform: uppercase; }
-#header .social-nav { float: right; position: relative; top: -15px; }
-#header .social-nav > li { float: left; margin-left: 3px; }
 
 #content { padding-top: 20px; }
+#content .title { border-bottom: 3px solid #666666; color: #666666; font-size: 28px; margin-bottom: 10px; padding-bottom: 5px; text-decoration: none; text-transform: uppercase; }
 
 #footer { padding: 50px 0 20px; }
 #footer > span { display: block; text-align: center; }
@@ -628,21 +631,20 @@ body { color: black; font-family: Arial,Helvetica,sans-serif; font-size: 14px; }
   #header .main-nav a { color: white !important; display: block; }
   #header .main-nav > li:hover { background-color: white; }
   #header .main-nav > li:hover a { color: black !important; }
-  #header .social-nav { margin-top: 5px; top: 0; } }
+  #header .social-nav { margin-top: 5px; top: 0; }
+  #content .title { font-size: 20px; } }
 /*import page Home*/
 #content .home-slider img { height: auto; max-width: 900px; width: 100%; }
 #content .home-slider span { display: block; padding: 10px 0; text-align: right; }
 
 /*import page About Us*/
-.about-content-wrapper { min-height: 550px; margin-top: 10px; }
-.about-content-wrapper .img-about-us { box-shadow: 0 0 15px black; display: block; float: left; height: auto; margin-right: 2.5%; max-width: 450px; width: 50%; }
-.about-content-wrapper .content-about-us { float: right; width: 45%; text-align: justify; }
-.about-content-wrapper .content-about-us .title { border-bottom: 3px solid #666666; padding-bottom: 5px; color: #666666; font-size: 28px; margin-bottom: 10px; text-decoration: none; text-transform: uppercase; }
-.about-content-wrapper .content-about-us > p { margin-top: 15px; }
+.about-us-content-wrapper { min-height: 550px; margin-top: 10px; }
+.about-us-content-wrapper .img-about-us { box-shadow: 0 0 15px black; display: block; float: left; height: auto; margin-right: 2.5%; max-width: 450px; width: 50%; }
+.about-us-content-wrapper .content-about-us { float: right; width: 45%; text-align: justify; }
+.about-us-content-wrapper .content-about-us > p { margin-top: 15px; }
 
-@media screen and (max-width: 930px) { .about-content-wrapper .img-about-us { float: none; margin: 0 auto 25px; width: 100%; }
-  .about-content-wrapper .content-about-us { float: none; display: block; margin: 10px auto; width: 100% !important; max-width: 450px; }
-  .about-content-wrapper .content-about-us .title { font-size: 20px; } }
+@media screen and (max-width: 930px) { .about-us-content-wrapper .img-about-us { float: none; margin: 0 auto 25px; width: 100%; }
+  .about-us-content-wrapper .content-about-us { float: none; display: block; margin: 10px auto; width: 100% !important; max-width: 450px; } }
 /*import page Exhibitions*/
 .exhibitions-content-wrapper { width: 100%; }
 .exhibitions-content-wrapper .upcoming-exhibitions, .exhibitions-content-wrapper .previous-exhibitions { width: 100%; }
@@ -669,20 +671,18 @@ body { color: black; font-family: Arial,Helvetica,sans-serif; font-size: 14px; }
 
 @media screen and (max-width: 930px) { .mailing-content-wrapper { width: 100%; }
   .mailing-content-wrapper .left-content-mailing-wrapper { float: none; width: 100% !important; }
-  .mailing-content-wrapper .right-image-content { float: none; width: 100% !important; max-width: 475px; height: auto; } }
+  .mailing-content-wrapper .img-contact-us { float: none; width: 100% !important; max-width: 475px; height: auto; } }
 /*import page Contact Us*/
-.contact-content-wrapper { width: 100%; }
-.contact-content-wrapper .left-content-contact-wrapper { float: left; width: 50%; }
-.contact-content-wrapper .left-content-contact-wrapper .contact-title p { color: #666666; font-size: 30px; font-weight: bold; text-decoration: none; text-transform: uppercase; }
-.contact-content-wrapper .left-content-contact-wrapper .contact-title .social-nav { margin-top: 5px; }
-.contact-content-wrapper .left-content-contact-wrapper .contact-title .social-nav > li { float: left; margin-left: 3px; }
-.contact-content-wrapper .left-content-contact-wrapper .contact-title .social-nav > li img { width: 30px; height: 30px; }
-.contact-content-wrapper .left-content-contact-wrapper .contact-info { margin-top: 10px; }
-.contact-content-wrapper .left-content-contact-wrapper .contact-info p { font-family: Arial, Helvetica, sans-serif; font-size: 14px; margin-left: 3px; }
-.contact-content-wrapper .left-content-contact-wrapper .contact-info p span { font-family: "Arial Black", Gadget, sans-serif; }
-.contact-content-wrapper .left-content-contact-wrapper .contact-info p a { color: #999; }
-.contact-content-wrapper .right-image-content { float: left; }
+.contact-us-content-wrapper .social-nav { float: none; top: 0; }
+.contact-us-content-wrapper .social-nav > li img { width: 30px; height: 30px; }
+.contact-us-content-wrapper .img-contact-us { box-shadow: 0 0 15px black; float: right; height: auto; max-width: 434px; width: 45%; }
 
-@media screen and (max-width: 930px) { .contact-content-wrapper { width: 100%; }
-  .contact-content-wrapper .left-content-contact-wrapper { float: none; display: block; width: 100% !important; }
-  .contact-content-wrapper .right-image-content { margin: 0 auto; max-width: 434px; height: auto; width: 100% !important; } }
+.content-contact-us-wrapper { float: left; width: 50%; }
+
+.contact-info { margin-top: 10px; }
+.contact-info p { font-family: Arial, Helvetica, sans-serif; }
+.contact-info p span { font-family: "Arial Black", Gadget, sans-serif; margin-right: 5px; }
+.contact-info p a { text-decoration: underline; }
+
+@media screen and (max-width: 930px) { .contact-us-content-wrapper .content-contact-us-wrapper { float: none; display: block; width: 100% !important; }
+  .contact-us-content-wrapper .img-contact-us { float: none; display: block; margin: 30px auto 0; } }

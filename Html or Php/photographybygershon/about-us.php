@@ -7,7 +7,7 @@ include 'template/header.php';
 <div class="<?php echo $sectionWrapper ?>">
     <img class="img-about-us" src="images/img-about-us.jpg" alt="About Gershon Kelman" width="450" height="336" />
     <div class="content-about-us">
-        <h2 class="title">ABOUT GERSHON KELMAN</h2>
+        <h2 class="title">About Gerson Kelman</h2>
         <p>
             Gershon Kelman has been doing freelance photography for 30 years. 
             He has dyslexia and he once came across information about this condition in which he could relate.
