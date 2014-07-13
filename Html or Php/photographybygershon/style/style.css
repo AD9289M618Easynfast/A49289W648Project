@@ -1413,3 +1413,43 @@ body {
       width: 100% !important;
       max-width: 475px;
       height: auto; } }
+.exhibitions-content-wrapper {
+  width: 100%; }
+  .exhibitions-content-wrapper .upcoming-exhibitions, .exhibitions-content-wrapper .previous-exhibitions {
+    width: 100%; }
+    .exhibitions-content-wrapper .upcoming-exhibitions .upcoming-title, .exhibitions-content-wrapper .previous-exhibitions .upcoming-title, .exhibitions-content-wrapper .previous-exhibitions .previous-title {
+      color: #666666;
+      font-size: 38px;
+      font-weight: bold;
+      text-decoration: none;
+      text-transform: uppercase;
+      margin: 15px 0; }
+    .exhibitions-content-wrapper .upcoming-exhibitions ul, .exhibitions-content-wrapper .previous-exhibitions ul {
+      margin: 60px 0; }
+      .exhibitions-content-wrapper .upcoming-exhibitions ul li, .exhibitions-content-wrapper .previous-exhibitions ul li {
+        margin-top: 30px; }
+        .exhibitions-content-wrapper .upcoming-exhibitions ul li img, .exhibitions-content-wrapper .previous-exhibitions ul li img {
+          padding-right: 5px;
+          border-right: 1px solid #C6C7C6;
+          float: left; }
+        .exhibitions-content-wrapper .upcoming-exhibitions ul li .right-content, .exhibitions-content-wrapper .previous-exhibitions ul li .right-content {
+          margin-left: 15px;
+          float: left;
+          margin-top: 20px; }
+          .exhibitions-content-wrapper .upcoming-exhibitions ul li .right-content .title, .exhibitions-content-wrapper .previous-exhibitions ul li .right-content .title {
+            color: #000000;
+            font-size: 20px;
+            font-weight: bold;
+            text-decoration: none;
+            text-transform: uppercase; }
+          .exhibitions-content-wrapper .upcoming-exhibitions ul li .right-content .content span, .exhibitions-content-wrapper .previous-exhibitions ul li .right-content .content span {
+            font-size: 16px; }
+
+@media screen and (max-width: 930px) {
+  .upcoming-exhibitions ul li img, .exhibitions-content-wrapper .previous-exhibitions ul li img {
+    float: none !important;
+    border: none !important;
+    display: block; }
+  .upcoming-exhibitions ul li .right-content, .exhibitions-content-wrapper .previous-exhibitions ul li .right-content {
+    float: none !important;
+    margin-left: 0 !important; } }
