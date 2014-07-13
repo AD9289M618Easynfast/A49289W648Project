@@ -1299,7 +1299,8 @@ body {
   .about-content-wrapper .right-content-about-wrapper {
     float: left;
     width: 46%;
-    margin-left: 15px; }
+    margin-left: 15px;
+    text-align: justify; }
     .about-content-wrapper .right-content-about-wrapper .right-title {
       color: #666666;
       font-size: 29px;
