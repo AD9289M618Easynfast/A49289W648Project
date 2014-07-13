@@ -7,11 +7,11 @@ include 'template/header.php';
 <div class="<?php echo $sectionWrapper ?>">
     <div class="upcoming-exhibitions">
         <p class="upcoming-title">UPCOMING EXHIBITIONS</p>
-        <ul>
+        <ul class="upcoming-detail">
             <li>
                 <img src="images/miami_exhibition.png" width="200" height="155" class="left-image" />
                 <div class="right-content">
-                    <p class="title">ART FUSION GALLERY (MIAMI)</p>
+                    <h2 class="title">ART FUSION GALLERY (MIAMI)</h2>
                     <p class="content">
                         "The Essence of Triumph and Color"<br />
                         <span>July - September 2014</span> 
@@ -27,11 +27,11 @@ include 'template/header.php';
     </div>
     <div class="previous-exhibitions">
         <p class="previous-title">PREVIOUS EXHIBITIONS</p>
-        <ul>
+        <ul class="previous-detail">
             <li>
                 <img src="images/salon_electron.png" width="200" height="155" class="left-image" />
                 <div class="right-content">
-                    <p class="title">AMSTERDAM WHITNEY GALLERY, NYC</p>
+                    <h2 class="title">AMSTERDAM WHITNEY GALLERY, NYC</h2>
                     <p class="content">
                         <span>March 27th 2014</span>
                         <br />
@@ -45,7 +45,7 @@ include 'template/header.php';
             <li>
                 <img src="images/salon_electron.png" width="200" height="155" class="left-image" />
                 <div class="right-content">
-                    <p class="title">ELECTRON SALON EXHIBIT</p>
+                    <h2 class="title">ELECTRON SALON EXHIBIT</h2>
                     <p class="content">
                         <span>June 13th (Reception 7-9pm) - July 6th</span>
                         <br />
@@ -59,7 +59,7 @@ include 'template/header.php';
             <li>
                 <img src="images/four_seasons.png" width="200" height="155" class="left-image" />
                 <div class="right-content">
-                    <p class="title">FOUR SEASONS HOTEL</p>
+                    <h2 class="title">FOUR SEASONS HOTEL</h2>
                     <p class="content">
                         <span>May 1st 2013</span>
                         <br />
@@ -73,7 +73,7 @@ include 'template/header.php';
             <li>
                 <img src="images/bruce_lurie.png" width="200" height="155" class="left-image" />
                 <div class="right-content">
-                    <p class="title">BRUCE LURIE GALLERY</p>
+                    <h2 class="title">BRUCE LURIE GALLERY</h2>
                     <p class="content">
                         <span>December 15th</span>
                         <br />
@@ -87,7 +87,7 @@ include 'template/header.php';
             <li>
                 <img src="images/petra.png" width="200" height="155" class="left-image" />
                 <div class="right-content">
-                    <p class="title">PETRA GALLERY</p>
+                    <h2 class="title">PETRA GALLERY</h2>
                     <p class="content">
                         <span>November 20th - December 20th</span>
                         <br />
@@ -101,7 +101,7 @@ include 'template/header.php';
             <li>
                 <img src="images/BH_artshow.png" width="200" height="155" class="left-image" />
                 <div class="right-content">
-                    <p class="title">BEVERLY HILLS ART SHOW</p>
+                    <h2 class="title">BEVERLY HILLS ART SHOW</h2>
                     <p class="content">
                         <span>October 20th - 21st</span>
                         <br />
@@ -115,8 +115,8 @@ include 'template/header.php';
             <li>
                 <img src="images/zimmerman.png" width="200" height="155" class="left-image" />
                 <div class="right-content">
-                    <p class="title">COMMUNITY SERVICE CENTER OPENING ASSEMBLYMAN:<br />
-                        MITCHELL ENGLANDER OF THE 12th DISTRICT</p>
+                    <h2 class="title">COMMUNITY SERVICE CENTER OPENING ASSEMBLYMAN:<br />
+                        MITCHELL ENGLANDER OF THE 12th DISTRICT</h2>
                     <p class="content">
                         <br />
                         <br />
@@ -128,7 +128,7 @@ include 'template/header.php';
             <li>
                 <img src="images/pasadena.png" width="200" height="155" class="left-image" />
                 <div class="right-content">
-                    <p class="title">PASADENA ARTWALK</p>
+                    <h2 class="title">PASADENA ARTWALK</h2>
                     <p class="content">
                         <br />
                         <br />
@@ -140,7 +140,7 @@ include 'template/header.php';
             <li>
                 <img src="images/terrell.png" width="200" height="155" class="left-image" />
                 <div class="right-content">
-                    <p class="title">ATERRELL MOORE GALLERY</p>
+                    <h2 class="title">ATERRELL MOORE GALLERY</h2>
                     <p class="content">
                         <br />
                         <br />
