@@ -1,46 +1,48 @@
 .about-content-wrapper{
     min-height: 550px;
-    .left-content-about-wrapper {
-        width: 460px;
+    margin-top:10px;
+    .left-image-about-us {
         float: left;
     }
     .right-content-about-wrapper {
-        width: 407px;
         float: left;
-        .right-content {
-            width: 410px;
-            margin: 0 auto;
+        width: 46%;
+        margin-left: 15px;
+        .right-title{
+            color: #666666;
+            font-size: 29px;
+            font-weight: bold;
+            text-decoration: none;
+            text-transform: uppercase;
+            display: inline;
+            margin-bottom: 10px;
+        }
+        .right-content{
+            margin-top: 15px;
         }
     }
 }
 @media screen and (max-width: 930px) {
     .about-content-wrapper{
-        .left-content-about-wrapper {
-            width: 60%;
-            height: auto;
+        min-height: 550px;
+        margin-top:10px;
+        img{
+            float: none !important;
+            display: block;
             margin: 0 auto;
-            float: none;
-            .left-image-about-us {
-                width: 100%;
-                height: auto;
-                max-width: 460px;
-            }
+            max-width: 450px;
+            height: auto;
+            width: 100% !important;
         }
         .right-content-about-wrapper {
-            width: 56%;
-            margin: 0 auto;
             float: none;
-            .right-content-title{
-                width: 100%;
-                max-width: 439px;
-                height: auto;
+            display: block;
+            margin: 10px auto;
+            width: 100% !important;
+            max-width: 450px;
+            .right-title{
+                font-size: 25px !important;
             }
-            .right-content {
-                width: 90%;
-                margin-left: 15px;
-                max-width: 410px;
-            }
-
         }
     }
 }
