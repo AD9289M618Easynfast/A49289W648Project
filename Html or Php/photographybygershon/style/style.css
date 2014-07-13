@@ -1235,9 +1235,6 @@ body {
     text-align: center; }
 
 @media screen and (max-width: 930px) {
-  #wrapper {
-    max-width: 768px; }
-
   #header .logo {
     display: block;
     float: none;
@@ -1295,39 +1292,44 @@ body {
   text-align: right; }
 
 .about-content-wrapper {
-  min-height: 550px; }
-  .about-content-wrapper .left-content-about-wrapper {
-    width: 460px;
+  min-height: 550px;
+  margin-top: 10px; }
+  .about-content-wrapper .left-image-about-us {
     float: left; }
   .about-content-wrapper .right-content-about-wrapper {
-    width: 407px;
-    float: left; }
+    float: left;
+    width: 46%;
+    margin-left: 15px; }
+    .about-content-wrapper .right-content-about-wrapper .right-title {
+      color: #666666;
+      font-size: 29px;
+      font-weight: bold;
+      text-decoration: none;
+      text-transform: uppercase;
+      display: inline;
+      margin-bottom: 10px; }
     .about-content-wrapper .right-content-about-wrapper .right-content {
-      width: 410px;
-      margin: 0 auto; }
+      margin-top: 15px; }
 
 @media screen and (max-width: 930px) {
-  .about-content-wrapper .left-content-about-wrapper {
-    width: 60%;
-    height: auto;
-    margin: 0 auto;
-    float: none; }
-    .about-content-wrapper .left-content-about-wrapper .left-image-about-us {
-      width: 100%;
+  .about-content-wrapper {
+    min-height: 550px;
+    margin-top: 10px; }
+    .about-content-wrapper img {
+      float: none !important;
+      display: block;
+      margin: 0 auto;
+      max-width: 450px;
       height: auto;
-      max-width: 460px; }
-  .about-content-wrapper .right-content-about-wrapper {
-    width: 56%;
-    margin: 0 auto;
-    float: none; }
-    .about-content-wrapper .right-content-about-wrapper .right-content-title {
-      width: 100%;
-      max-width: 439px;
-      height: auto; }
-    .about-content-wrapper .right-content-about-wrapper .right-content {
-      width: 90%;
-      margin-left: 15px;
-      max-width: 410px; } }
+      width: 100% !important; }
+    .about-content-wrapper .right-content-about-wrapper {
+      float: none;
+      display: block;
+      margin: 10px auto;
+      width: 100% !important;
+      max-width: 450px; }
+      .about-content-wrapper .right-content-about-wrapper .right-title {
+        font-size: 25px !important; } }
 .contact-content-wrapper {
   width: 100%; }
   .contact-content-wrapper .left-content-contact-wrapper {
