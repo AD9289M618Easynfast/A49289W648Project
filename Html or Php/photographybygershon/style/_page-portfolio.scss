@@ -1,0 +1,38 @@
+.portfolio-list {
+    > li {
+        clear: both;
+        display: block;
+        overflow: auto;
+        margin-bottom: 15px;
+        position: relative;
+
+        img {
+            float: left;
+            margin-right: 2.5%;
+            max-width: 630px;
+            width: 70%;
+        }
+        div {
+            position: absolute;
+            right: 0;
+            top: 50%;
+            width: 27%;
+        }
+        h3 {
+            color: #666666;
+            font-size: 25px;
+            text-transform: uppercase;
+        }
+        a {
+            color: #eebb71;
+            display: block;
+            font-size: 22px;
+            font-weight: bold;
+            margin-top: 5px;
+        }
+    }
+    > li:last-child {
+        margin-bottom: 0;
+    }
+}
+

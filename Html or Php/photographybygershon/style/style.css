@@ -659,7 +659,13 @@ body { color: black; font-family: Arial,Helvetica,sans-serif; font-size: 14px; }
 @media screen and (max-width: 930px) { .upcoming-exhibitions ul li img, .exhibitions-content-wrapper .previous-exhibitions ul li img { float: none !important; border: none !important; display: block; }
   .upcoming-exhibitions ul li .right-content, .exhibitions-content-wrapper .previous-exhibitions ul li .right-content { float: none !important; margin-left: 0 !important; } }
 /*import page Portfolio*/
-/*TODO*/
+.portfolio-list > li { clear: both; display: block; overflow: auto; margin-bottom: 15px; position: relative; }
+.portfolio-list > li img { float: left; margin-right: 2.5%; max-width: 630px; width: 70%; }
+.portfolio-list > li div { position: absolute; right: 0; top: 50%; width: 27%; }
+.portfolio-list > li h3 { color: #666666; font-size: 25px; text-transform: uppercase; }
+.portfolio-list > li a { color: #eebb71; display: block; font-size: 22px; font-weight: bold; margin-top: 5px; }
+.portfolio-list > li:last-child { margin-bottom: 0; }
+
 /*import page Mailing List*/
 .mailing-content-wrapper { width: 100%; }
 .mailing-content-wrapper .left-content-mailing-wrapper { float: left; width: 45%; }
