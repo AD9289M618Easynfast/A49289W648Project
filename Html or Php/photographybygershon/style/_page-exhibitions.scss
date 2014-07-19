@@ -1,63 +1,58 @@
-.exhibitions-content-wrapper{
-    width: 100%;
-    .upcoming-exhibitions{
-        width:100%;
-        .upcoming-title{
-            color: #666666;
-            font-size: 38px;
-            font-weight: bold;
-            text-decoration: none;
-            text-transform: uppercase;
-            margin-bottom: 15px;
-        }
-        ul{
-            li{ 
-                margin-top:30px;
-                img{
-                    padding-right: 5px;
-                    border-right: 1px solid #C6C7C6;
-                    float:left;
+.exhibitions{
+    width:100%;
+    margin-bottom: 50px;
+    .exhibitions-title{
+        color: #666666;
+        font-size: 38px;
+        font-weight: bold;
+        text-decoration: none;
+        text-transform: uppercase;
+        margin-bottom: 15px;
+    }
+    .detail{
+        > li{ 
+            margin-top:30px;
+            .left-image{
+                padding-right: 5px;
+                border-right: 1px solid #C6C7C6;
+                float:left;
+                max-width: 200px;
+            }
+            .right-content{
+                margin-left: 15px;
+                float:left;
+                margin-top:20px;
+                .title{
+                    color: #000000;
+                    font-size: 20px;
+                    font-weight: bold;
+                    text-decoration: none;
+                    text-transform: uppercase;
                 }
-                .right-content{
-                    margin-left: 15px;
-                    float:left;
-                    margin-top:20px;
-                    .title{
-                        color: #000000;
-                        font-size: 20px;
-                        font-weight: bold;
-                        text-decoration: none;
-                        text-transform: uppercase;
-                    }
-                    .content span{
-                        font-size: 16px;
-                    }
+                > p span{
+                    font-size: 16px;
                 }
             }
         }
     }
-    .previous-exhibitions{
-        @extend .upcoming-exhibitions;
-        margin-top: 20px;
-        .previous-title{
-            @extend .upcoming-title;
-        }
-    }
-
 }
-
 @media screen and (max-width: 930px) {
-    .upcoming-exhibitions{
-        ul{
-            li{
-                img{
-                    float:none !important;
-                    border: none !important;
+    .exhibitions{
+        .exhibitions-title{
+            font-size: 25px;
+        }
+        .detail{
+            > li{
+                .left-image{
+                    float:none; 
+                    border: none; 
                     display: block;
+                    width: 100%;
+                    height: auto;
                 }
                 .right-content{
-                    float:none !important;
-                    margin-left:0 !important;
+                    float:none;
+                    margin-left:0;
                 }
             }
         }
