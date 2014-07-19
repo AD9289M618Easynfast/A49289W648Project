@@ -1,0 +1,35 @@
+#wrapper {
+  box-shadow: 0 0 10px black;
+  box-sizing: border-box;
+  margin: 0 auto;
+  max-width: 800px;
+  padding: 30px; }
+  #wrapper > .title-wrapper {
+    position: relative; }
+    #wrapper > .title-wrapper h1 {
+      font-size: 30px;
+      height: 30px;
+      line-height: 30px;
+      text-align: center; }
+    #wrapper > .title-wrapper a {
+      background-color: black;
+      border-radius: 2.5px;
+      color: white;
+      cursor: pointer;
+      float: right;
+      height: 30px;
+      letter-spacing: 5px;
+      line-height: 30px;
+      position: absolute;
+      right: 0;
+      text-align: center;
+      text-transform: uppercase;
+      top: 0;
+      width: 100px; }
+  #wrapper textarea {
+    box-sizing: border-box;
+    font-size: 15px;
+    min-height: 500px;
+    padding: 20px;
+    resize: none;
+    width: 100%; }

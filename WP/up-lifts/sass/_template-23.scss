@@ -1,0 +1,71 @@
+.template-2-3-wrapper {
+    @extend %section-wrapper;
+}
+
+.template-2-wrapper {
+    float: left;
+    width: 390px;
+
+    > h2 {
+        font-size: 20px;
+        font-style: italic;
+        font-weight: lighter;
+        margin-bottom: 20px;
+        text-transform: uppercase;
+    }
+    > img {
+        left: -10px;
+        position: relative;
+        top: -10px;
+    }
+    .template-2-content {
+        float: right;
+        width:  215px;
+        > p {
+            font-size: 16px;
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+        > img {
+            margin-right: 15px;
+        }
+    }
+    > p {
+        font-weight: bold;
+        text-align: center;
+    }
+
+}
+.template-3-wrapper {
+    background: linear-gradient(to bottom, #abbcfa, #305686) repeat scroll 0 0 rgba(0, 0, 0, 0);
+    border: 1px solid #2a3f61;
+    border-radius: 10px;
+    box-shadow: 0 0 10px white;
+    box-sizing: border-box;
+    float: right;
+    font-size: 12px;
+    padding: 15px;
+    width: 350px;
+
+    > h2 {
+        color: #322421;
+        font-size: 30px;
+        font-weight: bold;
+        margin-bottom: 10px;
+    }
+    > h3 {
+        color: #322421;
+        font-size: 20px;
+        font-weight: 500;
+        margin-bottom: 5px;
+        text-decoration: underline;
+    }
+    > div {
+        float: right;
+        margin-left: 10px;
+    }
+    img {
+        display: block;
+        margin-bottom: 5px;
+    }
+}

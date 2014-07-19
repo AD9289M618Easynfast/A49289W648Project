@@ -1,0 +1,35 @@
+.template-5-wrapper {
+    background-color: #202735;
+    background-image: url("../images/bg/bg-why-uplift-work.png");
+    background-position: 230px bottom;
+    background-repeat: no-repeat;
+    border-radius: 14px;
+    margin: 0 10px;
+    overflow: visible;
+    padding: 0 15px 35px;
+    position: relative;
+
+    > h2 {
+        background-image: url("../images/template-6-title.png");
+        display: block;
+        left: -15px;
+        line-height: 53px;
+        margin-bottom: 15px;
+        padding-left: 15px;
+        position: relative;
+    }
+    .arrow-right {
+        bottom: 35px;
+        position: absolute;
+        right: -47px;
+    }
+    > img {
+        float: left;
+        margin-right: 15px;
+    }
+    > p {
+        color: white;
+        font-size: 13px;
+        line-height: 20px;
+    }
+}
