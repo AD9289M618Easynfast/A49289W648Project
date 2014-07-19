@@ -1,3 +1,9 @@
+/**
+ * *********************************************
+ * Methods Summary: Loading Animation While onload. 
+ * IMPORTANT: Implement after <body> tag.
+ * *********************************************
+ */
 var enfpreload = new function() {
     this.libLink = 'http://lib.easynfast.net/';
     this.libName = 'enfpreload';
