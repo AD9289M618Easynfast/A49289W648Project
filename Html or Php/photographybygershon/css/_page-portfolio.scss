@@ -36,3 +36,44 @@
     }
 }
 
+.image-gallery {
+    width: 100%;
+     li {
+        float: left;
+        width: 33.33%;
+    }
+    img {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 930px) {
+    .portfolio-list {
+        > li {
+            border-bottom: 2.5px solid #666666;
+            padding: 0 0 25px;
+
+            img {
+                width: 100%;
+                max-width: 100%;
+            }
+            div {
+                clear: both;
+                display: block;
+                position: relative;
+                width: 100%;
+            }
+            h3 {
+                font-size: 18px;
+            }
+        }
+
+    }
+}
+
+@media screen and (max-width: 468px) {
+    .image-gallery > li {
+        float: none !important;
+        width: 100%;
+    }
+}

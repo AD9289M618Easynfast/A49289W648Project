@@ -8,5 +8,10 @@
 <script type="text/javascript" src="js/jquery.bxslider.min.js"></script>
 <script type="text/javascript" src="js/jquery.prettyPhoto.min.js"></script>
 <script type="text/javascript" src="js/main.min.js"></script>
+<script type="text/javascript" charset="utf-8">
+    $(document).ready(function() {
+        $("a[rel^='prettyPhoto']").prettyPhoto({social_tools:''});
+    });
+</script>
 </body>
 </html>

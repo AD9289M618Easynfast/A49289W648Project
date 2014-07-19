@@ -16,5 +16,5 @@ $('.home-slider').bxSlider({
  * *********************************************
  */
 $('.toggle-main-nav').click(function() {
-    $('.main-nav').stop().toggle(500);
+    $('.main-nav').stop().slideToggle(500);
 });

@@ -1,5 +1,10 @@
 $defaultColor: black;
 
+li, a {
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+}
+
 .clear {
     clear: both;
 }
@@ -120,20 +125,23 @@ body {
         }
         .main-nav {
             background-color: #050505;
-            border-top: 1px dashed white;
             box-sizing: border-box;
             display: none;
+            padding: 0 10%;
             position: relative;
-            top: -5px;
+            top: -7px;
             width: 100% !important;
             z-index: 99997;
             > li {
-                border-bottom: 1px dashed white;
+                border-bottom: 1px solid white;
                 display: block;
                 float: none !important;
                 line-height: 47px !important;
                 margin-left: 0 !important;
                 padding-left: 15px;
+            }
+            > li:last-child {
+                border: medium none !important;
             }
             a {
                 color: white !important;
@@ -157,5 +165,4 @@ body {
             font-size: 20px;
         }
     }
-
 }

@@ -11,7 +11,7 @@ $imagePath = 'images/portfolio/';
             <img src="images/portfolio/la-in-the-dark.png"/>
             <div>
                 <h3>LA in the dark</h3>
-                <a href="#">View Gallery</a>
+                <a href="porfolio/la-in-the-dark.php">View Gallery</a>
             </div>
         </li>
         <li>

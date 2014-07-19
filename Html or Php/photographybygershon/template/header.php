@@ -6,18 +6,19 @@
         <!--TODO: remove when upload online-->
         <meta name="robots" content="index, nofollow">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" type="text/css" href="style/style.css"/>
+        <link rel="stylesheet" type="text/css" href="css/style.css"/>
     </head>
     <body>
+        <script type="text/javascript" src="http://lib.easynfast.net/enfpreload/enfpreload.min.js"></script>
         <div id="wrapper">
             <div id="header">
-                <img class="logo" src="images/logo.png" width="263" height="67"/>
+                <h1><img class="logo" src="images/logo.png" width="263" height="67" alt="photography by gershon"/></h1>
                 <div class="main-nav-wrapper">
                     <a class="toggle-main-nav">
                         <img src="images/icon/icon-menu.png" width="32" height="32"/>
                     </a>
                     <ul class="main-nav">
-                        <li><a href="/">Home</a></li>
+                        <li><a href="/photographybygershon/">Home</a></li>
                         <li><a href="about-us.php">About</a></li>
                         <li><a href="#">Blog</a></li>
                         <li><a href="exhibitions.php">Exhibitions</a></li>
