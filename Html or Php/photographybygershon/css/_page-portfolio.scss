@@ -1,3 +1,5 @@
+$portfolioOrange: #eebb71;
+
 .portfolio-list {
     > li {
         clear: both;
@@ -24,7 +26,7 @@
             text-transform: uppercase;
         }
         a {
-            color: #eebb71;
+            color: $portfolioOrange;
             display: block;
             font-size: 22px;
             font-weight: bold;
@@ -36,9 +38,23 @@
     }
 }
 
+.portfolio-title {
+    color: #666666;
+    font-size: 28px;
+    margin-bottom: 15px;
+    text-decoration: none;
+    text-transform: uppercase;
+
+    > span {
+        color: $portfolioOrange;
+        display: inline-block;
+        margin-right: 5px;
+    }
+}
+
 .image-gallery {
     width: 100%;
-     li {
+    li {
         float: left;
         width: 33.33%;
     }
@@ -47,6 +63,7 @@
     }
 }
 
+/* xxxxxxx Only Apply for Portfolio Page xxxxxxx */
 @media screen and (max-width: 930px) {
     .portfolio-list {
         > li {
@@ -71,6 +88,7 @@
     }
 }
 
+/* xxxxxxx Reponsive only apply for Inner Portfolio page xxxxxxx */
 @media screen and (max-width: 468px) {
     .image-gallery > li {
         float: none !important;

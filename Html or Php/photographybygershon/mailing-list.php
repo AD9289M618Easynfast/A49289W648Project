@@ -15,5 +15,7 @@ include 'template/header.php';
     <img src="images/mailinglist_03.png" alt="about-gershon-kelman" width="475" height="526" class="img-contact-us" />
     <div class="clear"></div>
 </div>
+<?php
+include 'template/footer.php';
 
 

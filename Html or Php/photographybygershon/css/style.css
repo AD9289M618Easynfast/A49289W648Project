@@ -668,14 +668,19 @@ body { color: black; font-family: Arial,Helvetica,sans-serif; font-size: 14px; }
 .portfolio-list > li a { color: #eebb71; display: block; font-size: 22px; font-weight: bold; margin-top: 5px; }
 .portfolio-list > li:last-child { margin-bottom: 0; }
 
+.portfolio-title { color: #666666; font-size: 28px; margin-bottom: 15px; text-decoration: none; text-transform: uppercase; }
+.portfolio-title > span { color: #eebb71; display: inline-block; margin-right: 5px; }
+
 .image-gallery { width: 100%; }
 .image-gallery li { float: left; width: 33.33%; }
 .image-gallery img { width: 100%; }
 
+/* xxxxxxx Only Apply for Portfolio Page xxxxxxx */
 @media screen and (max-width: 930px) { .portfolio-list > li { border-bottom: 2.5px solid #666666; padding: 0 0 25px; }
   .portfolio-list > li img { width: 100%; max-width: 100%; }
   .portfolio-list > li div { clear: both; display: block; position: relative; width: 100%; }
   .portfolio-list > li h3 { font-size: 18px; } }
+/* xxxxxxx Reponsive only apply for Inner Portfolio page xxxxxxx */
 @media screen and (max-width: 468px) { .image-gallery > li { float: none !important; width: 100%; } }
 /*import page Mailing List*/
 .mailing-content-wrapper { width: 100%; }

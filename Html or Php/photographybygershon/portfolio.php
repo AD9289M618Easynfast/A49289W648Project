@@ -11,14 +11,14 @@ $imagePath = 'images/portfolio/';
             <img src="images/portfolio/la-in-the-dark.png"/>
             <div>
                 <h3>LA in the dark</h3>
-                <a href="porfolio/la-in-the-dark.php">View Gallery</a>
+                <a href="la-in-the-dark.php">View Gallery</a>
             </div>
         </li>
         <li>
             <img src="images/portfolio/ny-in-the-dark.png"/>
             <div>
                 <h3>NY in the dark</h3>
-                <a href="#">View Gallery</a>
+                <a href="ny-in-the-dark.php">View Gallery</a>
             </div>
         </li>
         <li>
