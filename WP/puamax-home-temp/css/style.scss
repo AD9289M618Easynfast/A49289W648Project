@@ -1,0 +1,111 @@
+/*reset css*/
+@import "_reset";
+
+/*main css*/
+#wrapper{
+    background: url(../image-home/bg.png);
+    width: 100%;
+
+    .header{
+        width: 1024px;
+        margin: 0 auto 20px;
+        position: relative;
+        min-height: 680px;
+
+        .header-content{
+            width: 1000px;
+            margin: 0 auto;
+            border: 1px solid #212421;
+            border-bottom-left-radius: 5px;
+            border-bottom-right-radius: 5px;
+            background-color: #000000;
+            background-image: url(../image-home/header-img.jpg);
+            background-position: top left;
+            background-repeat: no-repeat;
+            overflow: auto;
+            padding-bottom: 20px;
+        }
+        img.header-label-top {
+            position: absolute;
+            top: 0;
+            right: 0;
+        }
+        img.header-arrow {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+        }
+    }
+    .header-content{
+        .header-content-left {
+            width: 675px;
+            float: left;
+            img.header-logo {
+                margin-top: 15px;
+                margin-left: 30px;
+                display: block;
+            }
+        }
+        .header-content-right {
+            width: 320px;
+            float: left;
+            .verifies {
+                width: 230px;
+                margin: 10px 0 5px 0px;
+                text-align: right;
+            }
+            .order-panel{
+                background-image: url(../image-home/header-form-title.png), url(../image-home/bg-payment.jpg);
+                background-position: top left,top left;
+                background-repeat: no-repeat, repeat-y;
+                padding-top: 110px;
+                width: 299px;
+                border: 1px solid #242124;
+                border-radius: 10px;
+                margin: 0 auto;
+                padding-bottom: 14px;
+            }
+        }
+        .order-panel{
+            .order-form{
+                width: 100%;
+                tr {
+                    height: 35px;
+                    td.label {
+                        width: 35%;
+                        text-align: right;
+                        color: #EFEFEF;
+                        font-weight: bold;
+                        font-size: 13px;
+                    }
+                    td.input-text {
+                        text-align: center;
+                        input[type="text"] {
+                            height: 22px;
+
+                            width: 160px;
+                        }
+                    }
+                }
+            }
+            img.btn-order-now {
+                margin: 0 auto;
+                display: block;
+                margin-top: 30px;
+            }
+            .key-promise{
+                background-image: url(../image-home/icon-lock.png);
+                background-position: top left;
+                background-repeat: no-repeat;
+                height: 29px;
+                text-align: right;
+                width: 228px;
+                margin: 0 auto;
+                font-size: 14px;
+                color: #EFEFEF;
+                line-height: 29px;
+            }
+        }
+    }
+}
+
