@@ -2,7 +2,7 @@
 @import "_reset";
 
 /*main css*/
-#wrapper{
+#wrapper-home{
     background: url(../image-home/bg.png);
     width: 100%;
 
@@ -10,7 +10,7 @@
         width: 1024px;
         margin: 0 auto 20px;
         position: relative;
-        min-height: 680px;
+        padding-bottom:25px;
 
         .header-content{
             width: 1000px;
@@ -36,74 +36,244 @@
             left: 0;
         }
     }
-    .header-content{
-        .header-content-left {
-            width: 675px;
-            float: left;
-            img.header-logo {
-                margin-top: 15px;
-                margin-left: 30px;
-                display: block;
-            }
+
+    .header-content-left {
+        width: 675px;
+        float: left;
+        img.header-logo {
+            margin-top: 15px;
+            margin-left: 30px;
+            display: block;
         }
-        .header-content-right {
-            width: 320px;
-            float: left;
-            .verifies {
-                width: 230px;
-                margin: 10px 0 5px 0px;
-                text-align: right;
-            }
-            .order-panel{
-                background-image: url(../image-home/header-form-title.png), url(../image-home/bg-payment.jpg);
-                background-position: top left,top left;
-                background-repeat: no-repeat, repeat-y;
-                padding-top: 110px;
-                width: 299px;
-                border: 1px solid #242124;
-                border-radius: 10px;
-                margin: 0 auto;
-                padding-bottom: 14px;
-            }
+    }
+    .header-content-right {
+        width: 320px;
+        float: left;
+        .verifies {
+            width: 230px;
+            margin: 10px 0 5px 0px;
+            text-align: right;
         }
         .order-panel{
-            .order-form{
-                width: 100%;
-                tr {
-                    height: 35px;
-                    td.label {
-                        width: 35%;
-                        text-align: right;
-                        color: #EFEFEF;
-                        font-weight: bold;
-                        font-size: 13px;
-                    }
-                    td.input-text {
-                        text-align: center;
-                        input[type="text"] {
-                            height: 22px;
+            background-image: url(../image-home/header-form-title.png), url(../image-home/bg-payment.jpg);
+            background-position: top left,top left;
+            background-repeat: no-repeat, repeat-y;
+            padding-top: 110px;
+            width: 299px;
+            border: 1px solid #242124;
+            border-radius: 10px;
+            margin: 0 auto;
+            padding-bottom: 14px;
+        }
+    }
+    .order-panel{
+        .order-form{
+            width: 100%;
+        }
+        img.btn-order-now {
+            margin: 0 auto;
+            display: block;
+            margin-top: 30px;
+        }
+        .key-promise{
+            background-image: url(../image-home/icon-lock.png);
+            background-position: top left;
+            background-repeat: no-repeat;
+            height: 29px;
+            text-align: right;
+            width: 228px;
+            margin: 0 auto;
+            font-size: 14px;
+            color: #EFEFEF;
+            line-height: 29px;
+        }
+    }
+    .order-form{
+        tr {
+            height: 35px;
+            td.label {
+                width: 35%;
+                text-align: right;
+                color: #EFEFEF;
+                font-weight: bold;
+                font-size: 13px;
+            }
+            td.input-text {
+                text-align: center;
+                input[type="text"] {
+                    height: 22px;
 
-                            width: 160px;
-                        }
-                    }
+                    width: 160px;
                 }
             }
-            img.btn-order-now {
-                margin: 0 auto;
-                display: block;
-                margin-top: 30px;
+        }
+    }
+
+    .content-1{
+        width: 1024px;
+        margin: 0 auto 20px;
+        position: relative;
+        padding-bottom: 25px;
+        img.ss1-img-1 {
+            position: absolute;
+            top: 0;
+            right: 0;
+        }
+        .work-how {
+            width: 1000px;
+            background: #000000;
+            border-top: 1px solid #212421;
+            border-left: 1px solid #212421;
+            border-right: 1px solid #212421;
+            border-top-left-radius: 5px;              
+            border-top-right-radius: 5px;
+            margin: 0 auto;
+            img.ss1-title {
+                margin-top: 20px;
+                margin-left: 30px;
+                margin-bottom: 5px;
             }
-            .key-promise{
-                background-image: url(../image-home/icon-lock.png);
-                background-position: top left;
-                background-repeat: no-repeat;
-                height: 29px;
-                text-align: right;
-                width: 228px;
-                margin: 0 auto;
-                font-size: 14px;
+            p{
                 color: #EFEFEF;
-                line-height: 29px;
+                width: 55%;
+                margin-left: 30px;
+                padding-bottom: 20px;
+            }
+        }
+        .line-horizental{
+            width: 1000px;
+            height: 50px;
+            margin: 0 auto;
+            background-image: url(../image-home/ss1-line.jpg);
+            background-position: top left;
+            background-repeat: no-repeat;
+        }
+        .inside-puamax{
+            width: 1000px;
+            background: #000000;
+            border-bottom: 1px solid #212421;
+            border-left: 1px solid #212421;
+            border-right: 1px solid #212421;
+            border-bottom-left-radius: 5px;              
+            border-bottom-right-radius: 5px;
+            margin: 0 auto;
+            background-image: url(../image-home/ss1-img-2.jpg);
+            background-position: top center;
+            background-repeat: no-repeat;
+            padding-top:40px;
+            padding-bottom: 20px;  
+        }
+    }
+    .inside-puamax-list{
+        width: 95%;
+        color: #EFEFEF;
+        margin: 0 auto;
+        text-align: justify;
+        padding-top: 40px;
+        li{
+            margin-top: 10px;
+        }
+        .line-2{
+            overflow: auto;
+            padding-top:20px;
+            .left-content{
+                width: 25%;
+                float:left;
+            }
+            .right-content{
+                width: 25%;
+                float:right;
+            }
+        }
+        .line-3{
+            overflow: auto;
+            padding-top: 20px;
+            div{
+                width: 25%;
+            }
+            .left-content{
+                float:left;
+            }
+            .middle-content{
+                float: left;
+                width: 50%;
+                text-align: center;
+                p{
+                    width: 50%;
+                    margin: 0 auto;
+                    text-align: justify;
+                }
+            }
+            .right-content{
+                width: 25%;
+                float:right;
+            }
+        }
+    }
+    .content-2{
+        width: 1020px;
+        margin: 0 auto 20px;
+        position: relative;
+        padding-bottom: 25px;
+        z-index:0;
+        .title {
+            width: 100%;
+            position: absolute;
+            top: 20px;
+            height: 64px;
+            background-image: url(../image-home/ss2-title-left.png), url(../image-home/ss2-bgtitle-right.png);
+            background-position: top left, top right;
+            background-repeat: no-repeat,no-repeat;
+            z-index: 10;
+        }
+        .ss2-img-1{
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 20;
+        }
+        .title div {
+            background: #B50000;
+            padding: 15px;
+            img{
+                display: block;
+                margin: 0 auto;
+            }
+        }
+        .content-2-inside{
+            width: 1000px;
+            margin: 0 auto;
+            border: 1px solid #212421;
+            border-radius: 5px;
+            background-color: #000000;
+            overflow:auto;
+            padding-bottom:20px;
+            .content-detail{
+                margin-top: 60px;
+                overflow: auto;
+                position: relative;
+            }
+        }
+    }
+    .content-detail{
+        .ss2-img-2{
+            float:right;
+            margin-top: 40px;
+            margin-right:20px;
+        }
+        .testosterone-detail{
+            float:right;
+            color: #EFEFEF;
+            width: 40%;
+            margin-top: 40px;
+            margin-right:20px;
+            p{
+                margin-top: 20px;
+            }
+            .sub-title{
+                font-weight: bold;
+                color: #FFFFFF;
+                font-size: 18px;
             }
         }
     }

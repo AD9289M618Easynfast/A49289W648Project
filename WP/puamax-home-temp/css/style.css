@@ -1,111 +1,98 @@
 /*reset css*/
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
-  border: 0 none;
-  margin: 0;
-  padding: 0;
-  vertical-align: baseline; }
+    border: 0 none;
+    margin: 0;
+    padding: 0;
+    vertical-align: baseline; }
 
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
-  display: block; }
+    display: block; }
 
 body {
-  font-weight: normal; }
+    font-weight: normal; }
 
 a {
-  cursor: pointer; }
+    cursor: pointer; }
 
 ol, ul, li {
-  list-style: none outside none; }
+    list-style: none outside none; }
 
 blockquote, q {
-  quotes: none; }
+    quotes: none; }
 
 blockquote:before, blockquote:after, q:before, q:after {
-  content: none; }
+    content: none; }
 
 table {
-  border-collapse: collapse;
-  border-spacing: 0; }
+    border-collapse: collapse;
+    border-spacing: 0; }
 
 b, strong {
-  font-weight: bold; }
+    font-weight: bold; }
 
 .clear {
-  clear: both; }
+    clear: both; }
 
 /*main css*/
-#wrapper {
-  background: url(../image-home/bg.png);
-  width: 100%; }
-  #wrapper .header {
+#wrapper-home {
+    background: url(../image-home/bg.png);
+    width: 100%; }
+#wrapper-home .header {
     width: 1024px;
     margin: 0 auto 20px;
     position: relative;
-    min-height: 680px; }
-    #wrapper .header .header-content {
-      width: 1000px;
-      margin: 0 auto;
-      border: 1px solid #212421;
-      border-bottom-left-radius: 5px;
-      border-bottom-right-radius: 5px;
-      background-color: #000000;
-      background-image: url(../image-home/header-img.jpg);
-      background-position: top left;
-      background-repeat: no-repeat;
-      overflow: auto;
-      padding-bottom: 20px; }
-    #wrapper .header img.header-label-top {
-      position: absolute;
-      top: 0;
-      right: 0; }
-    #wrapper .header img.header-arrow {
-      position: absolute;
-      bottom: 0;
-      left: 0; }
-  #wrapper .header-content .header-content-left {
+    padding-bottom: 25px; }
+#wrapper-home .header .header-content {
+    width: 1000px;
+    margin: 0 auto;
+    border: 1px solid #212421;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    background-color: #000000;
+    background-image: url(../image-home/header-img.jpg);
+    background-position: top left;
+    background-repeat: no-repeat;
+    overflow: auto;
+    padding-bottom: 20px; }
+#wrapper-home .header img.header-label-top {
+    position: absolute;
+    top: 0;
+    right: 0; }
+#wrapper-home .header img.header-arrow {
+    position: absolute;
+    bottom: 0;
+    left: 0; }
+#wrapper-home .header-content-left {
     width: 675px;
     float: left; }
-    #wrapper .header-content .header-content-left img.header-logo {
-      margin-top: 15px;
-      margin-left: 30px;
-      display: block; }
-  #wrapper .header-content .header-content-right {
+#wrapper-home .header-content-left img.header-logo {
+    margin-top: 15px;
+    margin-left: 30px;
+    display: block; }
+#wrapper-home .header-content-right {
     width: 320px;
     float: left; }
-    #wrapper .header-content .header-content-right .verifies {
-      width: 230px;
-      margin: 10px 0 5px 0px;
-      text-align: right; }
-    #wrapper .header-content .header-content-right .order-panel {
-      background-image: url(../image-home/header-form-title.png), url(../image-home/bg-payment.jpg);
-      background-position: top left,top left;
-      background-repeat: no-repeat, repeat-y;
-      padding-top: 110px;
-      width: 299px;
-      border: 1px solid #242124;
-      border-radius: 10px;
-      margin: 0 auto;
-      padding-bottom: 14px; }
-  #wrapper .header-content .order-panel .order-form {
+#wrapper-home .header-content-right .verifies {
+    width: 230px;
+    margin: 10px 0 5px 0px;
+    text-align: right; }
+#wrapper-home .header-content-right .order-panel {
+    background-image: url(../image-home/header-form-title.png), url(../image-home/bg-payment.jpg);
+    background-position: top left,top left;
+    background-repeat: no-repeat, repeat-y;
+    padding-top: 110px;
+    width: 299px;
+    border: 1px solid #242124;
+    border-radius: 10px;
+    margin: 0 auto;
+    padding-bottom: 14px; }
+#wrapper-home .order-panel .order-form {
     width: 100%; }
-    #wrapper .header-content .order-panel .order-form tr {
-      height: 35px; }
-      #wrapper .header-content .order-panel .order-form tr td.label {
-        width: 35%;
-        text-align: right;
-        color: #EFEFEF;
-        font-weight: bold;
-        font-size: 13px; }
-      #wrapper .header-content .order-panel .order-form tr td.input-text {
-        text-align: center; }
-        #wrapper .header-content .order-panel .order-form tr td.input-text input[type="text"] {
-          height: 22px;
-          width: 160px; }
-  #wrapper .header-content .order-panel img.btn-order-now {
+#wrapper-home .order-panel img.btn-order-now {
     margin: 0 auto;
     display: block;
     margin-top: 30px; }
-  #wrapper .header-content .order-panel .key-promise {
+#wrapper-home .order-panel .key-promise {
     background-image: url(../image-home/icon-lock.png);
     background-position: top left;
     background-repeat: no-repeat;
@@ -116,3 +103,153 @@ b, strong {
     font-size: 14px;
     color: #EFEFEF;
     line-height: 29px; }
+#wrapper-home .order-form tr {
+    height: 35px; }
+#wrapper-home .order-form tr td.label {
+    width: 35%;
+    text-align: right;
+    color: #EFEFEF;
+    font-weight: bold;
+    font-size: 13px; }
+#wrapper-home .order-form tr td.input-text {
+    text-align: center; }
+#wrapper-home .order-form tr td.input-text input[type="text"] {
+    height: 22px;
+    width: 160px; }
+#wrapper-home .content-1 {
+    width: 1024px;
+    margin: 0 auto 20px;
+    position: relative;
+    padding-bottom: 25px; }
+#wrapper-home .content-1 img.ss1-img-1 {
+    position: absolute;
+    top: 0;
+    right: 0; }
+#wrapper-home .content-1 .work-how {
+    width: 1000px;
+    background: #000000;
+    border-top: 1px solid #212421;
+    border-left: 1px solid #212421;
+    border-right: 1px solid #212421;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    margin: 0 auto; }
+#wrapper-home .content-1 .work-how img.ss1-title {
+    margin-top: 20px;
+    margin-left: 30px;
+    margin-bottom: 5px; }
+#wrapper-home .content-1 .work-how p {
+    color: #EFEFEF;
+    width: 55%;
+    margin-left: 30px;
+    padding-bottom: 20px; }
+#wrapper-home .content-1 .line-horizental {
+    width: 1000px;
+    height: 50px;
+    margin: 0 auto;
+    background-image: url(../image-home/ss1-line.jpg);
+    background-position: top left;
+    background-repeat: no-repeat; }
+#wrapper-home .content-1 .inside-puamax {
+    width: 1000px;
+    background: #000000;
+    border-bottom: 1px solid #212421;
+    border-left: 1px solid #212421;
+    border-right: 1px solid #212421;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    margin: 0 auto;
+    background-image: url(../image-home/ss1-img-2.jpg);
+    background-position: top center;
+    background-repeat: no-repeat;
+    padding-top: 40px;
+    padding-bottom: 20px; }
+#wrapper-home .inside-puamax-list {
+    width: 95%;
+    color: #EFEFEF;
+    margin: 0 auto;
+    text-align: justify;
+    padding-top: 40px; }
+#wrapper-home .inside-puamax-list li {
+    margin-top: 10px; }
+#wrapper-home .inside-puamax-list .line-2 {
+    overflow: auto;
+    padding-top: 20px; }
+#wrapper-home .inside-puamax-list .line-2 .left-content {
+    width: 25%;
+    float: left; }
+#wrapper-home .inside-puamax-list .line-2 .right-content {
+    width: 25%;
+    float: right; }
+#wrapper-home .inside-puamax-list .line-3 {
+    overflow: auto;
+    padding-top: 20px; }
+#wrapper-home .inside-puamax-list .line-3 div {
+    width: 25%; }
+#wrapper-home .inside-puamax-list .line-3 .left-content {
+    float: left; }
+#wrapper-home .inside-puamax-list .line-3 .middle-content {
+    float: left;
+    width: 50%;
+    text-align: center; }
+#wrapper-home .inside-puamax-list .line-3 .middle-content p {
+    width: 50%;
+    margin: 0 auto;
+    text-align: justify; }
+#wrapper-home .inside-puamax-list .line-3 .right-content {
+    width: 25%;
+    float: right; }
+#wrapper-home .content-2 {
+    width: 1020px;
+    margin: 0 auto 20px;
+    position: relative;
+    padding-bottom: 25px;
+    z-index: 0; }
+#wrapper-home .content-2 .title {
+    width: 100%;
+    position: absolute;
+    top: 20px;
+    height: 64px;
+    background-image: url(../image-home/ss2-title-left.png), url(../image-home/ss2-bgtitle-right.png);
+    background-position: top left, top right;
+    background-repeat: no-repeat,no-repeat;
+    z-index: 10; }
+#wrapper-home .content-2 .ss2-img-1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 20; }
+#wrapper-home .content-2 .title div {
+    background: #B50000;
+    padding: 15px; }
+#wrapper-home .content-2 .title div img {
+    display: block;
+    margin: 0 auto; }
+#wrapper-home .content-2 .content-2-inside {
+    width: 1000px;
+    margin: 0 auto;
+    border: 1px solid #212421;
+    border-radius: 5px;
+    background-color: #000000;
+    overflow: auto;
+    padding-bottom: 20px; }
+#wrapper-home .content-2 .content-2-inside .content-detail {
+    margin-top: 60px;
+    overflow: auto;
+    position: relative; }
+#wrapper-home .content-detail .ss2-img-2 {
+    float: right;
+    margin-top: 40px;
+    margin-right: 20px; }
+#wrapper-home .content-detail .testosterone-detail {
+    float: right;
+    color: #EFEFEF;
+    width: 40%;
+    margin-top: 40px;
+    margin-right: 20px; }
+#wrapper-home .content-detail .testosterone-detail p {
+    margin-top: 20px; }
+#wrapper-home .content-detail .testosterone-detail .sub-title {
+    font-weight: bold;
+    color: #FFFFFF;
+    font-size: 18px; }
