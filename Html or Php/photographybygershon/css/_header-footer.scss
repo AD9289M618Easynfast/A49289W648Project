@@ -1,6 +1,6 @@
 $defaultColor: black;
 
-li, a {
+li, a, img {
     transition: all 0.5s;
     -webkit-transition: all 0.5s;
 }
@@ -55,6 +55,7 @@ body {
         }
     }
     .main-nav {
+        display: block;
         > li:first-child {
             margin-left: 0;
         }
