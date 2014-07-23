@@ -281,5 +281,98 @@
       font-size: 18px;
     }
   }
+  .content-3 {
+    width: 1020px;
+    margin: 0 auto 20px;
+    position: relative;
+    padding-bottom: 25px;
+    z-index: 0;
+    .title {
+      width: 100%;
+      position: absolute;
+      top: 20px;
+      height: 64px;
+      background-image: url(../image-home/ss2-title-left.png), url(../image-home/ss2-bgtitle-right.png);
+      background-position: top left, top right;
+      background-repeat: no-repeat, no-repeat;
+      z-index: 10;
+    }
+    .title div {
+      background: #B50000;
+      padding: 15px;
+      img {
+        display: block;
+        margin: 0 auto;
+      }
+    }
+    .content-3-inside {
+      width: 1000px;
+      margin: 0 auto;
+      border: 1px solid #212421;
+      border-radius: 5px;
+      background-color: #000000;
+      overflow: auto;
+      padding-top: 5%;
+    }
+    .ss3-img {
+      padding-top: 2%;
+      float: left;
+    }
+  }
+
+  .customer-said-list {
+    width: 55%;
+    float: left;
+    color: #EFEFEF;
+    padding-top: 3%;
+    line-height: 1;
+    > li {
+      margin-top: 25px;
+    }
+    .customer-said {
+      margin-bottom: 5px;
+      font-style: oblique;
+    }
+    .cus-name {
+      color: #B50000;
+      font-weight: bold;
+      display: block;
+    }
+  }
+ 
+  .content-4 {
+    width: 1000px;
+    margin: 0 auto 20px;
+    border: 1px solid #212421;
+    border-radius: 5px;
+    background-color: #000000;
+    background-image: url(../image-home/ss4-img.jpg);
+    background-position: top left;
+    background-repeat: no-repeat;
+    position: relative;
+    overflow: auto;
+  }
+  .content-4-left {
+    position: absolute;
+    text-align: center;
+    margin: 0 auto;
+    bottom: 0;
+    width: 35%;
+  }
+  .content-4-right {
+    width: 60%;
+    float: right;
+    .order-panel {
+      background-image: url(../image-home/ss4-form-title.png), url(../image-home/ss4-form-bg.jpg);
+      background-position: top left, top left;
+      background-repeat: no-repeat, repeat-y;
+      padding-top: 110px;
+      width: 574px;
+      border: 1px solid #242124;
+      border-radius: 10px;
+      margin: 10px auto;
+      padding-bottom: 14px;
+    }
+  }
 }
 
