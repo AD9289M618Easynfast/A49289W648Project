@@ -1,0 +1,6 @@
+3/ ss1-img-1.png =>Cắt phía bên phải sát vào hình chai pumax (cắt bỏ phía bên phải khoảng 40px), mở rộng thêm phía trên khoảng 10px.
+4/ ss1-img-2.jpg => mở rộng phần top thêm khoảng 15px;
+5/ ss2-img-2.png => phần biểu đồ chị cắt giúp em luôn phần title nha.
+6/ ss3-img.jpg => cắt hiển thị vừa đủ khuôn mặt của customer thôi nha chị, (cắt bỏ bớt phía bên phải 1 hình), rồi chị cắt hình của 3 KH thành 3 hình giúp em (3 hình).
+7/ ss4-img.jpg => chị cắt thêm phần top khoảng 15px giúp em nha.
+
