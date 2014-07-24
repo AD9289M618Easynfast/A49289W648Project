@@ -5,7 +5,7 @@ include './template/header.php';
 <ul id="index_slider">
     <li>
         <a rel="prettyPhoto[vimeo]" href="http://vimeo.com/100787944?width=600&height=400">
-            <img src="images/slides/slide1.jpg" width="1000" height="500" alt="" />
+            <img src="images/slides/video-slide.jpg" width="1000" height="500" alt="" />
         </a>
     </li>
     <li><img src="images/slides/slide1.jpg" width="1000" height="500" alt="" /></li>

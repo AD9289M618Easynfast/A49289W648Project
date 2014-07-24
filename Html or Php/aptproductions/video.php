@@ -4,6 +4,20 @@ include './template/header.php';
 ?>
 <ul class="video_list">
     <li>
+        <iframe width="310" height="180" frameborder="0" src="//www.youtube.com/embed/RnYw8jfHESw"></iframe>
+        <span>
+            <b>Ian Thomas</b> "Slow Down"<br/>
+            <i>Co Director</i>
+        </span>
+    </li>
+    <li>
+        <iframe width="310" height="180" frameborder="0" src="//www.youtube.com/embed/tBKyuh7DeZI"></iframe>
+        <span>
+            <b>Twoloud</b> "I'm Alive"<br/>
+            <i>Director</i>
+        </span>
+    </li>
+    <li>
         <iframe width="310" height="180" frameborder="0" src="//www.youtube.com/embed/Vo0AKlTxEQw"></iframe>
         <span>
             <b>Destinee & Paris</b> "True Love"<br/>
@@ -14,14 +28,14 @@ include './template/header.php';
         <iframe width="310" height="180" frameborder="0" src="//www.youtube.com/embed/wagn8Wrmzuc"></iframe>
         <span>
             <b>Lady Gaga</b> "Judas"<br/>
-            <i>Creative Direction for Harem</i>
+            <i>Assistant Creative Producer</i>
         </span>
     </li>
     <li>
         <iframe width="310" height="180" frameborder="0" src="//www.youtube.com/embed/xW7Ah4GGtVo"></iframe>
         <span>
             <b>Channel Zero </b> "Hot Summer"<br/>
-            <i>Creative Direction for</i>
+            <i>Creative Producer/Choreographer</i>
         </span>
     </li>
     <li>
@@ -35,7 +49,7 @@ include './template/header.php';
         <iframe width="310" height="180" frameborder="0" src="//www.youtube.com/embed/UA8rcLvS1BY"></iframe>
         <span>
             <b>LMFAO</b> "Champagne Showers"<br/>
-            <i>Creative Directior</i>
+            <i>Assistant Creative Producer</i>
         </span>
     </li>
     <li>
@@ -48,8 +62,8 @@ include './template/header.php';
     <li>
         <iframe width="310" height="180" frameborder="0" src="//www.youtube.com/embed/UecPqm2Dbes"></iframe>
         <span>
-            <b>Enrique Iglesias</b> "(Tonight) I'm Lovin You" <br/>
-            <i>Artistic Direction &amp; Choreography</i>
+            <b>Enrique Iglesias</b> "Tonight (I'm Lovin' You)" <br/>
+            <i>Artistic Director/Choreographer</i>
         </span>
     </li>
     <li>
@@ -63,35 +77,35 @@ include './template/header.php';
         <iframe width="310" height="180" frameborder="0" src="//www.youtube.com/embed/DCjxd2rehaQ"></iframe>
         <span>
             <b>Dirt Nasty</b> "Can't Dance" <br/>
-            <i>Artistic Direction</i>
+            <i>Artistic Director/Choreographer</i>
         </span>
     </li>
     <li>
         <iframe width="310" height="180" frameborder="0" src="//www.youtube.com/embed/FAMdhspadd4"></iframe>
         <span>
             <b>Jordy Towers</b> "Money, Money" <br/>
-            <i>Artistic Direction</i>
+            <i>Assistant Creative Director</i>
         </span>
     </li>
     <li>
         <iframe width="310" height="180" frameborder="0" src="//www.youtube.com/embed/lGi2MOYKZLE"></iframe>
         <span>
             <b>Jordy Towers</b> "Don't Say it's Over" <br/>
-            <i>Artistic Direction</i>
+            <i>Assistant Creative Director</i>
         </span>
     </li>
     <li>
         <iframe width="310" height="180" frameborder="0" src="//www.youtube.com/embed/X9YMU0WeBwU"></iframe>
         <span>
             <b>Lady Gaga</b> "You &amp; I"<br/>
-            <i>Assistant Creative Producer</i>
+            <i>Assistant Creative Director</i>
         </span>
     </li>
     <li>
         <iframe width="310" height="180" frameborder="0" src="//www.youtube.com/embed/cggNqDAtJYU"></iframe>
         <span>
             <b>Lady Gaga</b> "Marry the Night"<br/>
-            <i>Assistant Creative Producer</i>
+            <i>Assistant Creative Director</i>
         </span>
     </li>
     <li>
