@@ -23,7 +23,7 @@ include 'template/header.php';
         <p>
             Gershon's current pop photography has been shown in several top galleries in Los Angeles.
         </p>
-        <div class="clear"></div>
+        <div class="clearfix"></div>
     </div>
 </div>
 

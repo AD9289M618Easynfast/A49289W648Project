@@ -13,7 +13,7 @@ include 'template/header.php';
         </div>
     </div>
     <img src="images/mailinglist_03.png" alt="about-gershon-kelman" width="475" height="526" class="img-contact-us" />
-    <div class="clear"></div>
+    <div class="clearfix"></div>
 </div>
 <?php
 include 'template/footer.php';

@@ -4,8 +4,11 @@ li, a, img {
     transition: all 0.5s;
     -webkit-transition: all 0.5s;
 }
-
-.clear {
+.clearfix:before, .clearfix:after {
+    content: "";
+    display: table;
+}
+.clearfix:after {
     clear: both;
 }
 

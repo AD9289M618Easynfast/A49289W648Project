@@ -19,7 +19,7 @@ include 'template/header.php';
                         Miami, FL 33127
                     </p>
                 </div>
-                <div class="clear"></div>
+                <div class="clearfix"></div>
             </li>
         </ul>
     </div>
@@ -36,7 +36,7 @@ include 'template/header.php';
                         New York, NY 10001
                     </p>
                 </div>
-                <div class="clear"></div>
+                <div class="clearfix"></div>
             </li>
             <li>
                 <img src="images/exhibitions/salon_electron.png" width="200" height="155" class="left-image" />
@@ -48,7 +48,7 @@ include 'template/header.php';
                         102 West 5th Street (Corner of Spring & Main)
                     </p>
                 </div>
-                <div class="clear"></div>
+                <div class="clearfix"></div>
             </li>
             <li>
                 <img src="images/exhibitions/four_seasons.png" width="200" height="155" class="left-image" />
@@ -60,7 +60,7 @@ include 'template/header.php';
                         Beverly Hills, CA 90212
                     </p>
                 </div>
-                <div class="clear"></div>
+                <div class="clearfix"></div>
             </li>
             <li>
                 <img src="images/exhibitions/bruce_lurie.png" width="200" height="155" class="left-image" />
@@ -72,7 +72,7 @@ include 'template/header.php';
                         Culver City, CA
                     </p>
                 </div>
-                <div class="clear"></div>
+                <div class="clearfix"></div>
             </li>
             <li>
                 <img src="images/exhibitions/petra.png" width="200" height="155" class="left-image" />
@@ -84,7 +84,7 @@ include 'template/header.php';
                         Los Angeles, CA 90035
                     </p>
                 </div>
-                <div class="clear"></div>
+                <div class="clearfix"></div>
             </li>
             <li>
                 <img src="images/exhibitions/BH_artshow.png" width="200" height="155" class="left-image" />
@@ -96,7 +96,7 @@ include 'template/header.php';
                         9350 North Santa Monica Blvd. Beverly Hills, CA
                     </p>
                 </div>
-                <div class="clear"></div>
+                <div class="clearfix"></div>
             </li>
             <li>
                 <img src="images/exhibitions/zimmerman.png" width="200" height="155" class="left-image" />
@@ -107,7 +107,7 @@ include 'template/header.php';
                     </h3>
                     <span>July 23rd</span>
                 </div>
-                <div class="clear"></div>
+                <div class="clearfix"></div>
             </li>
             <li>
                 <img src="images/exhibitions/pasadena.png" width="200" height="155" class="left-image" />
@@ -115,7 +115,7 @@ include 'template/header.php';
                     <h3>PASADENA ARTWALK</h3>
                     <span>October 20th - 21st</span>
                 </div>
-                <div class="clear"></div>
+                <div class="clearfix"></div>
             </li>
             <li>
                 <img src="images/exhibitions/terrell.png" width="200" height="155" class="left-image" />
@@ -123,7 +123,7 @@ include 'template/header.php';
                     <h3>ATERRELL MOORE GALLERY</h3>
                     <span>October 15th 2011 - February 23rd 2012</span>
                 </div>
-                <div class="clear"></div>
+                <div class="clearfix"></div>
             </li>
         </ul>
     </div>

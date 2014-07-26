@@ -44,7 +44,7 @@ $imgCopyRight = " - Gershon Kelman © 2014";
             </a>
         </li>
     </ul>
-    <div class="clear"></div>
+    <div class="clearfix"></div>
 </div>
 
 <?php

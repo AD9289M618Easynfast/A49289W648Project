@@ -28,12 +28,12 @@
                         <li><a href="contact-us.php">Contact</a></li>
                     </ul>
                 </div>
-                <div class="clear"></div>
+                <div class="clearfix"></div>
                 <ul class="social-nav">
                     <li><a href="https://www.facebook.com/gershonkelman" target="_blank"><img src="images/icon/icon-facebook.jpg"/></a></li>
                     <li><a href="https://twitter.com/gershonKelman" target="_blank"><img src="images/icon/icon-twitter.jpg"/></a></li>
                     <li><a href="http://gershonkelman.tumblr.com/" target="_blank"><img src="images/icon/icon-tumblr.jpg"/></a></li>
                 </ul>
-                <div class="clear"></div>
+                <div class="clearfix"></div>
             </div>
             <div id="content">

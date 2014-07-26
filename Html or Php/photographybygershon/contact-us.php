@@ -14,7 +14,7 @@ include 'template/header.php';
                 <li><a href=""><img src="images/icon/icon-twitter.jpg" /></a></li>
             </ul>
         </div>
-        <div class="clear"></div>
+        <div class="clearfix"></div>
         <div class="contact-info">
             <p>
                 <span class="phone-contact">Phone:</span>661-713-9386
@@ -26,7 +26,7 @@ include 'template/header.php';
         </div>
     </div>
     <img class="img-contact-us" src="images/img-contact-us.png" alt="Contact Us Image" width="434" height="487"/>
-    <div class="clear"></div>
+    <div class="clearfix"></div>
 </div>
 
 <?php
