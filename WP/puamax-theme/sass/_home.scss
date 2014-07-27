@@ -237,7 +237,7 @@
         background-position: top left, top right;
         background-repeat: no-repeat, no-repeat;
         z-index: 10;
-        div {
+        > h2 {
             background: #B50000;
             padding: 14px;
             font-size: 24px;
@@ -314,7 +314,7 @@
         background-position: top left, top right;
         background-repeat: no-repeat, no-repeat;
         z-index: 10;
-        div {
+        > h2 {
             background: #B50000;
             padding: 14px;
             font-size: 24px;
@@ -469,7 +469,7 @@
         }
     }
 }
-.footer{
+.footer-home{
     width: 1000px;
     margin: 0 auto 20px;
     border: 2px solid #212421;

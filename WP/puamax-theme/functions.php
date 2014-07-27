@@ -27,7 +27,6 @@ add_action('after_setup_theme', 'puamax_setup');
  */
 function setup_Js_Styling() {
     wp_deregister_script('jquery');
-    wp_deregister_style('open-sans-css');
 
     //Import Jquery Library.
     wp_enqueue_script('jquery', get_template_directory_uri() . '/js/jquery-1.8.0.min.js', false, null, true);
@@ -35,7 +34,7 @@ function setup_Js_Styling() {
     /*
      * Set up Stylesheet.
      */
-    wp_enqueue_style('reset-css', get_template_directory_uri() . '/css/style.css', false, null, 'all');
+    wp_enqueue_style('main-css', get_template_directory_uri() . '/css/style.css', false, null, 'all');
 }
 
 add_action('wp_enqueue_scripts', 'setup_Js_Styling');

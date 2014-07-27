@@ -4,20 +4,23 @@ global $imagePath;
 while (have_posts()) : the_post();
 
     //Template 1
+    $template1 = '';
     $template1Array = explode("[template-1]", get_the_content());
-    $template1 = $template1Array[1];
+    if (count($template1Array) > 0) {
+        $template1 = $template1Array[1];
+    }
 
-    if ($template1 == null || $template1 == "") {
+    if (trim($template1) == '') {
         $template1 = '<div class="content-confirm-order">
-        <p class="confirm-title">Your Order Has Been Confirmed!</p>
+        <h1 class="confirm-title">Your Order Has Been Confirmed!</h1>
         <div class="confirm-number">
-            <p>Your web confirmation number is: <span>00000000</span> </p>
-            <a href="#"><img src="'.$imagePath.'button-click-here.png" width="204" height="38" /></a>
+            <p>Your web confirmation number is: <span class="bold-text">00000000</span> </p>
+            <a href="#"><img src="' . $imagePath . 'button-click-here.png" width="204" height="38" /></a>
         </div>
         <div class="address-wrapper">
             <div class="billing-address">
                 <dl>
-                    <dt>Billing Address</dt>
+                    <dt><h2>Billing Address</h2></dt>
                     <dd>123456</dd>
                     <dd>ABC STREET</dd>
                     <dd>US. 11100</dd>
@@ -25,7 +28,7 @@ while (have_posts()) : the_post();
             </div>
             <div class="shipping-address">
                 <dl>
-                    <dt>Shipping Address</dt>
+                    <dt><h2>Shipping Address</h2></dt>
                     <dd>Text Here</dd>
                 </dl>
             </div>
@@ -42,9 +45,9 @@ while (have_posts()) : the_post();
                         <p>1</p>
                     </td>
                     <td class="descip-column-detail">
-                        <img src="'.$imagePath.'img-confirm-product.png" width="98" height="129" />
+                        <img src="' . $imagePath . 'img-confirm-product.png" width="98" height="129" />
                         <dl>
-                            <dt>Premium Garcinia Extract</dt>
+                            <dt><h2>Premium Garcinia Extract</h2></dt>
                             <dd>- Fat Burner</dd>
                             <dd>- Lose Weight</dd>
                             <dd>- Feel Great</dd>
@@ -73,7 +76,7 @@ while (have_posts()) : the_post();
         </div>
         <div class="billing-price-wrapper">
             <ul>
-                <li class="place-new-order"><a href="#"><img src="'.$imagePath.'button-place-new.png" width="204" height="38" /></a></li>
+                <li class="place-new-order"><a href="#"><img src="' . $imagePath . 'button-place-new.png" width="204" height="38" /></a></li>
                 <li class="total-price">$0.00</li>
                 <li class="total-text">TOTAL</li>
 
@@ -81,8 +84,8 @@ while (have_posts()) : the_post();
         </div>
         <div class="content-footer">
             <ul>
-                <li class="confirm-card"><img src="'.$imagePath.'img-confirm-card.png" width="489" height="32" /></li>
-                <li class="money-back-logo"><img src="'.$imagePath.'icon-money.png" width="86" height="86" /></li>
+                <li class="confirm-card"><img src="' . $imagePath . 'img-confirm-card.png" width="489" height="32" /></li>
+                <li class="money-back-logo"><img src="' . $imagePath . 'icon-money.png" width="86" height="86" /></li>
                 <li class="money-back-text">
                     <p>
                         Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.

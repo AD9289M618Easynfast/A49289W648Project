@@ -4,10 +4,13 @@ global $imagePath;
 while (have_posts()) : the_post();
 
     //Template 1
+    $template1 = '';
     $template1Array = explode("[template-1]", get_the_content());
-    $template1 = $template1Array[1];
+    if (count($template1Array) > 0) {
+        $template1 = $template1Array[1];
+    }
 
-    if ($template1 == null || $template1 == "") {
+    if (trim($template1) == '') {
         $template1 = '
                     <div class="header-content-left">
                         <a href="#">
@@ -68,10 +71,13 @@ while (have_posts()) : the_post();
                     <img src="' . $imagePath . 'header-arrow.png" alt="header-arrow" class="header-arrow" width="713" height="230" />';
     }
     //Template 2
+    $template2 = '';
     $template2Array = explode("[template-2]", get_the_content());
-    $template2 = $template2Array[1];
+    if (count($template2Array) > 0) {
+        $template2 = $template2Array[1];
+    }
 
-    if ($template2 == null || $template2 == "") {
+    if (trim($template2) == '') {
         $template2 = '
                 <img src="' . $imagePath . 'ss1-img-1.png" alt="puamax natural" width="500" height="460" class="ss1-img-1"/>
                 <div class="work-how">
@@ -138,14 +144,17 @@ while (have_posts()) : the_post();
                 </div>';
     }
     //Template 3
+    $template3 = '';
     $template3Array = explode("[template-3]", get_the_content());
-    $template3 = $template3Array[1];
+    if (count($template3Array) > 0) {
+        $template3 = $template3Array[1];
+    }
 
-    if ($template3 == null || $template3 == "") {
+    if (trim($template3) == '') {
         $template3 = '
-                <div class="content-2-title"><div>
+                <div class="content-2-title"><h2>
 				SCIENTIFICALLY VALIDATED AND CLINICALLY PROVEN TO INCREASE ENERGY
-				</div></div>
+				</h2></div>
                 <div class="content-2-inside">
                     <div class="content-detail">
                         <img src="' . $imagePath . 'ss2-img-1.png" alt="ss2-img-1" width="362" height="442" class="ss2-img-1"/>
@@ -167,17 +176,20 @@ while (have_posts()) : the_post();
     }
 
     //Template 4
+    $template4 = '';
     $template4Array = explode("[template-4]", get_the_content());
-    $template4 = $template4Array[1];
+    if (count($template4Array) > 0) {
+        $template4 = $template4Array[1];
+    }
 
-    if ($template4 == null || $template4 == "") {
+    if (trim($template4) == '') {
         $template4 = '
-                <div class="content-3-title"><div>WHAT OUR CUSTOMERS SAY ABOUT OUR PRODUCT</div></div>
+                <div class="content-3-title"><h2>WHAT OUR CUSTOMERS SAY ABOUT OUR PRODUCT</h2></div>
                 <div class="content-3-inside">
 
                     <ul class="customer-said-list">
                         <li>
-                            <p class="customer-img"><img src="'. $imagePath .'ss3-img-1.png" alt="ss3-img-1" width="139" height="152" /></p>
+                            <p class="customer-img"><img src="' . $imagePath . 'ss3-img-1.png" alt="ss3-img-1" width="139" height="152" /></p>
                             <p class="customer-said">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
                                 <span class="cus-name">Mark Smith</span>
                                 Lorem ipsum</p>
@@ -186,7 +198,7 @@ while (have_posts()) : the_post();
                             </p>
                         </li>
                         <li>
-                            <p class="customer-img"><img src="'. $imagePath .'ss3-img-2.png" alt="ss3-img-2" width="139" height="152" /></p>
+                            <p class="customer-img"><img src="' . $imagePath . 'ss3-img-2.png" alt="ss3-img-2" width="139" height="152" /></p>
                             <p class="customer-said">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
                                 <span class="cus-name">Mark Smith</span>
                                 Lorem ipsum</p>
@@ -196,7 +208,7 @@ while (have_posts()) : the_post();
 
                         </li>
                         <li>
-                            <p class="customer-img"><img src="'. $imagePath .'ss3-img-3.png" alt="ss3-img-3" width="139" height="152" /></p>
+                            <p class="customer-img"><img src="' . $imagePath . 'ss3-img-3.png" alt="ss3-img-3" width="139" height="152" /></p>
                             <p class="customer-said">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
                                 <span class="cus-name">Mark Smith</span>
                                 Lorem ipsum</p>
@@ -208,10 +220,13 @@ while (have_posts()) : the_post();
                 </div>';
     }
     //Template 5
+    $template5 = '';
     $template5Array = explode("[template-5]", get_the_content());
-    $template5 = $template5Array[1];
+    if (count($template5Array) > 0) {
+        $template5 = $template5Array[1];
+    }
 
-    if ($template5 == null || $template5 == "") {
+    if (trim($template5) == '') {
         $template5 = '
                 <div class="content-4-left">
                     <img src="' . $imagePath . 'header-check.png" alt="VeriSign-Secured" width="87" height="43" />
@@ -265,10 +280,13 @@ while (have_posts()) : the_post();
     }
 
     //Template 6
+    $template6 = '';
     $template6Array = explode("[template-6]", get_the_content());
-    $template6 = $template6Array[1];
+    if (count($template6Array)) {
+        $template6 = $template6Array[1];
+    }
 
-    if ($template6 == null || $template6 == "") {
+    if (trim($template6) == '') {
         $template6 = '
                 <img src="' . $imagePath . 'ss5-img.png" class="ss5-img" alt="ss5-img" width="965" height="475" />
                 <img src="' . $imagePath . 'ss5-arrow.png" class="ss5-arrow" alt="ss5-arrow" width="713" height="137" />
@@ -276,7 +294,5 @@ while (have_posts()) : the_post();
                     <a href="#"><img src="' . $imagePath . 'button-order-now.png" alt="button-order-now" width="260" height="69" class="button-order-now" /> </a>
                 </div>';
     }
-
-
 endwhile;
 

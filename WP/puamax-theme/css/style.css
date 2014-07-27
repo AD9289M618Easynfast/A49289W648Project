@@ -223,7 +223,7 @@ b, strong {
     background-position: top left, top right;
     background-repeat: no-repeat, no-repeat;
     z-index: 10; }
-    #wrapper-home .content-2-title div {
+    #wrapper-home .content-2-title > h2 {
       background: #B50000;
       padding: 14px;
       font-size: 24px;
@@ -287,7 +287,7 @@ b, strong {
     background-position: top left, top right;
     background-repeat: no-repeat, no-repeat;
     z-index: 10; }
-    #wrapper-home .content-3-title div {
+    #wrapper-home .content-3-title > h2 {
       background: #B50000;
       padding: 14px;
       font-size: 24px;
@@ -405,7 +405,7 @@ b, strong {
       margin-right: 20px;
       bottom: 29px; }
 
-.footer {
+.footer-home {
   width: 1000px;
   margin: 0 auto 20px;
   border: 2px solid #212421;
@@ -413,7 +413,7 @@ b, strong {
   background-color: #000000;
   color: #EFEFEF;
   text-align: center; }
-  .footer > p {
+  .footer-home > p {
     padding: 10px 0;
     width: 90%;
     margin: 10px auto 0;
@@ -512,30 +512,30 @@ b, strong {
   #wrapper-order .package-area-content {
     position: relative;
     padding-bottom: 30px; }
-    #wrapper-order .package-area-content .product-img-wrap {
-      width: 405px;
-      height: 141px;
+  #wrapper-order .product-img-wrap {
+    width: 405px;
+    height: 141px;
+    text-align: center;
+    float: left;
+    top: 80px;
+    left: 15px;
+    position: relative; }
+  #wrapper-order .product-pricing {
+    float: right;
+    position: relative;
+    top: 75px;
+    right: 30px; }
+    #wrapper-order .product-pricing p {
+      font-size: 17px;
       text-align: center;
-      float: left;
-      top: 80px;
-      left: 15px;
-      position: relative; }
-    #wrapper-order .package-area-content > div {
-      float: right;
-      position: relative;
-      top: 75px;
-      right: 30px; }
-      #wrapper-order .package-area-content > div p {
-        font-size: 17px;
-        text-align: center;
-        font-weight: bold; }
-      #wrapper-order .package-area-content > div > img {
-        display: block;
-        margin-top: 17px;
-        margin-left: 30px; }
-      #wrapper-order .package-area-content > div a > img {
-        display: block;
-        margin-top: 17px; }
+      font-weight: bold; }
+    #wrapper-order .product-pricing > img {
+      display: block;
+      margin-top: 17px;
+      margin-left: 30px; }
+    #wrapper-order .product-pricing a > img {
+      display: block;
+      margin-top: 17px; }
   #wrapper-order .content-wrap-right {
     width: 300px;
     float: left;
@@ -554,30 +554,30 @@ b, strong {
       color: #BDBABD;
       width: 290px;
       margin: 25px 5px 0px 0px; }
-      #wrapper-order .content-wrap-right > table td {
-        height: 35px; }
-      #wrapper-order .content-wrap-right > table .first-column {
-        width: 30%;
-        vertical-align: middle;
-        text-align: right; }
-      #wrapper-order .content-wrap-right > table .second-column {
-        text-align: left;
-        padding-left: 4px;
-        padding-bottom: 4px; }
-      #wrapper-order .content-wrap-right > table select.full-row, #wrapper-order .content-wrap-right > table td select.date-class {
-        height: 30px;
-        width: 204px; }
-      #wrapper-order .content-wrap-right > table input.full-row {
-        height: 25px;
-        width: 201px; }
-      #wrapper-order .content-wrap-right > table td select.date-class {
-        width: 100px; }
-      #wrapper-order .content-wrap-right > table td.cvv-input input {
-        height: 25px;
-        width: 100px; }
-      #wrapper-order .content-wrap-right > table td.cvv-input a {
-        font-size: 13px;
-        color: #FFFFFF; }
+    #wrapper-order .content-wrap-right td {
+      height: 35px; }
+    #wrapper-order .content-wrap-right .first-column {
+      width: 30%;
+      vertical-align: middle;
+      text-align: right; }
+    #wrapper-order .content-wrap-right .second-column {
+      text-align: left;
+      padding-left: 4px;
+      padding-bottom: 4px; }
+    #wrapper-order .content-wrap-right select.full-row, #wrapper-order .content-wrap-right select.date-class {
+      height: 30px;
+      width: 204px; }
+    #wrapper-order .content-wrap-right input.full-row {
+      height: 25px;
+      width: 201px; }
+    #wrapper-order .content-wrap-right select.date-class {
+      width: 100px; }
+    #wrapper-order .content-wrap-right td.cvv-input input {
+      height: 25px;
+      width: 100px; }
+    #wrapper-order .content-wrap-right td.cvv-input a {
+      font-size: 13px;
+      color: #FFFFFF; }
     #wrapper-order .content-wrap-right p.text-safe {
       background-image: url("../images/icon-lock.png");
       background-position: center left;
@@ -606,7 +606,7 @@ b, strong {
     font-size: 30px;
     font-weight: bold;
     margin-bottom: 15px; }
-  #wrapper-order .confirm-number, #wrapper-order .address-wrapper, #wrapper-order .address-wrapper .billing-address, #wrapper-order .address-wrapper .shipping-address, #wrapper-order .product-order-wrapper, #wrapper-order .billing-price-wrapper, #wrapper-order .content-footer {
+  #wrapper-order .confirm-number, #wrapper-order .address-wrapper, #wrapper-order .billing-address, #wrapper-order .shipping-address, #wrapper-order .product-order-wrapper, #wrapper-order .billing-price-wrapper, #wrapper-order .content-footer {
     overflow: auto;
     background-color: #E7EBE7;
     filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr=#FFFFFF, endColorstr=#E7EBE7);
@@ -621,7 +621,7 @@ b, strong {
     border-radius: 10px;
     padding: 8px;
     margin-bottom: 10px; }
-    #wrapper-order .confirm-number > p, #wrapper-order .address-wrapper > p, #wrapper-order .address-wrapper .billing-address > p, #wrapper-order .address-wrapper .shipping-address > p, #wrapper-order .product-order-wrapper > p, #wrapper-order .billing-price-wrapper > p, #wrapper-order .content-footer > p {
+    #wrapper-order .confirm-number > p, #wrapper-order .address-wrapper > p, #wrapper-order .billing-address > p, #wrapper-order .shipping-address > p, #wrapper-order .product-order-wrapper > p, #wrapper-order .billing-price-wrapper > p, #wrapper-order .content-footer > p {
       display: block;
       text-align: left;
       color: #CE0000;
@@ -629,11 +629,11 @@ b, strong {
       margin-top: 10px;
       float: left;
       margin-left: 10px; }
-      #wrapper-order .confirm-number > p span, #wrapper-order .address-wrapper > p span, #wrapper-order .address-wrapper .billing-address > p span, #wrapper-order .address-wrapper .shipping-address > p span, #wrapper-order .product-order-wrapper > p span, #wrapper-order .billing-price-wrapper > p span, #wrapper-order .content-footer > p span {
-        color: #313431;
-        font-weight: bold; }
-    #wrapper-order .confirm-number > a img, #wrapper-order .address-wrapper > a img, #wrapper-order .address-wrapper .billing-address > a img, #wrapper-order .address-wrapper .shipping-address > a img, #wrapper-order .product-order-wrapper > a img, #wrapper-order .billing-price-wrapper > a img, #wrapper-order .content-footer > a img {
+    #wrapper-order .confirm-number > a img, #wrapper-order .address-wrapper > a img, #wrapper-order .billing-address > a img, #wrapper-order .shipping-address > a img, #wrapper-order .product-order-wrapper > a img, #wrapper-order .billing-price-wrapper > a img, #wrapper-order .content-footer > a img {
       float: right; }
+  #wrapper-order .bold-text {
+    color: #313431;
+    font-weight: bold; }
   #wrapper-order .address-wrapper {
     background-color: #000000;
     background-image: none;
@@ -641,26 +641,26 @@ b, strong {
     padding: 0;
     width: 100%;
     margin: 0; }
-    #wrapper-order .address-wrapper .billing-address {
-      width: 47%;
-      float: left;
-      margin-right: 10px;
-      min-height: 90px; }
-    #wrapper-order .address-wrapper .shipping-address {
-      width: 48%;
-      float: left;
-      min-height: 90px; }
     #wrapper-order .address-wrapper dl {
       padding: 10px; }
-      #wrapper-order .address-wrapper dl dt {
-        font-size: 14px;
-        font-weight: bold;
-        color: #313031;
-        margin-bottom: 5px; }
-      #wrapper-order .address-wrapper dl dd {
-        padding-left: 30px;
-        font-size: 15px;
-        color: #CE0000; }
+    #wrapper-order .address-wrapper h2 {
+      font-size: 14px;
+      font-weight: bold;
+      color: #313031;
+      margin-bottom: 5px; }
+    #wrapper-order .address-wrapper dd {
+      padding-left: 30px;
+      font-size: 15px;
+      color: #CE0000; }
+  #wrapper-order .billing-address {
+    width: 47%;
+    float: left;
+    margin-right: 10px;
+    min-height: 90px; }
+  #wrapper-order .shipping-address {
+    width: 48%;
+    float: left;
+    min-height: 90px; }
   #wrapper-order .confirm-order-product {
     width: 98%;
     margin: 5px auto;
@@ -706,15 +706,15 @@ b, strong {
     float: left;
     margin-top: 16px;
     margin-left: 20px; }
-    #wrapper-order .descip-column-detail dl dt {
-      font-size: 14px;
-      font-weight: bold;
-      color: #313031;
-      margin-bottom: 5px; }
-    #wrapper-order .descip-column-detail dl dd {
-      padding-left: 30px;
-      font-size: 15px;
-      color: #CE0000; }
+  #wrapper-order .descip-column-detail h2 {
+    font-size: 14px;
+    font-weight: bold;
+    color: #313031;
+    margin-bottom: 5px; }
+  #wrapper-order .descip-column-detail dd {
+    padding-left: 30px;
+    font-size: 15px;
+    color: #CE0000; }
   #wrapper-order .total-column-detail p {
     margin: 0;
     width: 100%;
@@ -728,19 +728,20 @@ b, strong {
     color: #313431;
     float: right;
     margin: 15px 7px; }
-    #wrapper-order .confirm-order-footer .order-footer-title {
-      width: 245px;
-      text-align: right; }
-    #wrapper-order .confirm-order-footer .order-footer-content {
-      width: 150px; }
     #wrapper-order .confirm-order-footer p {
       text-align: center; }
     #wrapper-order .confirm-order-footer span {
       color: #CE0000; }
-  #wrapper-order .billing-price-wrapper .place-new-order {
+  #wrapper-order .order-footer-title {
+    width: 245px;
+    text-align: right; }
+  #wrapper-order .order-footer-content {
+    width: 150px; }
+  #wrapper-order .place-new-order {
     float: left;
-    margin-top: 5px; }
-  #wrapper-order .billing-price-wrapper .total-text, #wrapper-order .billing-price-wrapper .total-price {
+    margin-top: 5px;
+    margin-left: 10px; }
+  #wrapper-order .total-text, #wrapper-order .total-price {
     float: right;
     font-size: 28px;
     color: #313431;

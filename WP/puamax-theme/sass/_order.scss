@@ -106,41 +106,40 @@
     }
     .package-area-content{
         position: relative;
-        padding-bottom: 30px;
-        .product-img-wrap{
-            width: 405px;
-            height: 141px;
+        padding-bottom: 30px; 
+    }
+    .product-img-wrap{
+        width: 405px;
+        height: 141px;
+        text-align: center;
+        float:left;
+        top:80px;
+        left: 15px;
+        position: relative;
+    }
+    .product-pricing{
+        float: right;
+        position: relative;
+        top: 75px;
+        right: 30px;
+
+        p{
+            font-size: 17px;
             text-align: center;
-            float:left;
-            top:80px;
-            left: 15px;
-            position: relative;
+            font-weight: bold;
         }
-        > div{
-            float: right;
-            position: relative;
-            top: 75px;
-            right: 30px;
 
-            p{
-                font-size: 17px;
-                text-align: center;
-                font-weight: bold;
-            }
+        > img {
+            display: block;
+            margin-top: 17px;
+            margin-left: 30px;
+        }
 
-            > img {
-                display: block;
-                margin-top: 17px;
-                margin-left: 30px;
-            }
-
-            a > img{
-                display: block;
-                margin-top: 17px;
-            }
+        a > img{
+            display: block;
+            margin-top: 17px;
         }
     }
-
 
     .content-wrap-right{
         width: 300px;
@@ -163,49 +162,49 @@
             width: 290px;
             margin: 25px 5px 0px 0px;
 
-            td{
-                height: 35px;
-            }
-            .first-column{
-                width: 30%;
-                vertical-align: middle;
-                text-align: right;
-            }
 
-            .second-column{
-                text-align: left;
-                padding-left: 4px;
-                padding-bottom: 4px;
-            }
-
-            select.full-row{
-
-                height: 30px;
-                width: 204px;
-            }
-
-            input.full-row{
-                height: 25px;
-                width: 201px;
-            }
-
-            td select.date-class{
-                @extend .full-row;
-                width: 100px;
-            }
-            td.cvv-input {
-                input{
-
-                    height: 25px;
-                    width: 100px;
-                }
-                a{
-                    font-size: 13px;
-                    color: #FFFFFF;
-                }
-            }
+        }
+        td{
+            height: 35px;
+        }
+        .first-column{
+            width: 30%;
+            vertical-align: middle;
+            text-align: right;
         }
 
+        .second-column{
+            text-align: left;
+            padding-left: 4px;
+            padding-bottom: 4px;
+        }
+
+        select.full-row{
+
+            height: 30px;
+            width: 204px;
+        }
+
+        input.full-row{
+            height: 25px;
+            width: 201px;
+        }
+
+        select.date-class{
+            @extend .full-row;
+            width: 100px;
+        }
+        td.cvv-input {
+            input{
+
+                height: 25px;
+                width: 100px;
+            }
+            a{
+                font-size: 13px;
+                color: #FFFFFF;
+            }
+        }
         p.text-safe{
             background-image: url("../images/icon-lock.png");
             background-position: center left;
@@ -266,14 +265,14 @@
             margin-top: 10px;
             float: left;
             margin-left: 10px;
-            span{
-                color: #313431;
-                font-weight: bold;
-            }
         }
         > a img {
             float:right;
         }
+    }
+    .bold-text{
+        color: #313431;
+        font-weight: bold;
     }
     .address-wrapper{
         @extend .confirm-number;
@@ -283,37 +282,37 @@
         padding: 0;
         width: 100%;
         margin: 0;
-        .billing-address{
-            @extend .confirm-number;
-            width: 47%;
-            float:left;
-            margin-right: 10px;
-            min-height: 90px;
-        }
 
-        .shipping-address{
-            @extend .confirm-number;
-            width: 48%;
-            float:left;
-            min-height: 90px;
-
-        }
         dl{
             padding:10px;
-
-            dt{
-                font-size: 14px;
-                font-weight: bold;
-                color: #313031;
-                margin-bottom: 5px;
-            }
-
-            dd{
-                padding-left: 30px;
-                font-size: 15px;
-                color: #CE0000;
-            }
         }
+        h2{
+            font-size: 14px;
+            font-weight: bold;
+            color: #313031;
+            margin-bottom: 5px;
+        }
+
+        dd{
+            padding-left: 30px;
+            font-size: 15px;
+            color: #CE0000;
+        }
+    }
+    .billing-address{
+        @extend .confirm-number;
+        width: 47%;
+        float:left;
+        margin-right: 10px;
+        min-height: 90px;
+    }
+
+    .shipping-address{
+        @extend .confirm-number;
+        width: 48%;
+        float:left;
+        min-height: 90px;
+
     }
     .product-order-wrapper{
         @extend .confirm-number;
@@ -379,18 +378,18 @@
             float: left;
             margin-top: 16px;
             margin-left: 20px;
-            dt{
-                font-size: 14px;
-                font-weight: bold;
-                color: #313031;
-                margin-bottom: 5px;
-            }
+        }
+        h2{
+            font-size: 14px;
+            font-weight: bold;
+            color: #313031;
+            margin-bottom: 5px;
+        }
 
-            dd{
-                padding-left: 30px;
-                font-size: 15px;
-                color: #CE0000;
-            }
+        dd{
+            padding-left: 30px;
+            font-size: 15px;
+            color: #CE0000;
         }
     }
     .total-column-detail{
@@ -410,14 +409,7 @@
         color: #313431;
         float: right;
         margin: 15px 7px;
-        .order-footer-title{
-            width: 245px;
-            text-align: right;
-        }
-        .order-footer-content{
-            width: 150px;
 
-        }
         p{
             text-align: center;
         }
@@ -425,27 +417,35 @@
             color: #CE0000;
         }
     }
+    .order-footer-title{
+        width: 245px;
+        text-align: right;
+    }
+    .order-footer-content{
+        width: 150px;
+
+    }
 
 
     .billing-price-wrapper{
         @extend .confirm-number;
-        .place-new-order{
-            float:left;
-            margin-top: 5px;
-        }
-        .total-text{
-            float:right;
-            font-size: 28px;
-            color: #313431;
-            font-weight: bold;
-            margin-right: 50px;
-            margin-top:5px;
-            padding: 5px 0;
-        }
-        .total-price{
-            @extend .total-text;
-
-        }
+    }
+    .place-new-order{
+        float:left;
+        margin-top: 5px;
+        margin-left: 10px;
+    }
+    .total-text{
+        float:right;
+        font-size: 28px;
+        color: #313431;
+        font-weight: bold;
+        margin-right: 50px;
+        margin-top:5px;
+        padding: 5px 0;
+    }
+    .total-price{
+        @extend .total-text;
 
     }
     .content-footer{
