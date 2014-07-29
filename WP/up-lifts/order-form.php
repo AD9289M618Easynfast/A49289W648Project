@@ -72,7 +72,7 @@
 </style>
 
 <link type="text/css" rel="stylesheet" href="http://jotformpro.com/css/styles/buttons/form-submit-button-simple_white.css?3.2.2936"/>
-<form class="jotform-form" action="http://submit.jotformpro.com/submit/41179355587971/" method="post" name="form_41179355587971" id="41179355587971" accept-charset="utf-8">
+<form class="jotform-form" action="http://demo.easynfast.net/wp-uplifts/order/" method="post" name="form_41179355587971" id="41179355587971" accept-charset="utf-8">
     <input type="hidden" name="formID" value="41179355587971" />
     <div class="form-all">
         <ul class="form-section">

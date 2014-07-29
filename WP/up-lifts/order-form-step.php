@@ -88,7 +88,7 @@
                     </span>
                 </label>
                 <div id="cid_1" class="form-input always-hidden">
-                    <input type="text" class=" form-textbox validate[required]" data-type="input-textbox" id="input_1" name="q1_firstName" size="20" value="" />
+                    <input type="text" class=" form-textbox validate[required]" data-type="input-textbox" id="input_1" name="q1_firstName" size="20" value="<?php echo $firstName; ?>" />
                 </div>
             </li>
             <li class="form-line always-hidden" data-type="control_textbox" id="id_2">
@@ -99,7 +99,7 @@
                     </span>
                 </label>
                 <div id="cid_2" class="form-input always-hidden">
-                    <input type="text" class=" form-textbox validate[required]" data-type="input-textbox" id="input_2" name="q2_lastName2" size="20" value="" />
+                    <input type="text" class=" form-textbox validate[required]" data-type="input-textbox" id="input_2" name="q2_lastName2" size="20" value="<?php echo $lastName; ?>" />
                 </div>
             </li>
             <li class="form-line always-hidden" data-type="control_dropdown" id="id_3">
@@ -111,7 +111,7 @@
                 </label>
                 <div id="cid_3" class="form-input always-hidden">
                     <select class="form-dropdown validate[required]" style="width:150px" id="input_3" name="q3_country3">
-                        <option value="">  </option>
+                        <option value="<?php echo $country; ?>"><?php echo $country; ?>  </option>
                         <option value="Select...."> Select.... </option>
                         <option value="United States"> United States </option>
                         <option value="Canada"> Canada </option>
@@ -362,7 +362,7 @@
                     </span>
                 </label>
                 <div id="cid_4" class="form-input always-hidden">
-                    <input type="text" class=" form-textbox validate[required]" data-type="input-textbox" id="input_4" name="q4_address" size="20" value="" />
+                    <input type="text" class=" form-textbox validate[required]" data-type="input-textbox" id="input_4" name="q4_address" size="20" value="<?php echo $address; ?>" />
                 </div>
             </li>
             <li class="form-line always-hidden" data-type="control_textbox" id="id_5">
@@ -373,7 +373,7 @@
                     </span>
                 </label>
                 <div id="cid_5" class="form-input always-hidden">
-                    <input type="text" class=" form-textbox validate[required]" data-type="input-textbox" id="input_5" name="q5_city" size="20" value="" />
+                    <input type="text" class=" form-textbox validate[required]" data-type="input-textbox" id="input_5" name="q5_city" size="20" value="<?php echo $city ?>" />
                 </div>
             </li>
             <li class="form-line always-hidden" data-type="control_textbox" id="id_6">
@@ -384,7 +384,7 @@
                     </span>
                 </label>
                 <div id="cid_6" class="form-input always-hidden">
-                    <input type="text" class=" form-textbox validate[required]" data-type="input-textbox" id="input_6" name="q6_state" size="20" value="" />
+                    <input type="text" class=" form-textbox validate[required]" data-type="input-textbox" id="input_6" name="q6_state" size="20" value="<?php echo $state; ?>" />
                 </div>
             </li>
             <li class="form-line always-hidden" data-type="control_textbox" id="id_7">
@@ -395,7 +395,7 @@
                     </span>
                 </label>
                 <div id="cid_7" class="form-input always-hidden">
-                    <input type="text" class=" form-textbox validate[required]" data-type="input-textbox" id="input_7" name="q7_zipCode" size="20" value="" />
+                    <input type="text" class=" form-textbox validate[required]" data-type="input-textbox" id="input_7" name="q7_zipCode" size="20" value="<?php echo $zipCode; ?>" />
                 </div>
             </li>
             <li class="form-line always-hidden" data-type="control_textbox" id="id_8">
@@ -406,7 +406,7 @@
                     </span>
                 </label>
                 <div id="cid_8" class="form-input always-hidden">
-                    <input type="text" class=" form-textbox validate[required]" data-type="input-textbox" id="input_8" name="q8_email" size="20" value="" />
+                    <input type="text" class=" form-textbox validate[required]" data-type="input-textbox" id="input_8" name="q8_email" size="20" value="<?php echo $email; ?>" />
                 </div>
             </li>
             <li class="form-line" data-type="control_stripe" id="id_10">
@@ -483,13 +483,13 @@
                         <tr>
                             <td width="50%">
                                 <span class="form-sub-label-container">
-                                    <input class="form-textbox cc_firstName" name="q10_lifeIs[cc_firstName]" type="text" size="20" id="input_10_cc_firstName" />
+                                    <input class="form-textbox cc_firstName" name="q10_lifeIs[cc_firstName]" type="text" size="20" id="input_10_cc_firstName"  value="<?php echo $firstName; ?>"/>
                                     <label class="form-sub-label" for="input_10_cc_firstName" id="sublabel_cc_firstName"> First Name </label>
                                 </span>
                             </td>
                             <td width="50%">
                                 <span class="form-sub-label-container">
-                                    <input class="form-textbox cc_lastName" name="q10_lifeIs[cc_lastName]" type="text" size="20" id="input_10_cc_lastName" />
+                                    <input class="form-textbox cc_lastName" name="q10_lifeIs[cc_lastName]" type="text" size="20" id="input_10_cc_lastName" value="<?php echo $lastName; ?>" />
                                     <label class="form-sub-label" for="input_10_cc_lastName" id="sublabel_cc_lastName"> Last Name </label>
                                 </span>
                             </td>
@@ -498,7 +498,7 @@
                             <span class="form-sub-label-container">
                                 <input class="form-textbox cc_number" size="33" autocomplete="off" />
                                 -
-                                <label class="form-sub-label" id="sublabel_cc_number"> Credit Card Number </label>
+                                <label class="form-sub-label" id="sublabel_cc_number">Credit Card Number</label>
                             </span>
                             <span class="form-sub-label-container">
                                 <input class="form-textbox cc_ccv" type="number" style="width:52px" autocomplete="off" />

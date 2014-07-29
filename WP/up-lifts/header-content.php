@@ -10,15 +10,9 @@
         <?php wp_head(); ?>
         <style>
             #wrapper {
-                background-color: #608de0;
                 background-image: url("<?php echo $imagePath; ?>bg/bg-content-bottom.png");
                 background-position: center bottom;
                 background-repeat: repeat-x;
-                box-shadow: 0 0 11px black;
-                margin: 0 auto;
-                min-height: 1500px;
-                padding: 35px 0;
-                width: 788px;
             }
         </style>
     </head>
