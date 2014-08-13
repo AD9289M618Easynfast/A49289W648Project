@@ -80,6 +80,15 @@
         }
 
     }
+
+    .loading-image {
+        bottom: 0;
+        left: 0;
+        margin: auto;
+        position: fixed;
+        right: 0;
+        top: 0;
+    }
 }
 @keyframes up {
     0%   { margin-bottom: 0; }

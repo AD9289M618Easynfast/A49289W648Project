@@ -10,52 +10,67 @@ $imgCopyRight = " - Gershon Kelman © 2014";
     <ul class="image-gallery">
         <li>
             <a rel="prettyPhoto[la-pop-art]" href="images/portfolio/la-pop-art/img-1-large.jpg">
-                <img src="images/portfolio/la-pop-art/img-1.jpg" width="300"  alt="Slow Night<?php echo $imgCopyRight; ?>"/>
+                <img src="images/portfolio/la-pop-art/img-1.jpg" width="300"  alt="Lit<?php echo $imgCopyRight; ?>"/>
             </a>
         </li>
         <li>
             <a rel="prettyPhoto[la-pop-art]" href="images/portfolio/la-pop-art/img-2-large.jpg">
-                <img src="images/portfolio/la-pop-art/img-2.jpg" width="300"  alt="Fog<?php echo $imgCopyRight; ?>"/>
+                <img src="images/portfolio/la-pop-art/img-2.jpg" width="300"  alt="The Birds<?php echo $imgCopyRight; ?>"/>
             </a>
         </li>
         <li>
             <a rel="prettyPhoto[la-pop-art]" href="images/portfolio/la-pop-art/img-3-large.jpg">
-                <img src="images/portfolio/la-pop-art/img-3.jpg" width="300"  alt="Vendor<?php echo $imgCopyRight; ?>"/>
+                <img src="images/portfolio/la-pop-art/img-3.jpg" width="300"  alt="Space Station<?php echo $imgCopyRight; ?>"/>
             </a>
         </li>
         <li>
             <a rel="prettyPhoto[la-pop-art]" href="images/portfolio/la-pop-art/img-4-large.jpg">
-                <img src="images/portfolio/la-pop-art/img-4.jpg" width="300"  alt="One for the Road<?php echo $imgCopyRight; ?>"/>
+                <img src="images/portfolio/la-pop-art/img-4.jpg" width="300"  alt="Rent<?php echo $imgCopyRight; ?>"/>
             </a>
         </li>
         <li>
             <a rel="prettyPhoto[la-pop-art]" href="images/portfolio/la-pop-art/img-5-large.jpg">
-                <img src="images/portfolio/la-pop-art/img-5.jpg" width="300"  alt="Time Square in the Dark<?php echo $imgCopyRight; ?>"/>
+                <img src="images/portfolio/la-pop-art/img-5.jpg" width="300"  alt="My Book<?php echo $imgCopyRight; ?>"/>
             </a>
         </li>
         <li>
             <a rel="prettyPhoto[la-pop-art]" href="images/portfolio/la-pop-art/img-6-large.jpg">
-                <img src="images/portfolio/la-pop-art/img-6.jpg" width="300"  alt="Product of New York<?php echo $imgCopyRight; ?>"/>
+                <img src="images/portfolio/la-pop-art/img-6.jpg" width="300"  alt="Infinity<?php echo $imgCopyRight; ?>"/>
             </a>
         </li>
         <li>
             <a rel="prettyPhoto[la-pop-art]" href="images/portfolio/la-pop-art/img-7-large.jpg">
-                <img src="images/portfolio/la-pop-art/img-7.jpg" width="300"  alt="Tonic<?php echo $imgCopyRight; ?>"/>
+                <img src="images/portfolio/la-pop-art/img-7.jpg" width="300"  alt="Hotel Rosselynn<?php echo $imgCopyRight; ?>"/>
             </a>
         </li>
         <li>
             <a rel="prettyPhoto[la-pop-art]" href="images/portfolio/la-pop-art/img-8-large.jpg">
-                <img src="images/portfolio/la-pop-art/img-8.jpg" width="300"  alt="NY Taxi Driver<?php echo $imgCopyRight; ?>"/>
+                <img src="images/portfolio/la-pop-art/img-8.jpg" width="300"  alt="Hotel Rosselynn<?php echo $imgCopyRight; ?>"/>
             </a>
         </li>
         <li>
             <a rel="prettyPhoto[la-pop-art]" href="images/portfolio/la-pop-art/img-9-large.jpg">
-                <img src="images/portfolio/la-pop-art/img-9.jpg" width="300"  alt="Crossover<?php echo $imgCopyRight; ?>"/>
+                <img src="images/portfolio/la-pop-art/img-9.jpg" width="300"  alt="Tripping<?php echo $imgCopyRight; ?>"/>
             </a>
         </li>
         <li>
             <a rel="prettyPhoto[la-pop-art]" href="images/portfolio/la-pop-art/img-10-large.jpg">
-                <img src="images/portfolio/la-pop-art/img-10.jpg" width="300"  alt="Visions<?php echo $imgCopyRight; ?>"/>
+                <img src="images/portfolio/la-pop-art/img-10.jpg" width="300"  alt="The Vault<?php echo $imgCopyRight; ?>"/>
+            </a>
+        </li>
+        <li>
+            <a rel="prettyPhoto[la-pop-art]" href="images/portfolio/la-pop-art/img-11-large.jpg">
+                <img src="images/portfolio/la-pop-art/img-11.jpg" width="300"  alt="Peace<?php echo $imgCopyRight; ?>"/>
+            </a>
+        </li>
+        <li>
+            <a rel="prettyPhoto[la-pop-art]" href="images/portfolio/la-pop-art/img-12-large.jpg">
+                <img src="images/portfolio/la-pop-art/img-12.jpg" width="300"  alt="Tripping<?php echo $imgCopyRight; ?>"/>
+            </a>
+        </li>
+        <li>
+            <a rel="prettyPhoto[la-pop-art]" href="images/portfolio/la-pop-art/img-13-large.jpg">
+                <img src="images/portfolio/la-pop-art/img-13.jpg" width="300"  alt="The Vault<?php echo $imgCopyRight; ?>"/>
             </a>
         </li>
     </ul>

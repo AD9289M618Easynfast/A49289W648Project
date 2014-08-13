@@ -13,14 +13,14 @@ $imgCopyRight = " - Gershon Kelman © 2014";
                 <img src="images/portfolio/ny-in-the-dark/img-1.jpg" width="300"  alt="Slow Night<?php echo $imgCopyRight; ?>"/>
             </a>
         </li>
-        <li>
+<!--        <li>
             <a rel="prettyPhoto[ny-in-the-dark]" href="images/portfolio/ny-in-the-dark/img-2-large.jpg">
                 <img src="images/portfolio/ny-in-the-dark/img-2.jpg" width="300"  alt="Fog<?php echo $imgCopyRight; ?>"/>
             </a>
-        </li>
+        </li>-->
         <li>
             <a rel="prettyPhoto[ny-in-the-dark]" href="images/portfolio/ny-in-the-dark/img-3-large.jpg">
-                <img src="images/portfolio/ny-in-the-dark/img-3.jpg" width="300"  alt="Vendor<?php echo $imgCopyRight; ?>"/>
+                <img src="images/portfolio/ny-in-the-dark/img-3.jpg" width="300"  alt="January 7th<?php echo $imgCopyRight; ?>"/>
             </a>
         </li>
         <li>
@@ -58,11 +58,11 @@ $imgCopyRight = " - Gershon Kelman © 2014";
                 <img src="images/portfolio/ny-in-the-dark/img-10.jpg" width="300"  alt="Visions<?php echo $imgCopyRight; ?>"/>
             </a>
         </li>
-        <li>
+<!--        <li>
             <a rel="prettyPhoto[ny-in-the-dark]" href="images/portfolio/ny-in-the-dark/img-11-large.jpg">
                 <img src="images/portfolio/ny-in-the-dark/img-11.jpg" width="300"  alt="3 Cabs<?php echo $imgCopyRight; ?>"/>
             </a>
-        </li>
+        </li>-->
         <li>
             <a rel="prettyPhoto[ny-in-the-dark]" href="images/portfolio/ny-in-the-dark/img-12-large.jpg">
                 <img src="images/portfolio/ny-in-the-dark/img-12.jpg" width="300"  alt="Princess of Crown Heights<?php echo $imgCopyRight; ?>"/>
@@ -93,9 +93,49 @@ $imgCopyRight = " - Gershon Kelman © 2014";
                 <img src="images/portfolio/ny-in-the-dark/img-17.jpg" width="300"  alt="Infinity<?php echo $imgCopyRight; ?>"/>
             </a>
         </li>
-        <li>
+<!--        <li>
             <a rel="prettyPhoto[ny-in-the-dark]" href="images/portfolio/ny-in-the-dark/img-18-large.jpg">
                 <img src="images/portfolio/ny-in-the-dark/img-18.jpg" width="300"  alt="Oyster Bar<?php echo $imgCopyRight; ?>"/>
+            </a>
+        </li>-->
+        <li>
+            <a rel="prettyPhoto[ny-in-the-dark]" href="images/portfolio/ny-in-the-dark/img-19-large.jpg">
+                <img src="images/portfolio/ny-in-the-dark/img-19.jpg" width="300"  alt="Blur<?php echo $imgCopyRight; ?>"/>
+            </a>
+        </li>
+        <li>
+            <a rel="prettyPhoto[ny-in-the-dark]" href="images/portfolio/ny-in-the-dark/img-20-large.jpg">
+                <img src="images/portfolio/ny-in-the-dark/img-20.jpg" width="300"  alt="Mirage<?php echo $imgCopyRight; ?>"/>
+            </a>
+        </li>
+        <li>
+            <a rel="prettyPhoto[ny-in-the-dark]" href="images/portfolio/ny-in-the-dark/img-21-large.jpg">
+                <img src="images/portfolio/ny-in-the-dark/img-21.jpg" width="300"  alt="New York, New York<?php echo $imgCopyRight; ?>"/>
+            </a>
+        </li>
+        <li>
+            <a rel="prettyPhoto[ny-in-the-dark]" href="images/portfolio/ny-in-the-dark/img-22-large.jpg">
+                <img src="images/portfolio/ny-in-the-dark/img-22.jpg" width="300"  alt="Nowhere<?php echo $imgCopyRight; ?>"/>
+            </a>
+        </li>
+        <li>
+            <a rel="prettyPhoto[ny-in-the-dark]" href="images/portfolio/ny-in-the-dark/img-23-large.jpg">
+                <img src="images/portfolio/ny-in-the-dark/img-23.jpg" width="300"  alt="The 3rd Eye<?php echo $imgCopyRight; ?>"/>
+            </a>
+        </li>
+        <li>
+            <a rel="prettyPhoto[ny-in-the-dark]" href="images/portfolio/ny-in-the-dark/img-24-large.jpg">
+                <img src="images/portfolio/ny-in-the-dark/img-24.jpg" width="300"  alt="The Vendor<?php echo $imgCopyRight; ?>"/>
+            </a>
+        </li>
+        <li>
+            <a rel="prettyPhoto[ny-in-the-dark]" href="images/portfolio/ny-in-the-dark/img-25-large.jpg">
+                <img src="images/portfolio/ny-in-the-dark/img-25.jpg" width="300"  alt="Time after Time<?php echo $imgCopyRight; ?>"/>
+            </a>
+        </li>
+        <li>
+            <a rel="prettyPhoto[ny-in-the-dark]" href="images/portfolio/ny-in-the-dark/img-26-large.jpg">
+                <img src="images/portfolio/ny-in-the-dark/img-26.jpg" width="300"  alt="Visions<?php echo $imgCopyRight; ?>"/>
             </a>
         </li>
     </ul>

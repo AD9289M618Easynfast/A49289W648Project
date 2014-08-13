@@ -10,37 +10,37 @@ $imgCopyRight = " - Gershon Kelman © 2014";
     <ul class="image-gallery">
         <li>
             <a rel="prettyPhoto[private-collection]" href="images/portfolio/private-collection/img-1-large.jpg">
-                <img src="images/portfolio/private-collection/img-1.jpg" width="300"  alt="Slow Night<?php echo $imgCopyRight; ?>"/>
+                <img src="images/portfolio/private-collection/img-1.jpg" width="300"  alt="I Only Have Eyes for You<?php echo $imgCopyRight; ?>"/>
             </a>
         </li>
         <li>
             <a rel="prettyPhoto[private-collection]" href="images/portfolio/private-collection/img-2-large.jpg">
-                <img src="images/portfolio/private-collection/img-2.jpg" width="300"  alt="Fog<?php echo $imgCopyRight; ?>"/>
+                <img src="images/portfolio/private-collection/img-2.png" width="300"  alt="Roy's on Route 66<?php echo $imgCopyRight; ?>"/>
             </a>
         </li>
         <li>
             <a rel="prettyPhoto[private-collection]" href="images/portfolio/private-collection/img-3-large.jpg">
-                <img src="images/portfolio/private-collection/img-3.jpg" width="300"  alt="Vendor<?php echo $imgCopyRight; ?>"/>
+                <img src="images/portfolio/private-collection/img-3.jpg" width="300"  alt="Lithium<?php echo $imgCopyRight; ?>"/>
             </a>
         </li>
         <li>
             <a rel="prettyPhoto[private-collection]" href="images/portfolio/private-collection/img-4-large.jpg">
-                <img src="images/portfolio/private-collection/img-4.jpg" width="300"  alt="One for the Road<?php echo $imgCopyRight; ?>"/>
+                <img src="images/portfolio/private-collection/img-4.jpg" width="300"  alt="Outside my Window<?php echo $imgCopyRight; ?>"/>
             </a>
         </li>
         <li>
             <a rel="prettyPhoto[private-collection]" href="images/portfolio/private-collection/img-5-large.jpg">
-                <img src="images/portfolio/private-collection/img-5.jpg" width="300"  alt="Time Square in the Dark<?php echo $imgCopyRight; ?>"/>
+                <img src="images/portfolio/private-collection/img-5.png" width="300"  alt="Laid Off<?php echo $imgCopyRight; ?>"/>
             </a>
         </li>
         <li>
             <a rel="prettyPhoto[private-collection]" href="images/portfolio/private-collection/img-6-large.jpg">
-                <img src="images/portfolio/private-collection/img-6.jpg" width="300"  alt="Product of New York<?php echo $imgCopyRight; ?>"/>
+                <img src="images/portfolio/private-collection/img-6.jpg" width="300"  alt="The Last Walk<?php echo $imgCopyRight; ?>"/>
             </a>
         </li>
         <li>
             <a rel="prettyPhoto[private-collection]" href="images/portfolio/private-collection/img-7-large.jpg">
-                <img src="images/portfolio/private-collection/img-7.jpg" width="300"  alt="Tonic<?php echo $imgCopyRight; ?>"/>
+                <img src="images/portfolio/private-collection/img-7.jpg" width="300"  alt="Man on the Train<?php echo $imgCopyRight; ?>"/>
             </a>
         </li>
     </ul>

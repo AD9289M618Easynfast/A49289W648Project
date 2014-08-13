@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title><?php echo $title . " | EasynFast.net"; ?></title>
+        <title><?php echo $title . " | Photography by Gershon"; ?></title>
         <meta charset="UTF-8">
         <!--TODO: remove when upload online-->
         <meta name="robots" content="index, nofollow">
@@ -12,13 +12,13 @@
         <script type="text/javascript" src="http://lib.easynfast.net/enfpreload/enfpreload.min.js"></script>
         <div id="wrapper">
             <div id="header">
-                <h1><img class="logo" src="images/logo.png" width="263" height="67" alt="photography by gershon"/></h1>
+                <h1><a href="/"><img class="logo" src="images/logo.png" width="263" height="67" alt="photography by gershon"/></a></h1>
                 <div class="main-nav-wrapper">
                     <a class="toggle-main-nav">
                         <img src="images/icon/icon-menu.png" width="32" height="32"/>
                     </a>
                     <ul class="main-nav">
-                        <li><a href="/photographybygershon/">Home</a></li>
+                        <li><a href="/">Home</a></li>
                         <li><a href="about-us.php">About</a></li>
                         <li><a href="#">Blog</a></li>
                         <li><a href="exhibitions.php">Exhibitions</a></li>

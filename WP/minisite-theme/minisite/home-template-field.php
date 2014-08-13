@@ -7,14 +7,15 @@ while (have_posts()) : the_post();
     $template1Array = explode("[template-1]", get_the_content());
     $template1 = $template1Array[1];
 
-    if ($template1 == null || $template1 == "") {
+    if ($template1 == null || $template1 == "")
+    {
         $template1 = '
                     
 	<tr>
-		<td><img src="'.$imagePath.'headline1.jpg" alt=""></td>
+		<td><img src="' . $imagePath . 'headline1.jpg" alt=""></td>
 	</tr>
 	<TR>
-	  <td background="'.$imagePath.'x_06.jpg">
+	  <td background="' . $imagePath . 'x_06.jpg">
 		
 
 
@@ -93,19 +94,19 @@ while (have_posts()) : the_post();
   
 <center><table cellspacing=0 cellpadding=0 border=0 width=500 class=guarantee-table>
 <TR><TD><div class=guarantee-head>100% No-Questions Asked, 60 Day Money Back Guarantee</div>
-<div class=guarantee-text><img src="'.$imagePath.'seal05.png" align=left style="margin-right:10px;margin-bottom:10px;">Donec ultricies convallis tellus, malesuada placerat metus varius sit amet. Sed et ante leo. Fusce arcu lectus, posuere at ornare ac, fringilla ac elit. Etiam ut quam odio, id consequat ipsum. In erat turpis, consequat in pulvinar a, pharetra ac turpis. Praesent at velit urna, sodales molestie nulla. Donec ultricies convallis tellus, malesuada placerat metus varius sit amet. Sed et ante leo. Fusce arcu lectus, posuere at ornare ac, fringilla ac elit. Etiam ut quam odio, id consequat ipsum. In erat turpis, consequat in pulvinar a, pharetra ac turpis. Praesent at velit urna, sodales molestie nulla.</div></td></tr>
+<div class=guarantee-text><img src="' . $imagePath . 'seal05.png" align=left style="margin-right:10px;margin-bottom:10px;">Donec ultricies convallis tellus, malesuada placerat metus varius sit amet. Sed et ante leo. Fusce arcu lectus, posuere at ornare ac, fringilla ac elit. Etiam ut quam odio, id consequat ipsum. In erat turpis, consequat in pulvinar a, pharetra ac turpis. Praesent at velit urna, sodales molestie nulla. Donec ultricies convallis tellus, malesuada placerat metus varius sit amet. Sed et ante leo. Fusce arcu lectus, posuere at ornare ac, fringilla ac elit. Etiam ut quam odio, id consequat ipsum. In erat turpis, consequat in pulvinar a, pharetra ac turpis. Praesent at velit urna, sodales molestie nulla.</div></td></tr>
 </table></center>
 
 </div>
  
- <BR><center><img src="'.$imagePath.'ecover-pbk3-done.png"></center>
+ <BR><center><img src="' . $imagePath . 'ecover-pbk3-done.png"></center>
 
 <div style="padding:0px 119px; padding-top:0px; ">
 
  <div align="center">
    <p>
    
-	   <center><a href="#"><img src="'.$imagePath.'x_09.jpg"></a></center><BR>
+	   <center><a href="#"><img src="' . $imagePath . 'x_09.jpg"></a></center><BR>
     
      </p>
 
