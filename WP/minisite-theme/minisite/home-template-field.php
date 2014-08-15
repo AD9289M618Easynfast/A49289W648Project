@@ -14,7 +14,7 @@ while (have_posts()) : the_post();
 	<tr>
 		<td><img src="' . $imagePath . 'headline1.jpg" alt=""></td>
 	</tr>
-	<TR>
+	<tr>
 	  <td background="' . $imagePath . 'x_06.jpg">
 		
 
