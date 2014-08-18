@@ -1,0 +1,133 @@
+.title {
+    font-size: 75px;
+    margin: 40px 0;
+    text-align: center;
+}
+.title > span, section h2 {
+    color: $defaultBlue;
+}
+section {
+    border-bottom: 1px solid black;
+    padding: 0 $margin 40px;
+}
+section:last-child {
+    border: medium none;
+}
+/**
+ * *********************************************
+ * Styling: Section Services
+ * *********************************************
+ */
+#services {
+    h2 {
+        font-size: 39px;
+        margin: 35px 0 25px;
+    }
+} 
+/**
+ * *********************************************
+ * Styling: Section Clients
+ * *********************************************
+ */
+.client-slider {
+    margin: 0 auto;
+    > figure {
+        height: 220px;
+        width: 220px;
+    }
+    img {
+        display: block;
+        height: 65px;
+        margin: 0 auto;
+        width: auto;
+    }
+}
+#clients {
+    .bx-prev,.bx-next {
+        background-image: url("../images/theme/icon-buttons/icon-arrow-67x67.png");
+        height: 67px !important;
+        margin: 0;
+        top: 0 !important;
+        width: 67px !important;
+    }
+    $positionValue: -120px;
+    .bx-prev {
+        background-position: 0 center !important;
+        left: $positionValue !important;
+    }
+    .bx-next {
+        background-position: -67px 0 !important;
+        right: $positionValue !important;
+    }
+}
+/**
+ * *********************************************
+ * Styling: Section Audios
+ * *********************************************
+ */
+div.jp-video-270p {
+    margin: 0 auto;
+    max-width: 480px;
+    width: 100%;
+}
+
+/**
+ * *********************************************
+ * Styling: Section Videos
+ * *********************************************
+ */
+
+.videos-list {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 864px;
+    > li {
+        box-shadow: 0 0 2px black;
+        float: left;
+        padding: 10px;
+    }
+    > li:nth-child(2n) {
+        margin-bottom: 12px;
+        margin-left: 12px;
+    }
+    h2 {
+        color: #4d4d4d;
+        font-size: 29px;
+        margin-top: 10px;
+    }
+}
+#bt-loadmore {
+    background-color: #c8c2c2;
+    color: #4d4d4d;
+    cursor: pointer;
+    display: block;
+    font-size: 25px;
+    height: 55px;
+    line-height: 55px;
+    margin: 0 auto;
+    text-align: center;
+    text-transform: uppercase;
+    width: 100%;
+    max-width: 864px;
+}
+
+/**
+ * *********************************************
+ * Styling: Section Contact
+ * *********************************************
+ */
+#contact {
+    .content {
+        max-width: 450px;
+    }
+    .title {
+        text-align: left;
+    }
+    a {
+        color: #2B7DAC;
+    }
+    .social-menu {
+        margin-top: 40px;
+        margin-right: 0px;
+    }
+}

@@ -1,0 +1,32 @@
+
+/**
+ * *********************************************
+ * Import: Reset Css
+ * *********************************************
+ */
+@import "../sass/reset.scss";
+
+/**
+ * *********************************************
+ * Import: Website Components
+ * *********************************************
+ */
+@import "../sass/components/font.scss";
+@import "../sass/components/bxSlider.scss";
+@import "../sass/components/prettyPhoto.scss";
+@import "../sass/components/jplayer.blue.monday.scss";
+
+/**
+ * *********************************************
+ * Import: Website Header & Footers
+ * *********************************************
+ */
+@import "../sass/header.scss";
+@import "../sass/footer.scss";
+/**
+ * *********************************************
+ * Import: Website Section/Content
+ * *********************************************
+ */
+@import "../sass/content.scss";
+

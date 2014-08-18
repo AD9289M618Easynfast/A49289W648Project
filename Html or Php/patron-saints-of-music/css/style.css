@@ -1,0 +1,937 @@
+/** ********************************************* Import: Reset Css ********************************************* */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video { margin: 0; padding: 0; border: 0; font-size: 100%; font: inherit; vertical-align: baseline; }
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { display: block; }
+
+body { line-height: 1; font-family: 'gothic'; }
+
+ol, ul { list-style: none; }
+
+blockquote, q { quotes: none; }
+
+blockquote:before, blockquote:after, q:before, q:after { content: ''; content: none; }
+
+table { border-collapse: collapse; border-spacing: 0; }
+
+p { color: #4d4d4d; font-size: 16.5px; line-height: 25px; }
+
+h1, h2, h3, h4, h5, h6 { /*font-weight: bold;*/ font-family: 'gothic'; }
+
+b { /*font-weight: bold;*/ font-family: 'gothic-bold'; }
+
+li, a, img { transition: all 0.5s; -webkit-transition: all 0.5s; }
+
+.clearfix:before, .clearfix:after { content: ""; display: table; }
+
+.clearfix:after { clear: both; }
+
+.clear { clear: both; }
+
+.goLeft { float: left; }
+
+.goRight { float: right; }
+
+input { outline: none; }
+
+input:focus { outline: none; }
+
+input:out-of-range { outline: none; }
+
+/** ********************************************* Import: Website Components ********************************************* */
+@font-face { font-family: 'gothic'; src: url("../font/gothic.TTF"); font-weight: normal; }
+@font-face { font-family: 'gothic-bold'; src: url("../font/gothic-bold.TTF"); font-weight: normal; }
+.bx-wrapper { margin: 0 auto 60px; padding: 0; position: relative; }
+
+.bx-wrapper img { display: block; margin: 0 auto; max-width: 100%; }
+
+.bx-wrapper .bx-pager, .bx-wrapper .bx-controls-auto { bottom: -30px; position: absolute; width: 100%; }
+
+.bx-wrapper .bx-loading { background: url("../images/bxslider/bx_loader.gif") no-repeat scroll center center white; height: 100%; left: 0; min-height: 50px; position: absolute; top: 0; width: 100%; z-index: 2000; }
+
+.bx-wrapper .bx-pager { color: #666666; font-family: Arial; font-size: 0.85em; font-weight: bold; padding-top: 20px; text-align: center; }
+
+.bx-wrapper .bx-pager .bx-pager-item, .bx-wrapper .bx-controls-auto .bx-controls-auto-item { display: inline-block; }
+
+.bx-wrapper .bx-pager.bx-default-pager a { background: none repeat scroll 0 0 #666666; border-radius: 50%; display: block; height: 15px; margin: 0 5px; outline: 0 none; text-indent: -9999px; width: 15px; }
+
+.bx-wrapper .bx-pager.bx-default-pager a:hover, .bx-wrapper .bx-pager.bx-default-pager a.active { background: none repeat scroll 0 0 #000000; }
+
+.bx-wrapper .bx-prev { background: url("../images/bxslider/controls.png") no-repeat scroll 0 -32px transparent; left: 10px; }
+
+.bx-wrapper .bx-next { background: url("../images/bxslider/controls.png") no-repeat scroll -43px -32px transparent; right: 10px; }
+
+.bx-wrapper .bx-prev:hover { background-position: 0 0; }
+
+.bx-wrapper .bx-next:hover { background-position: -43px 0; }
+
+.bx-wrapper .bx-controls-direction a { height: 32px; margin-top: -16px; outline: 0 none; position: absolute; text-indent: -9999px; top: 50%; width: 32px; z-index: 9999; }
+
+.bx-wrapper .bx-controls-direction a.disabled { display: none; }
+
+.bx-wrapper .bx-controls-auto { text-align: center; }
+
+.bx-wrapper .bx-controls-auto .bx-start { background: url("../images/bxslider/controls.png") no-repeat scroll -86px -11px transparent; display: block; height: 11px; margin: 0 3px; outline: 0 none; text-indent: -9999px; width: 10px; }
+
+.bx-wrapper .bx-controls-auto .bx-start:hover, .bx-wrapper .bx-controls-auto .bx-start.active { background-position: -86px 0; }
+
+.bx-wrapper .bx-controls-auto .bx-stop { background: url("../images/bxslider/controls.png") no-repeat scroll -86px -44px transparent; display: block; height: 11px; margin: 0 3px; outline: 0 none; text-indent: -9999px; width: 9px; }
+
+.bx-wrapper .bx-controls-auto .bx-stop:hover, .bx-wrapper .bx-controls-auto .bx-stop.active { background-position: -86px -33px; }
+
+.bx-wrapper .bx-controls.bx-has-controls-auto.bx-has-pager .bx-pager { text-align: left; width: 80%; }
+
+.bx-wrapper .bx-controls.bx-has-controls-auto.bx-has-pager .bx-controls-auto { right: 0; width: 35px; }
+
+.bx-wrapper .bx-caption { background: none repeat scroll 0 0 rgba(80, 80, 80, 0.75); bottom: 0; left: 0; position: absolute; width: 100%; }
+
+.bx-wrapper .bx-caption span { color: #FFFFFF; display: block; font-family: Arial; font-size: 0.85em; padding: 10px; }
+
+/* ------------------------------------------------------------------------ This you can edit.
+------------------------------------------------------------------------- */
+/* ---------------------------------- Default Theme
+----------------------------------- */
+div.pp_default .pp_top, div.pp_default .pp_top .pp_middle, div.pp_default .pp_top .pp_left, div.pp_default .pp_top .pp_right, div.pp_default .pp_bottom, div.pp_default .pp_bottom .pp_left, div.pp_default .pp_bottom .pp_middle, div.pp_default .pp_bottom .pp_right { height: 13px; }
+
+div.pp_default .pp_top .pp_left { background: url(../images/prettyPhoto/default/sprite.png) -78px -93px no-repeat; }
+
+/* Top left corner */
+div.pp_default .pp_top .pp_middle { background: url(../images/prettyPhoto/default/sprite_x.png) top left repeat-x; }
+
+/* Top pattern/color */
+div.pp_default .pp_top .pp_right { background: url(../images/prettyPhoto/default/sprite.png) -112px -93px no-repeat; }
+
+/* Top right corner */
+div.pp_default .pp_content .ppt { color: #f8f8f8; }
+
+div.pp_default .pp_content_container .pp_left { background: url(../images/prettyPhoto/default/sprite_y.png) -7px 0 repeat-y; padding-left: 13px; }
+
+div.pp_default .pp_content_container .pp_right { background: url(../images/prettyPhoto/default/sprite_y.png) top right repeat-y; padding-right: 13px; }
+
+div.pp_default .pp_content { background-color: #fff; }
+
+/* Content background */
+div.pp_default .pp_next:hover { background: url(../images/prettyPhoto/default/sprite_next.png) center right no-repeat; cursor: pointer; }
+
+/* Next button */
+div.pp_default .pp_previous:hover { background: url(../images/prettyPhoto/default/sprite_prev.png) center left no-repeat; cursor: pointer; }
+
+/* Previous button */
+div.pp_default .pp_expand { background: url(../images/prettyPhoto/default/sprite.png) 0 -29px no-repeat; cursor: pointer; width: 28px; height: 28px; }
+
+/* Expand button */
+div.pp_default .pp_expand:hover { background: url(../images/prettyPhoto/default/sprite.png) 0 -56px no-repeat; cursor: pointer; }
+
+/* Expand button hover */
+div.pp_default .pp_contract { background: url(../images/prettyPhoto/default/sprite.png) 0 -84px no-repeat; cursor: pointer; width: 28px; height: 28px; }
+
+/* Contract button */
+div.pp_default .pp_contract:hover { background: url(../images/prettyPhoto/default/sprite.png) 0 -113px no-repeat; cursor: pointer; }
+
+/* Contract button hover */
+div.pp_default .pp_close { width: 30px; height: 30px; background: url(../images/prettyPhoto/default/sprite.png) 2px 1px no-repeat; cursor: pointer; }
+
+/* Close button */
+div.pp_default #pp_full_res .pp_inline { color: #000; }
+
+div.pp_default .pp_gallery ul li a { background: url(../images/prettyPhoto/default/default_thumb.png) center center #f8f8f8; border: 1px solid #aaa; }
+
+div.pp_default .pp_gallery ul li a:hover, div.pp_default .pp_gallery ul li.selected a { border-color: #fff; }
+
+div.pp_default .pp_social { margin-top: 7px; }
+
+div.pp_default .pp_gallery a.pp_arrow_previous, div.pp_default .pp_gallery a.pp_arrow_next { position: static; left: auto; }
+
+div.pp_default .pp_nav .pp_play, div.pp_default .pp_nav .pp_pause { background: url(../images/prettyPhoto/default/sprite.png) -51px 1px no-repeat; height: 30px; width: 30px; }
+
+div.pp_default .pp_nav .pp_pause { background-position: -51px -29px; }
+
+div.pp_default .pp_details { position: relative; }
+
+div.pp_default a.pp_arrow_previous, div.pp_default a.pp_arrow_next { background: url(../images/prettyPhoto/default/sprite.png) -31px -3px no-repeat; height: 20px; margin: 4px 0 0 0; width: 20px; }
+
+div.pp_default a.pp_arrow_next { left: 52px; background-position: -82px -3px; }
+
+/* The next arrow in the bottom nav */
+div.pp_default .pp_content_container .pp_details { margin-top: 5px; }
+
+div.pp_default .pp_nav { clear: none; height: 30px; width: 110px; position: relative; }
+
+div.pp_default .pp_nav .currentTextHolder { font-family: Georgia; font-style: italic; color: #999; font-size: 11px; left: 75px; line-height: 25px; margin: 0; padding: 0 0 0 10px; position: absolute; top: 2px; }
+
+div.pp_default .pp_close:hover, div.pp_default .pp_nav .pp_play:hover, div.pp_default .pp_nav .pp_pause:hover, div.pp_default .pp_arrow_next:hover, div.pp_default .pp_arrow_previous:hover { opacity: 0.7; }
+
+div.pp_default .pp_description { font-size: 11px; font-weight: bold; line-height: 14px; margin: 5px 50px 5px 0; }
+
+div.pp_default .pp_bottom .pp_left { background: url(../images/prettyPhoto/default/sprite.png) -78px -127px no-repeat; }
+
+/* Bottom left corner */
+div.pp_default .pp_bottom .pp_middle { background: url(../images/prettyPhoto/default/sprite_x.png) bottom left repeat-x; }
+
+/* Bottom pattern/color */
+div.pp_default .pp_bottom .pp_right { background: url(../images/prettyPhoto/default/sprite.png) -112px -127px no-repeat; }
+
+/* Bottom right corner */
+div.pp_default .pp_loaderIcon { background: url(../images/prettyPhoto/default/loader.gif) center center no-repeat; }
+
+/* Loader icon */
+/* ---------------------------------- Light Rounded Theme
+----------------------------------- */
+div.light_rounded .pp_top .pp_left { background: url(../images/prettyPhoto/light_rounded/sprite.png) -88px -53px no-repeat; }
+
+/* Top left corner */
+div.light_rounded .pp_top .pp_middle { background: #fff; }
+
+/* Top pattern/color */
+div.light_rounded .pp_top .pp_right { background: url(../images/prettyPhoto/light_rounded/sprite.png) -110px -53px no-repeat; }
+
+/* Top right corner */
+div.light_rounded .pp_content .ppt { color: #000; }
+
+div.light_rounded .pp_content_container .pp_left, div.light_rounded .pp_content_container .pp_right { background: #fff; }
+
+div.light_rounded .pp_content { background-color: #fff; }
+
+/* Content background */
+div.light_rounded .pp_next:hover { background: url(../images/prettyPhoto/light_rounded/btnNext.png) center right no-repeat; cursor: pointer; }
+
+/* Next button */
+div.light_rounded .pp_previous:hover { background: url(../images/prettyPhoto/light_rounded/btnPrevious.png) center left no-repeat; cursor: pointer; }
+
+/* Previous button */
+div.light_rounded .pp_expand { background: url(../images/prettyPhoto/light_rounded/sprite.png) -31px -26px no-repeat; cursor: pointer; }
+
+/* Expand button */
+div.light_rounded .pp_expand:hover { background: url(../images/prettyPhoto/light_rounded/sprite.png) -31px -47px no-repeat; cursor: pointer; }
+
+/* Expand button hover */
+div.light_rounded .pp_contract { background: url(../images/prettyPhoto/light_rounded/sprite.png) 0 -26px no-repeat; cursor: pointer; }
+
+/* Contract button */
+div.light_rounded .pp_contract:hover { background: url(../images/prettyPhoto/light_rounded/sprite.png) 0 -47px no-repeat; cursor: pointer; }
+
+/* Contract button hover */
+div.light_rounded .pp_close { width: 75px; height: 22px; background: url(../images/prettyPhoto/light_rounded/sprite.png) -1px -1px no-repeat; cursor: pointer; }
+
+/* Close button */
+div.light_rounded .pp_details { position: relative; }
+
+div.light_rounded .pp_description { margin-right: 85px; }
+
+div.light_rounded #pp_full_res .pp_inline { color: #000; }
+
+div.light_rounded .pp_gallery a.pp_arrow_previous, div.light_rounded .pp_gallery a.pp_arrow_next { margin-top: 12px !important; }
+
+div.light_rounded .pp_nav .pp_play { background: url(../images/prettyPhoto/light_rounded/sprite.png) -1px -100px no-repeat; height: 15px; width: 14px; }
+
+div.light_rounded .pp_nav .pp_pause { background: url(../images/prettyPhoto/light_rounded/sprite.png) -24px -100px no-repeat; height: 15px; width: 14px; }
+
+div.light_rounded .pp_arrow_previous { background: url(../images/prettyPhoto/light_rounded/sprite.png) 0 -71px no-repeat; }
+
+/* The previous arrow in the bottom nav */
+div.light_rounded .pp_arrow_previous.disabled { background-position: 0 -87px; cursor: default; }
+
+div.light_rounded .pp_arrow_next { background: url(../images/prettyPhoto/light_rounded/sprite.png) -22px -71px no-repeat; }
+
+/* The next arrow in the bottom nav */
+div.light_rounded .pp_arrow_next.disabled { background-position: -22px -87px; cursor: default; }
+
+div.light_rounded .pp_bottom .pp_left { background: url(../images/prettyPhoto/light_rounded/sprite.png) -88px -80px no-repeat; }
+
+/* Bottom left corner */
+div.light_rounded .pp_bottom .pp_middle { background: #fff; }
+
+/* Bottom pattern/color */
+div.light_rounded .pp_bottom .pp_right { background: url(../images/prettyPhoto/light_rounded/sprite.png) -110px -80px no-repeat; }
+
+/* Bottom right corner */
+div.light_rounded .pp_loaderIcon { background: url(../images/prettyPhoto/light_rounded/loader.gif) center center no-repeat; }
+
+/* Loader icon */
+/* ---------------------------------- Dark Rounded Theme
+----------------------------------- */
+div.dark_rounded .pp_top .pp_left { background: url(../images/prettyPhoto/dark_rounded/sprite.png) -88px -53px no-repeat; }
+
+/* Top left corner */
+div.dark_rounded .pp_top .pp_middle { background: url(../images/prettyPhoto/dark_rounded/contentPattern.png) top left repeat; }
+
+/* Top pattern/color */
+div.dark_rounded .pp_top .pp_right { background: url(../images/prettyPhoto/dark_rounded/sprite.png) -110px -53px no-repeat; }
+
+/* Top right corner */
+div.dark_rounded .pp_content_container .pp_left { background: url(../images/prettyPhoto/dark_rounded/contentPattern.png) top left repeat-y; }
+
+/* Left Content background */
+div.dark_rounded .pp_content_container .pp_right { background: url(../images/prettyPhoto/dark_rounded/contentPattern.png) top right repeat-y; }
+
+/* Right Content background */
+div.dark_rounded .pp_content { background: url(../images/prettyPhoto/dark_rounded/contentPattern.png) top left repeat; }
+
+/* Content background */
+div.dark_rounded .pp_next:hover { background: url(../images/prettyPhoto/dark_rounded/btnNext.png) center right no-repeat; cursor: pointer; }
+
+/* Next button */
+div.dark_rounded .pp_previous:hover { background: url(../images/prettyPhoto/dark_rounded/btnPrevious.png) center left no-repeat; cursor: pointer; }
+
+/* Previous button */
+div.dark_rounded .pp_expand { background: url(../images/prettyPhoto/dark_rounded/sprite.png) -31px -26px no-repeat; cursor: pointer; }
+
+/* Expand button */
+div.dark_rounded .pp_expand:hover { background: url(../images/prettyPhoto/dark_rounded/sprite.png) -31px -47px no-repeat; cursor: pointer; }
+
+/* Expand button hover */
+div.dark_rounded .pp_contract { background: url(../images/prettyPhoto/dark_rounded/sprite.png) 0 -26px no-repeat; cursor: pointer; }
+
+/* Contract button */
+div.dark_rounded .pp_contract:hover { background: url(../images/prettyPhoto/dark_rounded/sprite.png) 0 -47px no-repeat; cursor: pointer; }
+
+/* Contract button hover */
+div.dark_rounded .pp_close { width: 75px; height: 22px; background: url(../images/prettyPhoto/dark_rounded/sprite.png) -1px -1px no-repeat; cursor: pointer; }
+
+/* Close button */
+div.dark_rounded .pp_details { position: relative; }
+
+div.dark_rounded .pp_description { margin-right: 85px; }
+
+div.dark_rounded .currentTextHolder { color: #c4c4c4; }
+
+div.dark_rounded .pp_description { color: #fff; }
+
+div.dark_rounded #pp_full_res .pp_inline { color: #fff; }
+
+div.dark_rounded .pp_gallery a.pp_arrow_previous, div.dark_rounded .pp_gallery a.pp_arrow_next { margin-top: 12px !important; }
+
+div.dark_rounded .pp_nav .pp_play { background: url(../images/prettyPhoto/dark_rounded/sprite.png) -1px -100px no-repeat; height: 15px; width: 14px; }
+
+div.dark_rounded .pp_nav .pp_pause { background: url(../images/prettyPhoto/dark_rounded/sprite.png) -24px -100px no-repeat; height: 15px; width: 14px; }
+
+div.dark_rounded .pp_arrow_previous { background: url(../images/prettyPhoto/dark_rounded/sprite.png) 0 -71px no-repeat; }
+
+/* The previous arrow in the bottom nav */
+div.dark_rounded .pp_arrow_previous.disabled { background-position: 0 -87px; cursor: default; }
+
+div.dark_rounded .pp_arrow_next { background: url(../images/prettyPhoto/dark_rounded/sprite.png) -22px -71px no-repeat; }
+
+/* The next arrow in the bottom nav */
+div.dark_rounded .pp_arrow_next.disabled { background-position: -22px -87px; cursor: default; }
+
+div.dark_rounded .pp_bottom .pp_left { background: url(../images/prettyPhoto/dark_rounded/sprite.png) -88px -80px no-repeat; }
+
+/* Bottom left corner */
+div.dark_rounded .pp_bottom .pp_middle { background: url(../images/prettyPhoto/dark_rounded/contentPattern.png) top left repeat; }
+
+/* Bottom pattern/color */
+div.dark_rounded .pp_bottom .pp_right { background: url(../images/prettyPhoto/dark_rounded/sprite.png) -110px -80px no-repeat; }
+
+/* Bottom right corner */
+div.dark_rounded .pp_loaderIcon { background: url(../images/prettyPhoto/dark_rounded/loader.gif) center center no-repeat; }
+
+/* Loader icon */
+/* ---------------------------------- Dark Square Theme
+----------------------------------- */
+div.dark_square .pp_left, div.dark_square .pp_middle, div.dark_square .pp_right, div.dark_square .pp_content { background: #000; }
+
+div.dark_square .currentTextHolder { color: #c4c4c4; }
+
+div.dark_square .pp_description { color: #fff; }
+
+div.dark_square .pp_loaderIcon { background: url(../images/prettyPhoto/dark_square/loader.gif) center center no-repeat; }
+
+/* Loader icon */
+div.dark_square .pp_expand { background: url(../images/prettyPhoto/dark_square/sprite.png) -31px -26px no-repeat; cursor: pointer; }
+
+/* Expand button */
+div.dark_square .pp_expand:hover { background: url(../images/prettyPhoto/dark_square/sprite.png) -31px -47px no-repeat; cursor: pointer; }
+
+/* Expand button hover */
+div.dark_square .pp_contract { background: url(../images/prettyPhoto/dark_square/sprite.png) 0 -26px no-repeat; cursor: pointer; }
+
+/* Contract button */
+div.dark_square .pp_contract:hover { background: url(../images/prettyPhoto/dark_square/sprite.png) 0 -47px no-repeat; cursor: pointer; }
+
+/* Contract button hover */
+div.dark_square .pp_close { width: 75px; height: 22px; background: url(../images/prettyPhoto/dark_square/sprite.png) -1px -1px no-repeat; cursor: pointer; }
+
+/* Close button */
+div.dark_square .pp_details { position: relative; }
+
+div.dark_square .pp_description { margin: 0 85px 0 0; }
+
+div.dark_square #pp_full_res .pp_inline { color: #fff; }
+
+div.dark_square .pp_gallery a.pp_arrow_previous, div.dark_square .pp_gallery a.pp_arrow_next { margin-top: 12px !important; }
+
+div.dark_square .pp_nav { clear: none; }
+
+div.dark_square .pp_nav .pp_play { background: url(../images/prettyPhoto/dark_square/sprite.png) -1px -100px no-repeat; height: 15px; width: 14px; }
+
+div.dark_square .pp_nav .pp_pause { background: url(../images/prettyPhoto/dark_square/sprite.png) -24px -100px no-repeat; height: 15px; width: 14px; }
+
+div.dark_square .pp_arrow_previous { background: url(../images/prettyPhoto/dark_square/sprite.png) 0 -71px no-repeat; }
+
+/* The previous arrow in the bottom nav */
+div.dark_square .pp_arrow_previous.disabled { background-position: 0 -87px; cursor: default; }
+
+div.dark_square .pp_arrow_next { background: url(../images/prettyPhoto/dark_square/sprite.png) -22px -71px no-repeat; }
+
+/* The next arrow in the bottom nav */
+div.dark_square .pp_arrow_next.disabled { background-position: -22px -87px; cursor: default; }
+
+div.dark_square .pp_next:hover { background: url(../images/prettyPhoto/dark_square/btnNext.png) center right no-repeat; cursor: pointer; }
+
+/* Next button */
+div.dark_square .pp_previous:hover { background: url(../images/prettyPhoto/dark_square/btnPrevious.png) center left no-repeat; cursor: pointer; }
+
+/* Previous button */
+/* ---------------------------------- Light Square Theme
+----------------------------------- */
+div.light_square .pp_left, div.light_square .pp_middle, div.light_square .pp_right, div.light_square .pp_content { background: #fff; }
+
+div.light_square .pp_content .ppt { color: #000; }
+
+div.light_square .pp_expand { background: url(../images/prettyPhoto/light_square/sprite.png) -31px -26px no-repeat; cursor: pointer; }
+
+/* Expand button */
+div.light_square .pp_expand:hover { background: url(../images/prettyPhoto/light_square/sprite.png) -31px -47px no-repeat; cursor: pointer; }
+
+/* Expand button hover */
+div.light_square .pp_contract { background: url(../images/prettyPhoto/light_square/sprite.png) 0 -26px no-repeat; cursor: pointer; }
+
+/* Contract button */
+div.light_square .pp_contract:hover { background: url(../images/prettyPhoto/light_square/sprite.png) 0 -47px no-repeat; cursor: pointer; }
+
+/* Contract button hover */
+div.light_square .pp_close { width: 75px; height: 22px; background: url(../images/prettyPhoto/light_square/sprite.png) -1px -1px no-repeat; cursor: pointer; }
+
+/* Close button */
+div.light_square .pp_details { position: relative; }
+
+div.light_square .pp_description { margin-right: 85px; }
+
+div.light_square #pp_full_res .pp_inline { color: #000; }
+
+div.light_square .pp_gallery a.pp_arrow_previous, div.light_square .pp_gallery a.pp_arrow_next { margin-top: 12px !important; }
+
+div.light_square .pp_nav .pp_play { background: url(../images/prettyPhoto/light_square/sprite.png) -1px -100px no-repeat; height: 15px; width: 14px; }
+
+div.light_square .pp_nav .pp_pause { background: url(../images/prettyPhoto/light_square/sprite.png) -24px -100px no-repeat; height: 15px; width: 14px; }
+
+div.light_square .pp_arrow_previous { background: url(../images/prettyPhoto/light_square/sprite.png) 0 -71px no-repeat; }
+
+/* The previous arrow in the bottom nav */
+div.light_square .pp_arrow_previous.disabled { background-position: 0 -87px; cursor: default; }
+
+div.light_square .pp_arrow_next { background: url(../images/prettyPhoto/light_square/sprite.png) -22px -71px no-repeat; }
+
+/* The next arrow in the bottom nav */
+div.light_square .pp_arrow_next.disabled { background-position: -22px -87px; cursor: default; }
+
+div.light_square .pp_next:hover { background: url(../images/prettyPhoto/light_square/btnNext.png) center right no-repeat; cursor: pointer; }
+
+/* Next button */
+div.light_square .pp_previous:hover { background: url(../images/prettyPhoto/light_square/btnPrevious.png) center left no-repeat; cursor: pointer; }
+
+/* Previous button */
+div.light_square .pp_loaderIcon { background: url(../images/prettyPhoto/light_rounded/loader.gif) center center no-repeat; }
+
+/* Loader icon */
+/* ---------------------------------- Facebook style Theme
+----------------------------------- */
+div.facebook .pp_top .pp_left { background: url(../images/prettyPhoto/facebook/sprite.png) -88px -53px no-repeat; }
+
+/* Top left corner */
+div.facebook .pp_top .pp_middle { background: url(../images/prettyPhoto/facebook/contentPatternTop.png) top left repeat-x; }
+
+/* Top pattern/color */
+div.facebook .pp_top .pp_right { background: url(../images/prettyPhoto/facebook/sprite.png) -110px -53px no-repeat; }
+
+/* Top right corner */
+div.facebook .pp_content .ppt { color: #000; }
+
+div.facebook .pp_content_container .pp_left { background: url(../images/prettyPhoto/facebook/contentPatternLeft.png) top left repeat-y; }
+
+/* Content background */
+div.facebook .pp_content_container .pp_right { background: url(../images/prettyPhoto/facebook/contentPatternRight.png) top right repeat-y; }
+
+/* Content background */
+div.facebook .pp_content { background: #fff; }
+
+/* Content background */
+div.facebook .pp_expand { background: url(../images/prettyPhoto/facebook/sprite.png) -31px -26px no-repeat; cursor: pointer; }
+
+/* Expand button */
+div.facebook .pp_expand:hover { background: url(../images/prettyPhoto/facebook/sprite.png) -31px -47px no-repeat; cursor: pointer; }
+
+/* Expand button hover */
+div.facebook .pp_contract { background: url(../images/prettyPhoto/facebook/sprite.png) 0 -26px no-repeat; cursor: pointer; }
+
+/* Contract button */
+div.facebook .pp_contract:hover { background: url(../images/prettyPhoto/facebook/sprite.png) 0 -47px no-repeat; cursor: pointer; }
+
+/* Contract button hover */
+div.facebook .pp_close { width: 22px; height: 22px; background: url(../images/prettyPhoto/facebook/sprite.png) -1px -1px no-repeat; cursor: pointer; }
+
+/* Close button */
+div.facebook .pp_details { position: relative; }
+
+div.facebook .pp_description { margin: 0 37px 0 0; }
+
+div.facebook #pp_full_res .pp_inline { color: #000; }
+
+div.facebook .pp_loaderIcon { background: url(../images/prettyPhoto/facebook/loader.gif) center center no-repeat; }
+
+/* Loader icon */
+div.facebook .pp_arrow_previous { background: url(../images/prettyPhoto/facebook/sprite.png) 0 -71px no-repeat; height: 22px; margin-top: 0; width: 22px; }
+
+/* The previous arrow in the bottom nav */
+div.facebook .pp_arrow_previous.disabled { background-position: 0 -96px; cursor: default; }
+
+div.facebook .pp_arrow_next { background: url(../images/prettyPhoto/facebook/sprite.png) -32px -71px no-repeat; height: 22px; margin-top: 0; width: 22px; }
+
+/* The next arrow in the bottom nav */
+div.facebook .pp_arrow_next.disabled { background-position: -32px -96px; cursor: default; }
+
+div.facebook .pp_nav { margin-top: 0; }
+
+div.facebook .pp_nav p { font-size: 15px; padding: 0 3px 0 4px; }
+
+div.facebook .pp_nav .pp_play { background: url(../images/prettyPhoto/facebook/sprite.png) -1px -123px no-repeat; height: 22px; width: 22px; }
+
+div.facebook .pp_nav .pp_pause { background: url(../images/prettyPhoto/facebook/sprite.png) -32px -123px no-repeat; height: 22px; width: 22px; }
+
+div.facebook .pp_next:hover { background: url(../images/prettyPhoto/facebook/btnNext.png) center right no-repeat; cursor: pointer; }
+
+/* Next button */
+div.facebook .pp_previous:hover { background: url(../images/prettyPhoto/facebook/btnPrevious.png) center left no-repeat; cursor: pointer; }
+
+/* Previous button */
+div.facebook .pp_bottom .pp_left { background: url(../images/prettyPhoto/facebook/sprite.png) -88px -80px no-repeat; }
+
+/* Bottom left corner */
+div.facebook .pp_bottom .pp_middle { background: url(../images/prettyPhoto/facebook/contentPatternBottom.png) top left repeat-x; }
+
+/* Bottom pattern/color */
+div.facebook .pp_bottom .pp_right { background: url(../images/prettyPhoto/facebook/sprite.png) -110px -80px no-repeat; }
+
+/* Bottom right corner */
+/* ------------------------------------------------------------------------ DO NOT CHANGE
+------------------------------------------------------------------------- */
+div.pp_pic_holder a:focus { outline: none; }
+
+div.pp_overlay { background: #000; display: none; left: 0; position: absolute; top: 0; width: 100%; z-index: 9500; }
+
+div.pp_pic_holder { display: none; position: absolute; width: 100px; z-index: 10000; }
+
+.pp_top { height: 20px; position: relative; }
+
+* html .pp_top { padding: 0 20px; }
+
+.pp_top .pp_left { height: 20px; left: 0; position: absolute; width: 20px; }
+
+.pp_top .pp_middle { height: 20px; left: 20px; position: absolute; right: 20px; }
+
+* html .pp_top .pp_middle { left: 0; position: static; }
+
+.pp_top .pp_right { height: 20px; left: auto; position: absolute; right: 0; top: 0; width: 20px; }
+
+.pp_content { height: 40px; min-width: 40px; }
+
+* html .pp_content { width: 40px; }
+
+.pp_fade { display: none; }
+
+.pp_content_container { position: relative; text-align: left; width: 100%; }
+
+.pp_content_container .pp_left { padding-left: 20px; }
+
+.pp_content_container .pp_right { padding-right: 20px; }
+
+.pp_content_container .pp_details { float: left; margin: 10px 0 2px 0; }
+
+.pp_description { display: none; margin: 0; }
+
+.pp_social { float: left; margin: 0; }
+
+.pp_social .facebook { float: left; margin-left: 5px; width: 55px; overflow: hidden; }
+
+.pp_social .twitter { float: left; }
+
+.pp_nav { clear: right; float: left; margin: 3px 10px 0 0; }
+
+.pp_nav p { float: left; margin: 2px 4px; white-space: nowrap; }
+
+.pp_nav .pp_play, .pp_nav .pp_pause { float: left; margin-right: 4px; text-indent: -10000px; }
+
+a.pp_arrow_previous, a.pp_arrow_next { display: block; float: left; height: 15px; margin-top: 3px; overflow: hidden; text-indent: -10000px; width: 14px; }
+
+.pp_hoverContainer { position: absolute; top: 0; width: 100%; z-index: 2000; }
+
+.pp_gallery { display: none; left: 50%; margin-top: -50px; position: absolute; z-index: 10000; }
+
+.pp_gallery div { float: left; overflow: hidden; position: relative; }
+
+.pp_gallery ul { float: left; height: 35px; margin: 0 0 0 5px; padding: 0; position: relative; white-space: nowrap; }
+
+.pp_gallery ul a { border: 1px #000 solid; border: 1px rgba(0, 0, 0, 0.5) solid; display: block; float: left; height: 33px; overflow: hidden; }
+
+.pp_gallery ul a:hover, .pp_gallery li.selected a { border-color: #fff; }
+
+.pp_gallery ul a img { border: 0; }
+
+.pp_gallery li { display: block; float: left; margin: 0 5px 0 0; padding: 0; }
+
+.pp_gallery li.default a { background: url(../images/prettyPhoto/facebook/default_thumbnail.gif) 0 0 no-repeat; display: block; height: 33px; width: 50px; }
+
+.pp_gallery li.default a img { display: none; }
+
+.pp_gallery .pp_arrow_previous, .pp_gallery .pp_arrow_next { margin-top: 7px !important; }
+
+a.pp_next { background: url(../images/prettyPhoto/light_rounded/btnNext.png) 10000px 10000px no-repeat; display: block; float: right; height: 100%; text-indent: -10000px; width: 49%; }
+
+a.pp_previous { background: url(../images/prettyPhoto/light_rounded/btnNext.png) 10000px 10000px no-repeat; display: block; float: left; height: 100%; text-indent: -10000px; width: 49%; }
+
+a.pp_expand, a.pp_contract { cursor: pointer; display: none; height: 20px; position: absolute; right: 30px; text-indent: -10000px; top: 10px; width: 20px; z-index: 20000; }
+
+a.pp_close { position: absolute; right: 0; top: 0; display: block; line-height: 22px; text-indent: -10000px; }
+
+.pp_bottom { height: 20px; position: relative; }
+
+* html .pp_bottom { padding: 0 20px; }
+
+.pp_bottom .pp_left { height: 20px; left: 0; position: absolute; width: 20px; }
+
+.pp_bottom .pp_middle { height: 20px; left: 20px; position: absolute; right: 20px; }
+
+* html .pp_bottom .pp_middle { left: 0; position: static; }
+
+.pp_bottom .pp_right { height: 20px; left: auto; position: absolute; right: 0; top: 0; width: 20px; }
+
+.pp_loaderIcon { display: block; height: 24px; left: 50%; margin: -12px 0 0 -12px; position: absolute; top: 50%; width: 24px; }
+
+#pp_full_res { line-height: 1 !important; }
+
+#pp_full_res .pp_inline { text-align: left; }
+
+#pp_full_res .pp_inline p { margin: 0 0 15px 0; }
+
+div.ppt { color: #fff; display: none; font-size: 17px; margin: 0 0 5px 15px; z-index: 9999; }
+
+/* Skin for jPlayer Plugin (jQuery JavaScript Library) http://www.jplayer.org  Skin Name: Blue Monday  Copyright (c) 2010-2014 Happyworm Ltd Licensed under the MIT license. - http://www.opensource.org/licenses/mit-license.php  Author: Silvia Benvenuti Skin Version: 4.4 (jPlayer 2.6.0) Date: 1st April 2014 */
+div.jp-audio, div.jp-audio-stream, div.jp-video { /* Edit the font-size to counteract inherited font sizing. Eg. 1.25em = 1 / 0.8em */ font-size: 1.25em; /* 1.25em for testing in site pages */ /* No parent CSS that can effect the size in the demos ZIP */ font-family: Verdana, Arial, sans-serif; line-height: 1.6; color: #666; border: 1px solid #009be3; background-color: #eee; }
+
+div.jp-audio { width: 420px; }
+
+div.jp-audio-stream { width: 182px; }
+
+div.jp-video-270p { width: 480px; }
+
+div.jp-video-360p { width: 640px; }
+
+div.jp-video-full { /* Rules for IE6 (full-screen) */ width: 480px; height: 270px; /* Rules for IE7 (full-screen) - Otherwise the relative container causes other page items that are not position:static (default) to appear over the video/gui. */ position: static !important; position: relative; }
+
+/* The z-index rule is defined in this manner to enable Popcorn plugins that add overlays to video area. EG. Subtitles. */
+div.jp-video-full div div { z-index: 1000; }
+
+div.jp-video-full div.jp-jplayer { top: 0; left: 0; position: fixed !important; position: relative; /* Rules for IE6 (full-screen) */ overflow: hidden; }
+
+div.jp-video-full div.jp-gui { position: fixed !important; position: static; /* Rules for IE6 (full-screen) */ top: 0; left: 0; width: 100%; height: 100%; z-index: 1001; /* 1 layer above the others. */ }
+
+div.jp-video-full div.jp-interface { position: absolute !important; position: relative; /* Rules for IE6 (full-screen) */ bottom: 0; left: 0; }
+
+div.jp-interface { position: relative; background-color: #eee; width: 100%; }
+
+div.jp-audio div.jp-type-single div.jp-interface { height: 80px; }
+
+div.jp-audio div.jp-type-playlist div.jp-interface { height: 80px; }
+
+div.jp-audio-stream div.jp-type-single div.jp-interface { height: 80px; }
+
+div.jp-video div.jp-interface { border-top: 1px solid #009be3; }
+
+/* @group CONTROLS */
+div.jp-controls-holder { clear: both; width: 440px; margin: 0 auto; position: relative; overflow: hidden; top: -8px; /* This negative value depends on the size of the text in jp-currentTime and jp-duration */ }
+
+div.jp-interface ul.jp-controls { list-style-type: none; margin: 0; padding: 0; overflow: hidden; }
+
+div.jp-audio ul.jp-controls { width: 380px; padding: 20px 20px 0 20px; }
+
+div.jp-audio-stream ul.jp-controls { width: 142px; padding: 20px 20px 0 20px; }
+
+div.jp-video div.jp-type-single ul.jp-controls { width: 78px; margin-left: 200px; }
+
+div.jp-video div.jp-type-playlist ul.jp-controls { width: 134px; margin-left: 172px; }
+
+div.jp-video ul.jp-controls, div.jp-interface ul.jp-controls li { display: inline; float: left; }
+
+div.jp-interface ul.jp-controls a { display: block; overflow: hidden; text-indent: -9999px; }
+
+a.jp-play, a.jp-pause { width: 40px; height: 40px; }
+
+a.jp-play { background: url("../images/blue.monday/jplayer.blue.monday.jpg") 0 0 no-repeat; }
+
+a.jp-play:hover { background: url("../images/blue.monday/jplayer.blue.monday.jpg") -41px 0 no-repeat; }
+
+a.jp-pause { background: url("../images/blue.monday/jplayer.blue.monday.jpg") 0 -42px no-repeat; display: none; }
+
+a.jp-pause:hover { background: url("../images/blue.monday/jplayer.blue.monday.jpg") -41px -42px no-repeat; }
+
+a.jp-stop, a.jp-previous, a.jp-next { width: 28px; height: 28px; margin-top: 6px; }
+
+a.jp-stop { background: url("../images/blue.monday/jplayer.blue.monday.jpg") 0 -83px no-repeat; margin-left: 10px; }
+
+a.jp-stop:hover { background: url("../images/blue.monday/jplayer.blue.monday.jpg") -29px -83px no-repeat; }
+
+a.jp-previous { background: url("../images/blue.monday/jplayer.blue.monday.jpg") 0 -112px no-repeat; }
+
+a.jp-previous:hover { background: url("../images/blue.monday/jplayer.blue.monday.jpg") -29px -112px no-repeat; }
+
+a.jp-next { background: url("../images/blue.monday/jplayer.blue.monday.jpg") 0 -141px no-repeat; }
+
+a.jp-next:hover { background: url("../images/blue.monday/jplayer.blue.monday.jpg") -29px -141px no-repeat; }
+
+/* @end */
+/* @group progress bar */
+div.jp-progress { overflow: hidden; background-color: #ddd; }
+
+div.jp-audio div.jp-progress { position: absolute; top: 32px; height: 15px; }
+
+div.jp-audio div.jp-type-single div.jp-progress { left: 110px; width: 186px; }
+
+div.jp-audio div.jp-type-playlist div.jp-progress { left: 166px; width: 130px; }
+
+div.jp-video div.jp-progress { top: 0px; left: 0px; width: 100%; height: 10px; }
+
+div.jp-seek-bar { background: url("../images/blue.monday/jplayer.blue.monday.jpg") 0 -202px repeat-x; width: 0px; height: 100%; cursor: pointer; }
+
+div.jp-play-bar { background: url("../images/blue.monday/jplayer.blue.monday.jpg") 0 -218px repeat-x; width: 0px; height: 100%; }
+
+/* The seeking class is added/removed inside jPlayer */
+div.jp-seeking-bg { background: url("../images/blue.monday/jplayer.blue.monday.seeking.gif"); }
+
+/* @end */
+/* @group volume controls */
+a.jp-mute, a.jp-unmute, a.jp-volume-max { width: 18px; height: 15px; margin-top: 12px; }
+
+div.jp-audio div.jp-type-single a.jp-mute, div.jp-audio div.jp-type-single a.jp-unmute { margin-left: 210px; }
+
+div.jp-audio div.jp-type-playlist a.jp-mute, div.jp-audio div.jp-type-playlist a.jp-unmute { margin-left: 154px; }
+
+div.jp-audio-stream div.jp-type-single a.jp-mute, div.jp-audio-stream div.jp-type-single a.jp-unmute { margin-left: 10px; }
+
+div.jp-audio a.jp-volume-max, div.jp-audio-stream a.jp-volume-max { margin-left: 56px; }
+
+div.jp-video a.jp-mute, div.jp-video a.jp-unmute, div.jp-video a.jp-volume-max { position: absolute; top: 12px; margin-top: 0; }
+
+div.jp-video a.jp-mute, div.jp-video a.jp-unmute { left: 50px; }
+
+div.jp-video a.jp-volume-max { left: 134px; }
+
+a.jp-mute { background: url("../images/blue.monday/jplayer.blue.monday.jpg") 0 -170px no-repeat; }
+
+a.jp-mute:hover { background: url("../images/blue.monday/jplayer.blue.monday.jpg") -19px -170px no-repeat; }
+
+a.jp-unmute { background: url("../images/blue.monday/jplayer.blue.monday.jpg") -60px -170px no-repeat; display: none; }
+
+a.jp-unmute:hover { background: url("../images/blue.monday/jplayer.blue.monday.jpg") -79px -170px no-repeat; }
+
+a.jp-volume-max { background: url("../images/blue.monday/jplayer.blue.monday.jpg") 0 -186px no-repeat; }
+
+a.jp-volume-max:hover { background: url("../images/blue.monday/jplayer.blue.monday.jpg") -19px -186px no-repeat; }
+
+div.jp-volume-bar { position: absolute; overflow: hidden; background: url("../images/blue.monday/jplayer.blue.monday.jpg") 0 -250px repeat-x; width: 46px; height: 5px; cursor: pointer; }
+
+div.jp-audio div.jp-volume-bar { top: 37px; left: 330px; }
+
+div.jp-audio-stream div.jp-volume-bar { top: 37px; left: 92px; }
+
+div.jp-video div.jp-volume-bar { top: 17px; left: 72px; }
+
+div.jp-volume-bar-value { background: url("../images/blue.monday/jplayer.blue.monday.jpg") 0 -256px repeat-x; width: 0px; height: 5px; }
+
+/* @end */
+/* @group current time and duration */
+div.jp-audio div.jp-time-holder { position: absolute; top: 50px; }
+
+div.jp-audio div.jp-type-single div.jp-time-holder { left: 110px; width: 186px; }
+
+div.jp-audio div.jp-type-playlist div.jp-time-holder { left: 166px; width: 130px; }
+
+div.jp-current-time, div.jp-duration { width: 60px; font-size: .64em; font-style: oblique; }
+
+div.jp-current-time { float: left; display: inline; }
+
+div.jp-duration { float: right; display: inline; text-align: right; }
+
+div.jp-video div.jp-current-time { margin-left: 20px; }
+
+div.jp-video div.jp-duration { margin-right: 20px; }
+
+/* @end */
+/* @group playlist */
+div.jp-details { font-weight: bold; text-align: center; }
+
+div.jp-details, div.jp-playlist { width: 100%; background-color: #ccc; border-top: 1px solid #009be3; }
+
+div.jp-type-single div.jp-details, div.jp-type-playlist div.jp-details, div.jp-type-single div.jp-playlist { border-top: none; }
+
+div.jp-details ul, div.jp-playlist ul { list-style-type: none; margin: 0; padding: 0 20px; font-size: .72em; }
+
+div.jp-details li { padding: 5px 0; font-weight: bold; }
+
+div.jp-playlist li { padding: 5px 0 4px 20px; border-bottom: 1px solid #eee; }
+
+div.jp-playlist li div { display: inline; }
+
+/* Note that the first-child (IE6) and last-child (IE6/7/8) selectors do not work on IE */
+div.jp-type-playlist div.jp-playlist li:last-child { padding: 5px 0 5px 20px; border-bottom: none; }
+
+div.jp-type-playlist div.jp-playlist li.jp-playlist-current { list-style-type: square; list-style-position: inside; padding-left: 7px; }
+
+div.jp-type-playlist div.jp-playlist a { color: #333; text-decoration: none; }
+
+div.jp-type-playlist div.jp-playlist a:hover { color: #0d88c1; }
+
+div.jp-type-playlist div.jp-playlist a.jp-playlist-current { color: #0d88c1; }
+
+div.jp-type-playlist div.jp-playlist a.jp-playlist-item-remove { float: right; display: inline; text-align: right; margin-right: 10px; font-weight: bold; color: #666; }
+
+div.jp-type-playlist div.jp-playlist a.jp-playlist-item-remove:hover { color: #0d88c1; }
+
+div.jp-type-playlist div.jp-playlist span.jp-free-media { float: right; display: inline; text-align: right; margin-right: 10px; }
+
+div.jp-type-playlist div.jp-playlist span.jp-free-media a { color: #666; }
+
+div.jp-type-playlist div.jp-playlist span.jp-free-media a:hover { color: #0d88c1; }
+
+span.jp-artist { font-size: .8em; color: #666; }
+
+/* @end */
+div.jp-video-play { width: 100%; overflow: hidden; /* Important for nested negative margins to work in modern browsers */ cursor: pointer; background-color: transparent; /* Makes IE9 work with the active area over the whole video area. IE6/7/8 only have the button as active area. */ }
+
+div.jp-video-270p div.jp-video-play { margin-top: -270px; height: 270px; }
+
+div.jp-video-360p div.jp-video-play { margin-top: -360px; height: 360px; }
+
+div.jp-video-full div.jp-video-play { height: 100%; }
+
+a.jp-video-play-icon { position: relative; display: block; width: 112px; height: 100px; margin-left: -56px; margin-top: -50px; left: 50%; top: 50%; background: url("../images/blue.monday/jplayer.blue.monday.video.play.png") 0 0 no-repeat; text-indent: -9999px; }
+
+div.jp-video-play:hover a.jp-video-play-icon { background: url("../images/blue.monday/jplayer.blue.monday.video.play.png") 0 -100px no-repeat; }
+
+div.jp-jplayer audio, div.jp-jplayer { width: 0px; height: 0px; }
+
+div.jp-jplayer { background-color: #000000; }
+
+/* @group TOGGLES */
+/* The audio toggles are nested inside jp-time-holder */
+ul.jp-toggles { list-style-type: none; padding: 0; margin: 0 auto; overflow: hidden; }
+
+div.jp-audio .jp-type-single ul.jp-toggles { width: 25px; }
+
+div.jp-audio .jp-type-playlist ul.jp-toggles { width: 55px; margin: 0; position: absolute; left: 325px; top: 50px; }
+
+div.jp-video ul.jp-toggles { margin-top: 10px; width: 100px; }
+
+ul.jp-toggles li { display: block; float: right; }
+
+ul.jp-toggles li a { display: block; width: 25px; height: 18px; text-indent: -9999px; line-height: 100%; /* need this for IE6 */ }
+
+a.jp-full-screen { background: url("../images/blue.monday/jplayer.blue.monday.jpg") 0 -310px no-repeat; margin-left: 20px; }
+
+a.jp-full-screen:hover { background: url("../images/blue.monday/jplayer.blue.monday.jpg") -30px -310px no-repeat; }
+
+a.jp-restore-screen { background: url("../images/blue.monday/jplayer.blue.monday.jpg") -60px -310px no-repeat; margin-left: 20px; }
+
+a.jp-restore-screen:hover { background: url("../images/blue.monday/jplayer.blue.monday.jpg") -90px -310px no-repeat; }
+
+a.jp-repeat { background: url("../images/blue.monday/jplayer.blue.monday.jpg") 0 -290px no-repeat; }
+
+a.jp-repeat:hover { background: url("../images/blue.monday/jplayer.blue.monday.jpg") -30px -290px no-repeat; }
+
+a.jp-repeat-off { background: url("../images/blue.monday/jplayer.blue.monday.jpg") -60px -290px no-repeat; }
+
+a.jp-repeat-off:hover { background: url("../images/blue.monday/jplayer.blue.monday.jpg") -90px -290px no-repeat; }
+
+a.jp-shuffle { background: url("../images/blue.monday/jplayer.blue.monday.jpg") 0 -270px no-repeat; margin-left: 5px; }
+
+a.jp-shuffle:hover { background: url("../images/blue.monday/jplayer.blue.monday.jpg") -30px -270px no-repeat; }
+
+a.jp-shuffle-off { background: url("../images/blue.monday/jplayer.blue.monday.jpg") -60px -270px no-repeat; margin-left: 5px; }
+
+a.jp-shuffle-off:hover { background: url("../images/blue.monday/jplayer.blue.monday.jpg") -90px -270px no-repeat; }
+
+/* @end */
+/* @group NO SOLUTION error feedback */
+.jp-no-solution { padding: 5px; font-size: .8em; background-color: #eee; border: 2px solid #009be3; color: #000; display: none; }
+
+.jp-no-solution a { color: #000; }
+
+.jp-no-solution span { font-size: 1em; display: block; text-align: center; font-weight: bold; }
+
+/* @end */
+/** ********************************************* Import: Website Header & Footers ********************************************* */
+div, header, footer { width: 100%; }
+
+#wrapper { max-width: 1100px; margin: 0 auto; }
+
+.logo-wrapper { padding-top: 20px; padding-bottom: 15px; }
+
+.banner-wrapper img { width: 100%; }
+
+.site-title { margin-left: 35px; }
+
+/** ********************************************* Styling: Main Navigation Section ********************************************* */
+.main-nav-wrapper { max-width: 625px; }
+
+/*Main Navigation Menu*/
+.main-menu { margin-top: 40px; }
+.main-menu li { float: left; margin-right: 35px; }
+.main-menu a { color: #0a234b; font-family: gothic-bold; font-size: 17px; text-transform: uppercase; text-decoration: none; }
+.main-menu a:hover { color: #007cd6; }
+
+/*Social Navigation*/
+.social-menu { margin-right: 35px; margin-top: 15px; }
+.social-menu li { float: left; margin-left: 5px; }
+.social-menu li:first-child { margin-left: 0; }
+.social-menu li a { background-image: url("../images/theme/icon-buttons/icon-social-34x34.png"); display: block; height: 34px; width: 34px; }
+.social-menu .icon-mail { background-position: 0; }
+.social-menu .icon-twitter { background-position: 68px 0; }
+.social-menu .icon-gmail { background-position: 102px 0; }
+.social-menu .icon-facebook { background-position: 170px 0; }
+
+/** ********************************************* Import: Website Section/Content ********************************************* */
+.title { font-size: 75px; margin: 40px 0; text-align: center; }
+
+.title > span, section h2 { color: #007cd6; }
+
+section { border-bottom: 1px solid black; padding: 0 35px 40px; }
+
+section:last-child { border: medium none; }
+
+/** ********************************************* Styling: Section Services ********************************************* */
+#services h2 { font-size: 39px; margin: 35px 0 25px; }
+
+/** ********************************************* Styling: Section Clients ********************************************* */
+.client-slider { margin: 0 auto; }
+.client-slider > figure { height: 220px; width: 220px; }
+.client-slider img { display: block; height: 65px; margin: 0 auto; width: auto; }
+
+#clients .bx-prev, #clients .bx-next { background-image: url("../images/theme/icon-buttons/icon-arrow-67x67.png"); height: 67px !important; margin: 0; top: 0 !important; width: 67px !important; }
+#clients .bx-prev { background-position: 0 center !important; left: -120px !important; }
+#clients .bx-next { background-position: -67px 0 !important; right: -120px !important; }
+
+/** ********************************************* Styling: Section Audios ********************************************* */
+div.jp-video-270p { margin: 0 auto; max-width: 480px; width: 100%; }
+
+/** ********************************************* Styling: Section Videos ********************************************* */
+.videos-list { margin: 0 auto; width: 100%; max-width: 864px; }
+.videos-list > li { box-shadow: 0 0 2px black; float: left; padding: 10px; }
+.videos-list > li:nth-child(2n) { margin-bottom: 12px; margin-left: 12px; }
+.videos-list h2 { color: #4d4d4d; font-size: 29px; margin-top: 10px; }
+
+#bt-loadmore { background-color: #c8c2c2; color: #4d4d4d; cursor: pointer; display: block; font-size: 25px; height: 55px; line-height: 55px; margin: 0 auto; text-align: center; text-transform: uppercase; width: 100%; max-width: 864px; }
+
+/** ********************************************* Styling: Section Contact ********************************************* */
+#contact .content { max-width: 450px; }
+#contact .title { text-align: left; }
+#contact a { color: #2B7DAC; }
+#contact .social-menu { margin-top: 40px; margin-right: 0px; }

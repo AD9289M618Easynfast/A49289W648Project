@@ -1,0 +1,22 @@
+<div class="row" id="tileVM">
+    <!--<h3 class="subheader">Debugging info:</h3>
+    <div class="debug" data-bind="text: ko.toJSON($root)"></div>-->
+    <div class="twelve columns tiles"
+         data-bind="foreach: TileData, updateTilesOnce: true">
+        <div class="live-tile" data-stops="100%" data-speed="750" data-delay="-1"
+             data-bind="class: color + ' ' + size,
+                        attr: {'data-mode': mode ? mode : '', 'data-direction': direction} ,
+                        click: $root.goToDetail">
+            <span class="tile-title" data-bind="text: title"></span>
+            <span class="badge" data-bind="text: count"></span>
+
+            <div>
+                <img class="micon" data-bind="attr: {src: icon}"/>
+            </div>
+            <div>
+                <h3 data-bind="text: backTitle"></h3>
+                <span class="prettyDate" data-bind="attr: {title: prettyDate}"></span>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,41 @@
+<div class="row" id="listingVM">
+
+    <div class="nine columns" style="display:none"
+         data-bind="visible: showTable()">
+        <div class="twelve columns">
+            <div class="two columns">
+                <a href="#" title="Go back"><img src="images/48/arrow_left.png"  style="border: none"/></a>
+            </div>
+            <div class="ten columns">
+                <h3 data-bind="text: $root.selectedList"></h3>
+            </div>
+        </div>
+        <div class="twelve columns"
+             data-bind="foreach: allItems,
+                        updateTilesOnce: {liveTile: { repeatCount : 0, delay : 0 }}" >
+                <div class="live-tile blue" data-bind="click: $root.getDetails" data-mode="flip">
+                   <div>
+                       <h3 data-bind="text: Title"></h3>
+                       <span class="tile-title prettyDate"
+                           data-bind="  text: Modified,
+                                        attr: {title: new Date(Modified).toISOString().substring(0,19) + 'Z'}"></span>
+                       <span class="badge" data-bind="text: Id"></span>
+                   </div>
+                   <div>
+                       <p>Here would be room for more information, but for this demo we simply show the infos on the
+                           right.</p>
+                   </div>
+                </div>
+        </div>
+    </div>
+    <div class="three columns" style="display:none"
+         data-bind="visible: showDetails">
+        <h3>Detail info</h3>
+            <ul class="disc" data-bind="foreach: { data: itemDetail}">
+                <li>
+                    <span data-bind="text: key"></span>
+                    <span class="secondary label" data-bind="text: val"></span>
+                </li>
+            </ul>
+    </div>
+</div>

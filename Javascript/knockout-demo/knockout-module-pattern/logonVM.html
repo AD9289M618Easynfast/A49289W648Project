@@ -1,0 +1,10 @@
+<div id="logonVM">
+    <div data-bind="visible: userId() !== 'anonymous' " style="display: none;">
+        You're logged on as: <span class="success label" data-bind="text: userId"></span>
+    </div>
+    <div data-bind="visible: userId() === 'anonymous' " style="display: none;">
+        <a href="#" data-bind="attr: {href: loginURL}" class="button"> Sign
+            in</a>
+        with username: <span class="secondary label">ODataDemo</span> password: <span class="secondary label">OData!Demo</span>
+    </div>
+</div>
