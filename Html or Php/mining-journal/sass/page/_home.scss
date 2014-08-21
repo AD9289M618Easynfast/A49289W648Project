@@ -1,0 +1,256 @@
+.page-home {
+    .tab-navigation {
+        margin-left: 2px;
+        max-width: 294px;
+        li {
+            border-bottom: 1px solid #e0e0e0;
+            padding: 7px 24px;
+            h2 {
+                margin-bottom: 11px;
+            }
+            a {
+                color: #3c9fe0;
+                font-size: 16px;
+                font-weight: normal;
+                text-decoration: none;
+            }
+        }
+
+        li:first-child {
+            margin: 0;
+            padding: 20px 24px 14px;
+            h2{
+                margin-bottom: 25px;
+            }
+            > a {
+                font-size: 19px !important;
+            }
+            > p {
+                padding: 0 9px;
+            }
+        }
+        li.selected, li:hover {
+            background-color: #0b3576;
+            color: white;
+            a {
+                color: white;
+            }
+
+            .comment-count {
+                background-image: url("../images/site/icon/icon-comment.png");
+            }
+        }
+        li:last-child {
+            border: medium none;
+        }
+    }
+}
+.advert-placeholder {
+    text-align: center;
+}
+.comment-count {
+    background-image: url("../images/site/icon/icon-comment-black.png");
+    background-position: right center;
+    background-repeat: no-repeat;
+    float: right;
+    padding-right: 20px;
+}
+/**
+ * *********************************************
+ * Methods Summary: Styling 3 columns post list
+ * *********************************************
+ */
+.post-3-columns-wapper {
+    > div {
+        float: left;
+        margin-left: 25px;
+        max-width: 270px;
+    }
+    > div:first-child {
+        margin: 0;
+    }
+    .post-list {
+        margin-top: 15px;
+        > li:first-child {
+            padding: 0;
+            border-bottom: medium none;
+            figcaption {
+                color: white;
+                background-color: $world;
+            }
+            h3 {
+                color: white;
+            }
+        } 
+
+        li {
+            border-bottom: 1px solid #E0E0E0;
+        }
+        li, li:first-child figcaption {
+            padding: 20px 14px 6px;
+        }
+        h3 {
+            color: #3c9fe0;
+            font-size: 16px;
+            margin-bottom: 15px;
+        }
+        p:last-child {
+            @include date-comment;
+        }
+    }
+
+    .world-post-list {
+        .line-title {
+            @include lineStyleTitle(1px, $world);
+        }
+        li:first-child {
+            figcaption {
+                background-color: $world;
+            }
+        } 
+    }
+
+    .finance-post-list {
+        .line-title {
+            @include lineStyleTitle(1px, $finance);
+        }
+        li:first-child {
+            figcaption {
+                background-color: $finance;
+            }
+        } 
+    }
+
+    .opinion-post-list {
+        .line-title {
+            @include lineStyleTitle(1px, $opinion);
+        }
+        li:first-child {
+            figcaption {
+                background-color: $opinion;
+            }
+        } 
+    }
+    .commodities-post-list {
+        .line-title {
+            @include lineStyleTitle(1px, $commodities);
+        }
+        li:first-child {
+            figcaption {
+                background-color: $commodities;
+            }
+        } 
+    }
+
+    .services-post-list {
+        .line-title {
+            @include lineStyleTitle(1px, $services);
+        }
+        li:first-child {
+            figcaption {
+                background-color: $services;
+            }
+        } 
+    }
+
+    .technology-post-list {
+        .line-title {
+            @include lineStyleTitle(1px, $technology);
+        }
+        li:first-child {
+            figcaption {
+                background-color: $technology;
+            }
+        } 
+    }
+
+} 
+/**
+ * *********************************************
+ * Methods Summary: Focus Post List
+ * *********************************************
+ */
+.focus-post {
+    .line-title {
+        @include lineStyleTitle(2px, $focus);
+    }
+}
+.focus-post-list {
+    margin-top: 15px;
+    li {
+        border-bottom: 1px solid #e0e0e0;
+        padding: $defaultPostListPadding;
+
+        a {
+            color: $lightBlue;
+        }
+    }
+    li:first-child {
+        background-color: white;
+        border-bottom: medium none;
+        float: left;
+        max-width: 415px;
+        padding: 0 44px 0 0;
+
+        figcaption {
+            background-color: #FF4747;
+            color: white;
+            padding: $defaultPostListPadding;
+
+            .comment-count {
+                @include white-comment;
+            }
+
+            h3 {
+                color: white;
+            }
+        }
+    }
+    .bt-viewmore-wrapper {
+        padding: 0;
+        border-bottom: medium none;
+    }
+    p:last-child {
+        @include date-comment;
+    }
+}
+/**
+ * *********************************************
+ * Methods Summary: Focus Post
+ * *********************************************
+ */
+.snapshot-post {
+    .line-title {
+        @include lineStyleTitle(2px, $snapshot);
+    }
+    > figure {
+        margin-top: 15px;
+        img {
+            background-color: white;
+            padding-right: 2px;
+        }
+    }
+    figcaption {
+        background-color: $snapshot;
+        color: white;
+        box-sizing: border-box;
+        max-width: 318px;
+        padding: $defaultPostListPadding;
+        position: relative;
+
+        a {
+            color: white;
+        }
+        p:last-child {
+            @include date-comment;
+        }
+
+        .comment-count {
+            @include white-comment;
+        }
+    }
+
+    h3 {
+        @include h3title;
+    }
+} 

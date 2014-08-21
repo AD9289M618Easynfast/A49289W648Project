@@ -1,0 +1,68 @@
+/**
+ * *********************************************
+ * Variables
+ * *********************************************
+ */
+
+/*base colors*/
+$lightBlue: #3C9FE0;
+$darkBlue: #0B3576;
+$borderLine: #E0E0E0;
+
+/*section colors*/
+$world: #BD2D48;
+$finance: #A03465;
+$opinion: #95A35F;
+$focus: #FF4747;
+$commodities: #EEBC32;
+$services: #E99333;
+$technology: #128E9E;
+$snapshot: #757519;
+
+/*other variables*/
+$defaultPostListPadding: 20px 14px 6px;
+$defaultWidth: 1200px;
+
+/**
+ * *********************************************
+ * Variables: Mixins
+ * *********************************************
+ */
+@mixin white-comment {
+    background-image: url("../images/site/icon/icon-comment.png");
+}
+@mixin black-comment {
+    background-image: url("../images/site/icon/icon-comment-black.png");
+}
+@mixin date-comment {
+    margin-top: 15px;
+}
+@mixin h3title {
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+@mixin input-text($width, $height) {
+    background-color: transparent;
+    border: medium none;
+    margin: 0;
+    padding: 0 0 0 10px;
+    line-height: $height;
+    height: $height;
+    width: $width;
+}
+@mixin input-submit($width, $height) {
+    background-color: transparent;
+    border: medium none;
+    color: transparent;
+    float: right;
+    height: $height;
+    width: $width;
+    cursor: pointer;
+}
+@mixin lineStyleTitle($borderWidth: 2px, $color: black) {
+    border-bottom: $borderWidth solid $color;
+    > h2 {
+        color: $color;
+        top: 5px + $borderWidth;
+    }
+}

@@ -1,0 +1,38 @@
+/**
+ * *********************************************
+ * Methods Summary: Sass Variables
+ * *********************************************
+ */
+@import "../sass/_sass-variables.scss";
+
+/**
+ * *********************************************
+ * Import: Reset Css
+ * *********************************************
+ */
+@import "../sass/_reset.scss";
+
+/**
+ * *********************************************
+ * Import: Website Components
+ * *********************************************
+ */
+@import "../sass/components/_font.scss";
+@import "../sass/components/_bxSlider.scss";
+@import "../sass/components/_prettyPhoto.scss";
+/**
+ * *********************************************
+ * Import: Website Header & Footers
+ * *********************************************
+ */
+@import "../sass/_header.scss";
+@import "../sass/_footer.scss";
+@import "../sass/_content.scss";
+@import "../sass/_sidebar.scss";
+
+/**
+ * *********************************************
+ * Import: Website Pages
+ * *********************************************
+ */
+@import "../sass/page/_home.scss";

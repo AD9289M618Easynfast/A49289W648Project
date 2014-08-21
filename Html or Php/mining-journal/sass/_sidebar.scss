@@ -1,0 +1,130 @@
+.sidebar-wrapper {
+    .line-title {
+        @include lineStyleTitle(2px,$darkBlue);
+    }
+    color: #363636;
+    max-width: 300px;
+    > section {
+        margin-bottom: 30px;
+    }
+    .tab-navigation  {
+        > li {
+
+            float: left;
+        }
+        a {
+            border-bottom: 2px solid #e4e4e4;
+            border-top: 3px solid transparent;
+            color: #0b3576;
+            display: block;
+            font-size: 12px;
+            font-weight: 600;
+            height: 45px;
+            line-height: 45px;
+            padding: 10px;
+            text-align: center;
+            text-decoration: none;
+            text-transform: uppercase;
+        }
+
+        a:hover {
+            border-bottom-color: transparent;
+            border-top-color: #0B3576;
+        }
+    }
+    .tab-content {
+        .latest-news-content {
+            box-sizing: border-box;
+            padding: 0 16px;
+            li {
+                border-bottom: 1px solid #e4e4e4;
+                padding: 12px 0;
+            }
+            a {
+                color: #42a1e1;
+                text-decoration: none;
+            }
+        }
+    }
+}
+
+
+
+.bt-viewmore {
+    color: #0B3576 !important;
+    display: block;
+    text-align: right;
+    margin-top: 17px;
+}
+
+
+/**
+ * *********************************************
+ * Methods Summary: Styling Subscribing Form
+ * *********************************************
+ */
+.sidebar-newsletter {
+    > h2 {
+        color: #0b3576;
+        font-size: 18px;
+        margin-bottom: 16px;
+        text-align: center;
+    }
+    > form {
+        background-image: url("../images/site/subscribe01.png");
+        background-position: center center;
+        background-repeat: no-repeat;
+        height: 35px;
+        margin: 0 auto;
+        width: 273px;
+
+        input[type="text"] {
+            @include input-text(225px,35px);
+        }
+        input[type="submit"] {
+            @include input-submit(35px,35px);
+        }
+    }
+} 
+
+/**
+ * *********************************************
+ * Methods Summary: Sidebar Listing
+ * *********************************************
+ */
+
+.sidebar-list {
+    li {
+        border-bottom: 1px solid $borderLine;
+        margin-top: 20px;
+        padding-bottom: 20px;
+    }
+    li:last-child {
+    }
+    figure {
+        img {
+            border: 1px solid black;
+            float: left;
+            margin-right: 20px;
+            margin-top: 5px;
+        }
+    }
+
+    figcaption {
+        h3 {
+            color: #0b3576;
+            margin-bottom: 14px;
+            text-transform: uppercase;
+        }
+        span {
+            color: #3c9fe0;
+        }
+    }
+}
+.profressional-placement-list, .upcoming-event-list {
+    figcaption {
+        h3 {
+            color: #3C9FE0;
+        }
+    }
+}

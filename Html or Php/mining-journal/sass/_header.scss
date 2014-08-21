@@ -1,0 +1,112 @@
+header {
+    padding-top: 20px;
+    .ad-1-placeholder {
+        margin-bottom: 50px;
+        > figure {
+            text-align: center;
+        }
+    }
+
+}
+.logo-wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+
+    .left-content {
+        max-width: 610px;
+    }
+}
+.site-title {
+}
+
+#search-form {
+    background-image: url("../images/site/search01.png");
+    height: 36px;
+    margin-bottom: 20px;
+    width: 301px;
+    input[type="text"] {
+        @include input-text(245px, 36px);
+    }
+    input[type="submit"] {
+        @include input-submit(36px, 36px);
+    }
+}
+
+.social-menu-wrapper {
+    > ul li {
+        float: left;
+        margin-left: 27px;
+    }
+}
+.user-menu {
+    a {
+        color: #0b3576;
+        font-size: 18px;
+        font-weight: 700;
+        text-decoration: none;
+        text-transform: uppercase;
+    }
+} 
+.subscribe-menu {
+    a {
+        color: #8a9ebc;
+        font-weight: 600;
+        text-decoration: none;
+        text-transform: uppercase;
+    }
+}
+.social-menu {
+    border-right: 1px solid #8a9ebc;
+    padding-right: 26px;
+    li:first-child {
+        margin-left: 0;
+    }
+    .icon-linkedin {
+        background-image: url("../images/site/icon/icon-linkedin.png");
+        display: block;
+        height: 22px;
+        width: 24px;
+    }
+    .icon-rss {
+        background-image: url("../images/site/icon/icon-rss.png");
+        display: block;
+        height: 22px;
+        width: 20px;
+    }
+    .icon-twitter {
+        background-image: url("../images/site/icon/icon-twitter.png");
+        display: block;
+        height: 20px;
+        width: 26px;
+    }
+}
+
+
+.main-menu-wrapper {
+    background-color: #0b3576;
+    height: 50px;
+    overflow: visible;
+}
+.main-menu {
+    margin: 0 auto;
+    max-width: 1232px;
+    > li {
+        float: left;
+    }
+    a {
+        border-bottom: 4px solid transparent;
+        color: white;
+        display: block;
+        font-size: 18px;
+        font-weight: 600;
+        height: 50px;
+        line-height: 50px;
+        padding: 0 14px;
+        text-decoration: none;
+    }
+    a:hover {
+        background-color: white;
+        border-color: #0B3576;
+        color: #0B3576;
+    }
+}
