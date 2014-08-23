@@ -1,4 +1,13 @@
-<?php include_once './header.php'; ?>
+<?php
+
+/**
+ * *********************************************
+ * Template Name: Home Page.
+ * *********************************************
+ */
+$isFront = true;
+include_once './header.php';
+?>
 <section class="main-content page-home goLeft">
     <!--Home Post In Tabs-->
     <section class="tab-wrapper clearfix">

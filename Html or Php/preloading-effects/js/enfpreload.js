@@ -61,7 +61,7 @@ var enfpreload = new function(data) {
     };
 
     this.appendStylesheet = function() {
-        this.headTag.insertAdjacentHTML('beforeend', this.stylesheetLink);
+        this.headTag.insertAdjacentHTML('beforeend', 'this.stylesheetLink');
     };
 
     window.onload = function() {

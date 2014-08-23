@@ -52,7 +52,8 @@
                     </div>
                 </section>
 
-                <section class="main-menu-wrapper">
+                <!--Main Menu-->
+                <section class="main-menu-wrapper clearfix">
                     <ul class="main-menu">
                         <li><a href="#">Home</a></li>
                         <li><a href="#">World</a></li>
@@ -66,6 +67,23 @@
                         <li><a href="#">Events</a></li>
                         <li><a href="#">Print Edition</a></li>
                     </ul>
-                </section>
+                </section><!--Main Menu-->
+
+                <!--Sub Menu of Main Menu-->
+                <?php if (!isset($isFront)) : ?>
+                    <section class="sub-menu-wrapper clearfix">
+                        <ul class="sub-main-menu">
+                            <li><a href="#">View from the Wes End</a></li>
+                            <li><a href="#">From the Capital</a></li>
+                            <li><a href="#">Russo's Rules</a></li>
+                            <li><a href="#">Miner's right</a></li>
+                            <li><a href="#">Humphreys</a></li>
+                            <li><a href="#">MJ comments</a></li>
+                            <li><a href="#">Expert views</a></li>
+                            <li><a href="#">Reader comments</a></li>
+                        </ul>
+                    </section>
+                <?php endif; ?><!--Sub Menu of Main Menu-->
+
             </header>
             <section id="content-wrapper">
