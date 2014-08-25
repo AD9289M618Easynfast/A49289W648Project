@@ -1,4 +1,6 @@
 header {
+    background-image: url("../images/site/bg-header.jpg");
+    background-repeat: repeat-x;
     padding-top: 20px;
     .ad-1-placeholder {
         margin-bottom: 50px;
@@ -8,13 +10,21 @@ header {
     }
 
 }
+
 .logo-wrapper {
     max-width: 1200px;
     margin: 0 auto;
+    position: relative;
+    top: 9px;
 
     .left-content {
         max-width: 610px;
     }
+}
+.line-above-menu {
+    height: 4px;
+    background-color: $darkBlue;
+    margin-bottom: 2px;
 }
 .site-title {
 }
@@ -137,7 +147,7 @@ header {
             border: medium none;
             padding-left: 0;
         }
-        
+
         a {
             color: $darkBlue;
         }

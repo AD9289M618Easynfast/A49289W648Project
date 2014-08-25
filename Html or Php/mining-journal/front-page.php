@@ -48,6 +48,9 @@ include_once './header.php';
                 </p>
             </li>
         </ul>
+        <script type="text/javascript">
+            $('.tab-content figure').height($('.tab-navigation').height());
+        </script>
     </section><!--Home Post In Tabs-->
 
     <!--Home Page 3 Columns Posts-->

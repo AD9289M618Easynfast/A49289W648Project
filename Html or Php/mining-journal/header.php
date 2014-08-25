@@ -52,6 +52,9 @@
                     </div>
                 </section>
 
+                <!--Line above main menu-->
+                <div class="line-above-menu"></div><!--Line above main menu-->
+                
                 <!--Main Menu-->
                 <section class="main-menu-wrapper clearfix">
                     <ul class="main-menu">

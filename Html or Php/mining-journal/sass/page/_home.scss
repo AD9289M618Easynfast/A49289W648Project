@@ -3,15 +3,14 @@
         margin-left: 2px;
         max-width: 294px;
         li {
-            border-bottom: 1px solid #e0e0e0;
+            border-bottom: 1px solid $borderLine;
             padding: 7px 24px;
             h2 {
                 margin-bottom: 11px;
             }
             a {
-                color: #3c9fe0;
-                font-size: 16px;
-                font-weight: normal;
+                color: $lightBlue;
+                font-size: 18px;
                 text-decoration: none;
             }
         }
@@ -22,15 +21,12 @@
             h2{
                 margin-bottom: 25px;
             }
-            > a {
-                font-size: 19px !important;
-            }
-            > p {
-                padding: 0 9px;
+            a {
+                font-size: 22px;
             }
         }
         li.selected, li:hover {
-            background-color: #0b3576;
+            background-color: $darkBlue;
             color: white;
             a {
                 color: white;
@@ -42,6 +38,27 @@
         }
         li:last-child {
             border: medium none;
+        }
+
+        p:last-child {
+            @include date-comment;
+        }
+
+        li, a {
+            transition: none;
+            -webkit-transition: none;
+        }
+    }
+
+    .tab-content {
+        figure {
+            max-width: 564px;
+            overflow: hidden;
+            img {
+                display: block;
+                height: 100%;
+                width: auto;
+            }
         }
     }
 }

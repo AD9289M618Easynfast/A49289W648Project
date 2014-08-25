@@ -35,6 +35,7 @@ $defaultWidth: 1200px;
     background-image: url("../images/site/icon/icon-comment-black.png");
 }
 @mixin date-comment {
+    font-size: 12px;
     margin-top: 15px;
 }
 @mixin h3title {
