@@ -4,13 +4,15 @@
         <title>Mining Journal</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" type="text/css" href="css/style.css"/>
-        <script type="text/javascript" src="js/jquery.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="../../css/style.css"/>
+        <script type="text/javascript" src="../../js/jquery.min.js"></script>
         <!--[if IE]>
         <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
         <style type="text/css">
             .main-menu a {font-size: 17px\0/;}
-            .sidebar-wrapper .tab-navigation a {font-size: 10px\0/;}
+            .sidebar-wrapper .tab-navigation a {font-size: 11px\0/;}
+            p {font-size: 13px\0/;}
+            footer .content-wrapper .content SPAN {font-size: 13px\0/;}
         </style>
         <![endif]-->
     </head>
@@ -19,19 +21,19 @@
             <header>
                 <section class="ad-1-placeholder">
                     <figure>
-                        <img src="images/site/ad/ad-1.png" width="728" height="90" alt="advert 1"/>
+                        <img src="../../images/site/ad/ad-1.png" width="728" height="90" alt="advert 1"/>
                     </figure>
                 </section>
 
                 <section class="logo-wrapper clearfix">
                     <h1 class="site-title goLeft">
                         <figure>
-                            <img src="images/site/logo01.png" width="351" height="91" alt="Mining Journal"/>
+                            <img src="../../images/site/logo01.png" width="351" height="91" alt="Mining Journal"/>
                         </figure>
                     </h1>
                     <div class="left-content goRight clearfix">
                         <form id="search-form" class="goRight clearfix">
-                            <input type="text" placeholder="Search..." />
+                            <input type="text" placeholder="Search here ..." />
                             <input type="submit"/>
                         </form>
                         <div class="social-menu-wrapper goRight clearfix">
@@ -44,9 +46,9 @@
                                 <li><a href="#">Newsletter</a></li>
                             </ul>
                             <ul class="social-menu goRight">
+                                <li><a href="#" target="_blank" class="icon-twitter"></a></li>
                                 <li><a href="#" target="_blank" class="icon-linkedin"></a></li>
                                 <li><a href="#" target="_blank" class="icon-rss"></a></li>
-                                <li><a href="#" target="_blank" class="icon-twitter"></a></li>
                             </ul>
                         </div>
                     </div>
@@ -54,7 +56,7 @@
 
                 <!--Line above main menu-->
                 <div class="line-above-menu"></div><!--Line above main menu-->
-                
+
                 <!--Main Menu-->
                 <section class="main-menu-wrapper clearfix">
                     <ul class="main-menu">
@@ -87,6 +89,5 @@
                         </ul>
                     </section>
                 <?php endif; ?><!--Sub Menu of Main Menu-->
-
             </header>
             <section id="content-wrapper">

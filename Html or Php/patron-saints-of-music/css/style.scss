@@ -1,32 +1,37 @@
-
+/**
+ * *********************************************
+ * Methods Summary: Import Sass Variables
+ * *********************************************
+ */
+@import "../sass/_sass-variables.scss";
 /**
  * *********************************************
  * Import: Reset Css
  * *********************************************
  */
-@import "../sass/reset.scss";
+@import "../sass/_reset.scss";
 
 /**
  * *********************************************
  * Import: Website Components
  * *********************************************
  */
-@import "../sass/components/font.scss";
-@import "../sass/components/bxSlider.scss";
-@import "../sass/components/prettyPhoto.scss";
-@import "../sass/components/jplayer.blue.monday.scss";
+@import "../sass/components/_font.scss";
+@import "../sass/components/_bxSlider.scss";
+@import "../sass/components/_prettyPhoto.scss";
+@import "../sass/components/_jplayer.blue.monday.scss";
 
 /**
  * *********************************************
  * Import: Website Header & Footers
  * *********************************************
  */
-@import "../sass/header.scss";
-@import "../sass/footer.scss";
+@import "../sass/_header.scss";
+@import "../sass/_footer.scss";
 /**
  * *********************************************
  * Import: Website Section/Content
  * *********************************************
  */
-@import "../sass/content.scss";
+@import "../sass/_content.scss";
 

@@ -18,6 +18,9 @@ $commodities: #EEBC32;
 $services: #E99333;
 $technology: #128E9E;
 $snapshot: #757519;
+/*listing sections*/
+$event: #DF1D4C; /* Job Listing, Event Listing*/
+$author: #E87D97;
 
 /*other variables*/
 $defaultPostListPadding: 20px 14px 6px;
@@ -34,22 +37,28 @@ $defaultWidth: 1200px;
 @mixin black-comment {
     background-image: url("../images/site/icon/icon-comment-black.png");
 }
+@mixin blue-comment {
+    background-image: url("../images/site/icon/icon-comment-blue.png");
+    color: $lightBlue;
+}
 @mixin date-comment {
     font-size: 12px;
     margin-top: 15px;
 }
-@mixin h3title {
-    font-size: 16px;
-    margin-bottom: 15px;
+@mixin h3title($fontSize: 16px, $color: $lightBlue, $margin: 15px) {
+    font-size: $fontSize;
+    color: $color;
+    margin-bottom: $margin;
 }
 @mixin input-text($width, $height) {
     background-color: transparent;
     border: medium none;
+    font-size: 14px;
+    height: 35px;
+    line-height: 35px;
     margin: 0;
     padding: 0 0 0 10px;
-    line-height: $height;
-    height: $height;
-    width: $width;
+    width: 225px;
 }
 @mixin input-submit($width, $height) {
     background-color: transparent;
@@ -65,5 +74,22 @@ $defaultWidth: 1200px;
     > h2 {
         color: $color;
         top: 5px + $borderWidth;
+    }
+}
+@mixin fixFigcaptionGap($gapValue: 2px) {
+    figcaption {
+        margin-top: -$gapValue;
+    }
+}
+@mixin no-transition {
+    transition: none;
+    -webkit-transition: none;
+}
+@mixin breadcrum-listing-color($color: black) {
+    span {
+        color: $color;
+        a {
+            color: $color;
+        }
     }
 }

@@ -6,7 +6,7 @@
  * *********************************************
  */
 $isFront = true;
-include_once './header.php';
+include_once '../../header.php';
 ?>
 <section class="main-content page-home goLeft">
     <!--Home Post In Tabs-->
@@ -342,10 +342,10 @@ include_once './header.php';
             </figcaption>
         </figure>
         <script type="text/javascript">
-            $('.snapshot-post').find('figcaption').height($('.snapshot-post').find('figure').find('img').height());
+            $('.snapshot-post').find('figure').find('img').height(($('.snapshot-post').find('figure').find('figcaption').height() + 26));
         </script>
     </section>
 </section>
 <?php
 
-include_once './footer.php';
+include_once '../../footer.php';

@@ -1,4 +1,4 @@
-<?php include_once './sidebar.php'; ?>
+<?php include_once 'template/partial/sidebar.php'; ?>
 
 <div class="clear"></div>
 
@@ -10,52 +10,52 @@
     <ul>
         <li>
             <figure>
-                <img src="images/site/classified/classified01.png"/>
+                <img src="../../images/site/classified/classified01.png"/>
             </figure>
         </li>
         <li>
             <figure>
-                <img src="images/site/classified/classified02.png"/>
+                <img src="../../images/site/classified/classified04.png"/>
             </figure>
         </li>
         <li>
             <figure>
-                <img src="images/site/classified/classified03.png"/>
+                <img src="../../images/site/classified/classified02.png"/>
             </figure>
         </li>
         <li>
             <figure>
-                <img src="images/site/classified/classified04.png"/>
+                <img src="../../images/site/classified/classified03.png"/>
             </figure>
         </li>
         <li>
             <figure>
-                <img src="images/site/classified/classified05.png"/>
+                <img src="../../images/site/classified/classified05.png"/>
             </figure>
         </li>
         <li>
             <figure>
-                <img src="images/site/classified/classified06.png"/>
+                <img src="../../images/site/classified/classified06.png"/>
             </figure>
         </li>
         <li>
             <figure>
-                <img src="images/site/classified/classified07.png"/>
+                <img src="../../images/site/classified/classified07.png"/>
             </figure>
         </li>
         <li>
             <figure>
-                <img src="images/site/classified/classified08.png"/>
+                <img src="../../images/site/classified/classified08.png"/>
             </figure>
         </li>
         <li>
             <figure>
-                <img src="images/site/classified/classified09.png"/>
+                <img src="../../images/site/classified/classified09.png"/>
             </figure>
         </li>
         <li>
             <figure>
-                <img src="images/site/classified/classified10.png"/>
+                <img src="../../images/site/classified/classified10.png"/>
             </figure>
         </li>
     </ul>
@@ -68,7 +68,7 @@
     <section class="goLeft">
         <div class="line-title">
             <figure class="clearfix">
-                <img src="images/site/mining-magazine.png"/>
+                <img src="../../images/site/mining-magazine.png"/>
                 <figcaption>
                     <h2>Lastest from Mining News</h2>
                 </figcaption>
@@ -93,7 +93,7 @@
     <section class="goLeft">
         <div class="line-title">
             <figure class="clearfix">
-                <img src="images/site/mining-news.png"/>
+                <img src="../../images/site/mining-news.png"/>
                 <figcaption>
                     <h2>Lastest from Mining News</h2>
                 </figcaption>
@@ -204,7 +204,7 @@
         </div><!--/col 5-->
 
         <!--col 6-->
-        <div class="menu-col">
+        <div class="menu-col background-color">
             <div class="footer-menu-wrapper">
                 <h2>About Mining Journal</h2>
                 <ul class="footer-menu">
@@ -318,7 +318,7 @@
         </div><!--/col 5-->
 
         <!--col 6-->
-        <div class="menu-col">
+        <div class="menu-col background-color">
             <div class="footer-menu-wrapper">
                 <h2>About Mining Journal</h2>
                 <ul class="footer-menu">
@@ -356,92 +356,92 @@
         <ul class="clients-list">
             <li>
                 <figure>
-                    <img src="images/site/print-clients/client01.png" width="118" height="78" alt=""/>
+                    <img src="../../images/site/print-clients/client01.png" width="118" height="78" alt=""/>
                 </figure>
             </li>
             <li>
                 <figure>
-                    <img src="images/site/print-clients/client02.png" width="118" height="78" alt=""/>
+                    <img src="../../images/site/print-clients/client02.png" width="118" height="78" alt=""/>
                 </figure>
             </li>
             <li>
                 <figure>
-                    <img src="images/site/print-clients/client03.png" width="118" height="78" alt=""/>
+                    <img src="../../images/site/print-clients/client03.png" width="118" height="78" alt=""/>
                 </figure>
             </li>
             <li>
                 <figure>
-                    <img src="images/site/print-clients/client04.png" width="118" height="78" alt=""/>
+                    <img src="../../images/site/print-clients/client04.png" width="118" height="78" alt=""/>
                 </figure>
             </li>
             <li>
                 <figure>
-                    <img src="images/site/print-clients/client05.png" width="118" height="78" alt=""/>
+                    <img src="../../images/site/print-clients/client05.png" width="118" height="78" alt=""/>
                 </figure>
             </li>
             <li>
                 <figure>
-                    <img src="images/site/print-clients/client06.png" width="118" height="78" alt=""/>
+                    <img src="../../images/site/print-clients/client06.png" width="118" height="78" alt=""/>
                 </figure>
             </li>
             <li>
                 <figure>
-                    <img src="images/site/print-clients/client07.png" width="118" height="78" alt=""/>
+                    <img src="../../images/site/print-clients/client07.png" width="118" height="78" alt=""/>
                 </figure>
             </li>
             <li>
                 <figure>
-                    <img src="images/site/print-clients/client08.png" width="118" height="78" alt=""/>
+                    <img src="../../images/site/print-clients/client08.png" width="118" height="78" alt=""/>
                 </figure>
             </li>
             <li>
                 <figure>
-                    <img src="images/site/print-clients/client09.png" width="118" height="78" alt=""/>
+                    <img src="../../images/site/print-clients/client09.png" width="118" height="78" alt=""/>
                 </figure>
             </li>
             <li>
                 <figure>
-                    <img src="images/site/print-clients/client10.png" width="118" height="78" alt=""/>
+                    <img src="../../images/site/print-clients/client10.png" width="118" height="78" alt=""/>
                 </figure>
             </li>
             <li>
                 <figure>
-                    <img src="images/site/print-clients/client11.png" width="118" height="78" alt=""/>
+                    <img src="../../images/site/print-clients/client11.png" width="118" height="78" alt=""/>
                 </figure>
             </li>
             <li>
                 <figure>
-                    <img src="images/site/print-clients/client12.png" width="118" height="78" alt=""/>
+                    <img src="../../images/site/print-clients/client12.png" width="118" height="78" alt=""/>
                 </figure>
             </li>
             <li>
                 <figure>
-                    <img src="images/site/print-clients/client13.png" width="118" height="78" alt=""/>
+                    <img src="../../images/site/print-clients/client13.png" width="118" height="78" alt=""/>
                 </figure>
             </li>
             <li>
                 <figure>
-                    <img src="images/site/print-clients/client14.png" width="118" height="78" alt=""/>
+                    <img src="../../images/site/print-clients/client14.png" width="118" height="78" alt=""/>
                 </figure>
             </li>
             <li>
                 <figure>
-                    <img src="images/site/print-clients/client15.png" width="118" height="78" alt=""/>
+                    <img src="../../images/site/print-clients/client15.png" width="118" height="78" alt=""/>
                 </figure>
             </li>
             <li>
                 <figure>
-                    <img src="images/site/print-clients/client16.png" width="118" height="78" alt=""/>
+                    <img src="../../images/site/print-clients/client16.png" width="118" height="78" alt=""/>
                 </figure>
             </li>
             <li>
                 <figure>
-                    <img src="images/site/print-clients/client17.png" width="118" height="78" alt=""/>
+                    <img src="../../images/site/print-clients/client17.png" width="118" height="78" alt=""/>
                 </figure>
             </li>
             <li>
                 <figure>
-                    <img src="images/site/print-clients/client18.png" width="118" height="78" alt=""/>
+                    <img src="../../images/site/print-clients/client18.png" width="118" height="78" alt=""/>
                 </figure>
             </li>
         </ul>
@@ -456,72 +456,72 @@
         <ul class="clients-list">
             <li>
                 <figure>
-                    <img src="images/site/print-clients/client19.png" width="118" height="78" alt=""/>
+                    <img src="../../images/site/print-clients/client19.png" width="118" height="78" alt=""/>
                 </figure>
             </li>
             <li>
                 <figure>
-                    <img src="images/site/print-clients/client20.png" width="118" height="78" alt=""/>
+                    <img src="../../images/site/print-clients/client20.png" width="118" height="78" alt=""/>
                 </figure>
             </li>
             <li>
                 <figure>
-                    <img src="images/site/print-clients/client21.png" width="118" height="78" alt=""/>
+                    <img src="../../images/site/print-clients/client21.png" width="118" height="78" alt=""/>
                 </figure>
             </li>
             <li>
                 <figure>
-                    <img src="images/site/print-clients/client22.png" width="118" height="78" alt=""/>
+                    <img src="../../images/site/print-clients/client22.png" width="118" height="78" alt=""/>
                 </figure>
             </li>
             <li>
                 <figure>
-                    <img src="images/site/print-clients/client23.png" width="118" height="78" alt=""/>
+                    <img src="../../images/site/print-clients/client23.png" width="118" height="78" alt=""/>
                 </figure>
             </li>
             <li>
                 <figure>
-                    <img src="images/site/print-clients/client24.png" width="118" height="78" alt=""/>
+                    <img src="../../images/site/print-clients/client24.png" width="118" height="78" alt=""/>
                 </figure>
             </li>
             <li>
                 <figure>
-                    <img src="images/site/print-clients/client25.png" width="118" height="78" alt=""/>
+                    <img src="../../images/site/print-clients/client25.png" width="118" height="78" alt=""/>
                 </figure>
             </li>
             <li>
                 <figure>
-                    <img src="images/site/print-clients/client26.png" width="118" height="78" alt=""/>
+                    <img src="../../images/site/print-clients/client26.png" width="118" height="78" alt=""/>
                 </figure>
             </li>
             <li>
                 <figure>
-                    <img src="images/site/print-clients/client27.png" width="118" height="78" alt=""/>
+                    <img src="../../images/site/print-clients/client27.png" width="118" height="78" alt=""/>
                 </figure>
             </li>
             <li>
                 <figure>
-                    <img src="images/site/print-clients/client28.png" width="118" height="78" alt=""/>
+                    <img src="../../images/site/print-clients/client28.png" width="118" height="78" alt=""/>
                 </figure>
             </li>
             <li>
                 <figure>
-                    <img src="images/site/print-clients/client29.png" width="118" height="78" alt=""/>
+                    <img src="../../images/site/print-clients/client29.png" width="118" height="78" alt=""/>
                 </figure>
             </li>
             <li>
                 <figure>
-                    <img src="images/site/print-clients/client30.png" width="118" height="78" alt=""/>
+                    <img src="../../images/site/print-clients/client30.png" width="118" height="78" alt=""/>
                 </figure>
             </li>
             <li>
                 <figure>
-                    <img src="images/site/print-clients/client31.png" width="118" height="78" alt=""/>
+                    <img src="../../images/site/print-clients/client31.png" width="118" height="78" alt=""/>
                 </figure>
             </li>
             <li>
                 <figure>
-                    <img src="images/site/print-clients/client32.png" width="118" height="78" alt=""/>
+                    <img src="../../images/site/print-clients/client32.png" width="118" height="78" alt=""/>
                 </figure>
             </li>
         </ul>
@@ -536,32 +536,32 @@
         <ul class="clients-list">
             <li>
                 <figure>
-                    <img src="images/site/print-clients/client33.png" width="118" height="78" alt=""/>
+                    <img src="../../images/site/print-clients/client33.png" width="118" height="78" alt=""/>
                 </figure>
             </li>
             <li>
                 <figure>
-                    <img src="images/site/print-clients/client34.png" width="118" height="78" alt=""/>
+                    <img src="../../images/site/print-clients/client34.png" width="118" height="78" alt=""/>
                 </figure>
             </li>
             <li>
                 <figure>
-                    <img src="images/site/print-clients/client35.png" width="118" height="78" alt=""/>
+                    <img src="../../images/site/print-clients/client35.png" width="118" height="78" alt=""/>
                 </figure>
             </li>
             <li>
                 <figure>
-                    <img src="images/site/print-clients/client36.png" width="118" height="78" alt=""/>
+                    <img src="../../images/site/print-clients/client36.png" width="118" height="78" alt=""/>
                 </figure>
             </li>
             <li>
                 <figure>
-                    <img src="images/site/print-clients/client37.png" width="118" height="78" alt=""/>
+                    <img src="../../images/site/print-clients/client37.png" width="118" height="78" alt=""/>
                 </figure>
             </li>
             <li>
                 <figure>
-                    <img src="images/site/print-clients/client38.png" width="118" height="78" alt=""/>
+                    <img src="../../images/site/print-clients/client38.png" width="118" height="78" alt=""/>
                 </figure>
             </li>
         </ul>
@@ -576,22 +576,22 @@
         <ul class="clients-list">
             <li>
                 <figure>
-                    <img src="images/site/print-clients/client39.png" width="118" height="78" alt=""/>
+                    <img src="../../images/site/print-clients/client39.png" width="118" height="78" alt=""/>
                 </figure>
             </li>
             <li>
                 <figure>
-                    <img src="images/site/print-clients/client40.png" width="118" height="78" alt=""/>
+                    <img src="../../images/site/print-clients/client40.png" width="118" height="78" alt=""/>
                 </figure>
             </li>
             <li>
                 <figure>
-                    <img src="images/site/print-clients/client41.png" width="118" height="78" alt=""/>
+                    <img src="../../images/site/print-clients/client41.png" width="118" height="78" alt=""/>
                 </figure>
             </li>
             <li>
                 <figure>
-                    <img src="images/site/print-clients/client42.png" width="118" height="78" alt=""/>
+                    <img src="../../images/site/print-clients/client42.png" width="118" height="78" alt=""/>
                 </figure>
             </li>
         </ul>
@@ -599,7 +599,7 @@
 
     <section class="content-wrapper clearfix">
         <figure class="goLeft">
-            <img src="images/site/logo02.png" alt="Aspermont Logo" width="157" height="119"/>
+            <img src="../../images/site/logo02.png" alt="Aspermont Logo" width="157" height="119"/>
         </figure>
         <div class="content goLeft">
             <p>

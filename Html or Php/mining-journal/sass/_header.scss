@@ -1,3 +1,8 @@
+/**
+ * *********************************************
+ * Css File: Header.
+ * *********************************************
+ */
 header {
     background-image: url("../images/site/bg-header.jpg");
     background-repeat: repeat-x;
@@ -10,7 +15,11 @@ header {
     }
 
 }
-
+/**
+ * *********************************************
+ * Styling: Logo Wrapper Section
+ * *********************************************
+ */
 .logo-wrapper {
     max-width: 1200px;
     margin: 0 auto;
@@ -21,14 +30,8 @@ header {
         max-width: 610px;
     }
 }
-.line-above-menu {
-    height: 4px;
-    background-color: $darkBlue;
-    margin-bottom: 2px;
-}
 .site-title {
 }
-
 #search-form {
     background-image: url("../images/site/search01.png");
     height: 36px;
@@ -41,7 +44,6 @@ header {
         @include input-submit(36px, 36px);
     }
 }
-
 .social-menu-wrapper {
     > ul li {
         float: left;
@@ -61,36 +63,41 @@ header {
     a {
         color: #8a9ebc;
         font-weight: 600;
+        position: relative;
         text-decoration: none;
         text-transform: uppercase;
+        top: 2px;
     }
 }
 .social-menu {
     border-right: 1px solid #8a9ebc;
     padding-right: 26px;
+    position: relative;
+    top: -4px;
     li:first-child {
         margin-left: 0;
     }
     .icon-linkedin {
-        background-image: url("../images/site/icon/icon-linkedin.png");
         display: block;
         height: 22px;
         width: 24px;
     }
     .icon-rss {
-        background-image: url("../images/site/icon/icon-rss.png");
         display: block;
         height: 22px;
         width: 20px;
     }
     .icon-twitter {
-        background-image: url("../images/site/icon/icon-twitter.png");
         display: block;
         height: 20px;
         width: 26px;
     }
 }
-
+.line-above-menu {
+    height: 4px;
+    background-color: $darkBlue;
+    margin-bottom: 2px;
+}
 /**
  * *********************************************
  * Styling: Main Menu
@@ -130,7 +137,6 @@ header {
  * Styling: Sub Menu
  * *********************************************
  */
-
 .sub-menu-wrapper {
     margin: 15px auto 0;
     max-width: 1200px;

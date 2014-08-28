@@ -2,7 +2,7 @@
     <!--Tab Wrapper-->
     <section class="tab-wrapper">
         <ul class="tab-navigation">
-            <li><a href="#lastest-news" id="latest-news-tab">Lastest News</a></li>
+            <li><a href="#lastest-news" id="latest-news-tab" class="selected">Lastest News</a></li>
             <li><a href="#columns" id="columns-tab">Columns</a></li>
             <li><a href="#most-popular" id="most-popular-tab">Most Popular</a></li>
         </ul>
@@ -11,34 +11,46 @@
             <section class="latest-news-content">
                 <ul>
                     <li>
-                        <a href="#">
-                            Pentagon Chief Lifts Ban on Women in Combat
-                        </a>
+                        <h3>
+                            <a href="#">
+                                Pentagon Chief Lifts Ban on Women in Combat
+                            </a>
+                        </h3>
                     </li>  
                     <li>
-                        <a href="#">
-                            Clinton: U.S. Strengthening Embassy Security
-                        </a>
+                        <h3>
+                            <a href="#">
+                                Clinton: U.S. Strengthening Embassy Security
+                            </a>
+                        </h3>
                     </li>
                     <li>
-                        <a href="#">
-                            Scientists Push to Resume Research On Virulent Man-Made Flu Virus
-                        </a>
+                        <h3>
+                            <a href="#">
+                                Scientists Push to Resume Research On Virulent Man-Made Flu Virus
+                            </a>
+                        </h3>
                     </li>
                     <li>
-                        <a href="#">
-                            House GOP Postpones Debt-Limit Fight—for Now
-                        </a>
+                        <h3>
+                            <a href="#">
+                                House GOP Postpones Debt-Limit Fight—for Now
+                            </a>
+                        </h3>
                     </li>
                     <li>
-                        <a href="#">
-                            Cash Leaking Out of 401(k) Plans at Alarming Rate
-                        </a>
+                        <h3>
+                            <a href="#">
+                                Cash Leaking Out of 401(k) Plans at Alarming Rate
+                            </a>
+                        </h3>
                     </li>
                     <li>
-                        <a href="#">
-                            Scientists Push to Resume Research On Virulent Man-Made Flu Virus
-                        </a>
+                        <h3>
+                            <a href="#">
+                                Scientists Push to Resume Research On Virulent Man-Made Flu Virus
+                            </a>
+                        </h3>
                     </li>
                 </ul>
                 <a class="bt-viewmore">view more</a>
@@ -49,17 +61,19 @@
     <!--Advert 2 placeholder-->
     <section class="ad-2-placeholder">
         <figure>
-            <img src="images/site/ad/ad-2.png" width="300" height="250" alt="Advert 2 Placeholder"/>
+            <img src="../../images/site/ad/ad-2.png" width="300" height="250" alt="Advert 2 Placeholder"/>
         </figure>
     </section><!--Advert 2 placeholder-->
 
     <!--Mining Journal Newsletter-->
     <section class="sidebar-newsletter">
         <h2>Get Mining Journal newsletter</h2>
-        <form>
-            <input type="text" placeholder="email" />
-            <input type="submit"/>
-        </form>
+        <div class="form-wrapper">
+            <form>
+                <input type="text" placeholder="Enter your email" />
+                <input type="submit"/>
+            </form>
+        </div>
     </section><!--Mining Journal Newsletter-->
 
     <!--Company Profiles-->
@@ -70,7 +84,7 @@
         <ul>
             <li>
                 <figure>
-                    <img src="images/site/sidebar-list/comp01.png" width="78" height="78" alt="company profile 1"/>
+                    <img src="../../images/site/sidebar-list/comp01.png" width="78" height="78" alt="company profile 1"/>
                     <figcaption>
                         <h3>Garama Resources</h3>
                         <span>Sarama Resources scores 1.5Moz maiden gold resource at South Houndé: (2013-12-19)</span>
@@ -82,7 +96,7 @@
             </li>
             <li>
                 <figure>
-                    <img src="images/site/sidebar-list/comp01.png" width="78" height="78" alt="company profile 1"/>
+                    <img src="../../images/site/sidebar-list/comp01.png" width="78" height="78" alt="company profile 1"/>
                     <figcaption>
                         <h3>Garama Resources</h3>
                         <span>Sarama Resources scores 1.5Moz maiden gold resource at South Houndé: (2013-12-19)</span>
@@ -99,7 +113,7 @@
     <!--Advert 3 placeholder-->
     <section class="sidebar-ad-placeholder">
         <figure>
-            <img src="images/site/ad/ad-3.png" width="300" height="250" alt="Advert 2 Placeholder"/>
+            <img src="../../images/site/ad/ad-3.png" width="300" height="250" alt="Advert 2 Placeholder"/>
         </figure>
     </section><!--Advert 3 placeholder-->
 
@@ -111,7 +125,7 @@
         <ul class="profressional-placement-list">
             <li>
                 <figure>
-                    <img src="images/site/sidebar-list/comp01.png" width="78" height="78" alt="company profile 1"/>
+                    <img src="../../images/site/sidebar-list/comp01.png" width="78" height="78" alt="company profile 1"/>
                     <figcaption>
                         <h3>Luxury Retail Job Openings</h3>
                         <p>24 Seven Staffing Agency | West Mclean, VA</p>
@@ -121,7 +135,7 @@
             </li>
             <li>
                 <figure>
-                    <img src="images/site/sidebar-list/comp01.png" width="78" height="78" alt="company profile 1"/>
+                    <img src="../../images/site/sidebar-list/comp01.png" width="78" height="78" alt="company profile 1"/>
                     <figcaption>
                         <h3>Luxury Retail Job OpeningsPreviews Marketing Coordinator - Luxury Homes</h3>
                         <p>Coldwell Banker Res Re | Sarasota, FL</p>
@@ -136,7 +150,7 @@
     <!--Advert 3 placeholder-->
     <section class="sidebar-ad-placeholder">
         <figure>
-            <img src="images/site/ad/ad-3.png" width="300" height="250" alt="Advert 2 Placeholder"/>
+            <img src="../../images/site/ad/ad-3.png" width="300" height="250" alt="Advert 2 Placeholder"/>
         </figure>
     </section><!--Advert 3 placeholder-->
 
@@ -148,7 +162,7 @@
         <ul class="upcoming-event-list">
             <li>
                 <figure>
-                    <img src="images/site/sidebar-list/comp01.png" width="78" height="78" alt="company profile 1"/>
+                    <img src="../../images/site/sidebar-list/comp01.png" width="78" height="78" alt="company profile 1"/>
                     <figcaption>
                         <p>Conference</p>
                         <h3>Global Forum 2014</h3>
@@ -161,7 +175,7 @@
             </li>
             <li>
                 <figure>
-                    <img src="images/site/sidebar-list/comp01.png" width="78" height="78" alt="company profile 1"/>
+                    <img src="../../images/site/sidebar-list/comp01.png" width="78" height="78" alt="company profile 1"/>
                     <figcaption>
                         <p>Conference</p>
                         <h3>Global Forum 2014</h3>

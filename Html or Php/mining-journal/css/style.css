@@ -2,6 +2,8 @@
 /** ********************************************* Variables ********************************************* */
 /*base colors*/
 /*section colors*/
+/*listing sections*/
+/* Job Listing, Event Listing*/
 /*other variables*/
 /** ********************************************* Variables: Mixins ********************************************* */
 /** ********************************************* Import: Reset Css ********************************************* */
@@ -46,7 +48,7 @@ div, section, header, footer { width: 100%; }
 
 a { text-decoration: none; cursor: pointer; }
 
-h3 { font-size: 16px; }
+h3 { font-size: 18px; }
 
 /** ********************************************* Import: Website Components ********************************************* */
 .bx-wrapper { margin: 0 auto 60px; padding: 0; position: relative; }
@@ -625,30 +627,32 @@ a.pp_close { position: absolute; right: 0; top: 0; display: block; line-height: 
 div.ppt { color: #fff; display: none; font-size: 17px; margin: 0 0 5px 15px; z-index: 9999; }
 
 /** ********************************************* Import: Website Header & Footers ********************************************* */
+/** ********************************************* Css File: Header. ********************************************* */
 header { background-image: url("../images/site/bg-header.jpg"); background-repeat: repeat-x; padding-top: 20px; }
 header .ad-1-placeholder { margin-bottom: 50px; }
 header .ad-1-placeholder > figure { text-align: center; }
 
+/** ********************************************* Styling: Logo Wrapper Section ********************************************* */
 .logo-wrapper { max-width: 1200px; margin: 0 auto; position: relative; top: 9px; }
 .logo-wrapper .left-content { max-width: 610px; }
 
-.line-above-menu { height: 4px; background-color: #0b3576; margin-bottom: 2px; }
-
 #search-form { background-image: url("../images/site/search01.png"); height: 36px; margin-bottom: 20px; width: 301px; }
-#search-form input[type="text"] { background-color: transparent; border: medium none; margin: 0; padding: 0 0 0 10px; line-height: 36px; height: 36px; width: 245px; }
+#search-form input[type="text"] { background-color: transparent; border: medium none; font-size: 14px; height: 35px; line-height: 35px; margin: 0; padding: 0 0 0 10px; width: 225px; }
 #search-form input[type="submit"] { background-color: transparent; border: medium none; color: transparent; float: right; height: 36px; width: 36px; cursor: pointer; }
 
 .social-menu-wrapper > ul li { float: left; margin-left: 27px; }
 
 .user-menu a { color: #0b3576; font-size: 18px; font-weight: 700; text-decoration: none; text-transform: uppercase; }
 
-.subscribe-menu a { color: #8a9ebc; font-weight: 600; text-decoration: none; text-transform: uppercase; }
+.subscribe-menu a { color: #8a9ebc; font-weight: 600; position: relative; text-decoration: none; text-transform: uppercase; top: 2px; }
 
-.social-menu { border-right: 1px solid #8a9ebc; padding-right: 26px; }
+.social-menu { border-right: 1px solid #8a9ebc; padding-right: 26px; position: relative; top: -4px; }
 .social-menu li:first-child { margin-left: 0; }
-.social-menu .icon-linkedin { background-image: url("../images/site/icon/icon-linkedin.png"); display: block; height: 22px; width: 24px; }
-.social-menu .icon-rss { background-image: url("../images/site/icon/icon-rss.png"); display: block; height: 22px; width: 20px; }
-.social-menu .icon-twitter { background-image: url("../images/site/icon/icon-twitter.png"); display: block; height: 20px; width: 26px; }
+.social-menu .icon-linkedin { display: block; height: 22px; width: 24px; }
+.social-menu .icon-rss { display: block; height: 22px; width: 20px; }
+.social-menu .icon-twitter { display: block; height: 20px; width: 26px; }
+
+.line-above-menu { height: 4px; background-color: #0b3576; margin-bottom: 2px; }
 
 /** ********************************************* Styling: Main Menu ********************************************* */
 .main-menu-wrapper { background-color: #0b3576; height: 50px; overflow: visible; }
@@ -666,12 +670,13 @@ header .ad-1-placeholder > figure { text-align: center; }
 
 footer { margin: 0 auto; max-width: 1200px; }
 
-.menu-col { float: left; max-width: 200px; }
-
-.footer-menu-wrapper { margin-top: 30px; }
-.footer-menu-wrapper > h2 { color: #5ba7e2; font-size: 14px; margin-top: 30px; }
-.footer-menu-wrapper:first-child { margin-top: 0; }
-.footer-menu-wrapper:first-child > h2 { margin-top: 0; }
+section.footer-menu-wrapper:first-child div.footer-menu-wrapper:first-child { margin-top: 10px; }
+section.footer-menu-wrapper:first-child .menu-col.background-color { padding: 0 10px; }
+section.footer-menu-wrapper div.footer-menu-wrapper > h2 { color: #3c9fe0; font-size: 14px; padding-top: 30px; }
+section.footer-menu-wrapper div.footer-menu-wrapper:first-child { margin-top: 30px; }
+section.footer-menu-wrapper div.footer-menu-wrapper:first-child > h2 { padding-top: 0; }
+section.footer-menu-wrapper .menu-col { float: left; max-width: 200px; box-sizing: border-box; }
+section.footer-menu-wrapper .menu-col.background-color { background-color: #FAFAFA; padding: 0 10px 10px; }
 
 .footer-menu { margin-top: 15px; }
 .footer-menu a { color: black; display: inline-block; padding: 2px 0; text-decoration: none; }
@@ -687,21 +692,35 @@ footer { margin: 0 auto; max-width: 1200px; }
 footer .content-wrapper { padding-bottom: 50px; position: relative; }
 footer .content-wrapper figure { margin-right: 54px; }
 footer .content-wrapper .content { position: relative; top: 48px; width: 770px; }
-footer .content-wrapper .content span { color: #173f7d; display: block; font-size: 13px; font-weight: 700; margin-bottom: 15px; }
+footer .content-wrapper .content span { color: #173f7d; display: block; font-size: 14px; margin-bottom: 15px; }
 
+/** ********************************************* Styling: Social Icons ********************************************* */
+.icon-linkedin, .icon-rss, .icon-twitter, .icon-mail { background-repeat: no-repeat; background-position: left center; }
+
+.icon-linkedin { background-image: url("../images/site/icon/icon-linkedin.png"); }
+
+.icon-rss { background-image: url("../images/site/icon/icon-rss.png"); }
+
+.icon-twitter { background-image: url("../images/site/icon/icon-twitter.png"); }
+
+.icon-mail { background-image: url("../images/site/icon/icon-mail.png"); }
+
+/** ********************************************* Styling: Title with the Borderline underneath ********************************************* */
 .line-title { border-bottom: 2px solid black; }
 .line-title > h2 { color: black; top: 7px; }
 .line-title > h2 { background-color: white; display: inline-block; font-size: 18px; padding-right: 10px; position: relative; }
 
+/** ********************************************* Styling: Main Content (Genernal) ********************************************* */
 #content-wrapper { margin: 0 auto; max-width: 1200px; padding-top: 30px; }
 
 .main-content { max-width: 860px; }
-.main-content > section { margin-top: 40px; }
+.main-content > section { margin-top: 30px; }
 .main-content > section:first-child { margin-top: 0; }
 .main-content > section:last-child { margin-bottom: 60px; }
 
-/** ********************************************* Methods Summary: Styling Classified ********************************************* */
+/** ********************************************* Styling: Classified ********************************************* */
 .classifields > ul li { float: left; height: 60px; margin-top: 20px; padding-left: 68px; }
+.classifields > ul img { border: 1px solid black; }
 
 /** ********************************************* Methods Summary: Styling Latest News ********************************************* */
 .latest-news-list { margin: 50px 0; }
@@ -712,34 +731,61 @@ footer .content-wrapper .content span { color: #173f7d; display: block; font-siz
 .latest-news-list figure > img { float: left; margin-right: 20px; }
 .latest-news-list figcaption { color: #0b3576; display: inline-block; font-size: 18px; height: 30px; line-height: 30px; position: relative; top: 8px; }
 .latest-news-list ul li { border-bottom: 1px solid #e6e6e6; padding: 15px 11px; }
-.latest-news-list ul a { color: #3c9fe0; text-decoration: none; }
+.latest-news-list ul a { color: #3c9fe0; font-weight: 600; text-decoration: none; }
+
+/** ********************************************* Styling: Button Read More ********************************************* */
+.bt-viewmore { color: #0b3576; display: block; font-size: 12px; text-align: right; margin-top: 17px; }
+
+/** ********************************************* Styling: Breadcrums ********************************************* */
+.breadcrum-wrapper span { font-size: 18px; font-weight: 600; }
+.breadcrum-wrapper > h2 { font-size: 24px; margin-top: 20px; text-transform: uppercase; color: #0b3576; font-weight: 800; }
+.breadcrum-wrapper.opinion-listing span { color: #95a35f; }
+.breadcrum-wrapper.opinion-listing span a { color: #95a35f; }
+.breadcrum-wrapper.event-listing span, .breadcrum-wrapper.job-listing span { color: #df1d4c; }
+.breadcrum-wrapper.event-listing span a, .breadcrum-wrapper.job-listing span a { color: #df1d4c; }
+.breadcrum-wrapper.author-listing span { color: #e87d97; }
+.breadcrum-wrapper.author-listing span a { color: #e87d97; }
+.breadcrum-wrapper.author-listing > span { color: #010101; font-weight: 500; display: inline-block; margin-top: 15px; }
+
+/** ********************************************* Styling: Pagination ********************************************* */
+.pagination-wrapper { text-align: center; max-width: 196px; margin-left: auto; margin-right: auto; }
+.pagination-wrapper > span { float: left; }
+.pagination-wrapper a { display: block; color: black; font-size: 12px; font-weight: 700; line-height: 28px; width: 28px; height: 28px; }
+.pagination-wrapper a:hover { color: #3c9fe0; }
+.pagination-wrapper > span:first-child { margin-left: 0; }
+.pagination-wrapper .next-page a, .pagination-wrapper .prev-page a { background-color: #e0e0e0; background-position: center center; background-repeat: no-repeat; border-radius: 4px; }
+.pagination-wrapper .next-page a:hover, .pagination-wrapper .prev-page a:hover { background-color: #3c9fe0; }
+.pagination-wrapper .next-page a { background-image: url("../images/site/icon/icon-next.png"); }
+.pagination-wrapper .prev-page a { background-image: url("../images/site/icon/icon-prev.png"); }
 
 .sidebar-wrapper { color: #363636; max-width: 300px; }
+.sidebar-wrapper h3, .sidebar-wrapper a, .sidebar-wrapper p { font-size: 14px; }
 .sidebar-wrapper .line-title { border-bottom: 2px solid #0b3576; }
 .sidebar-wrapper .line-title > h2 { color: #0b3576; top: 7px; }
 .sidebar-wrapper > section { margin-bottom: 30px; }
+.sidebar-wrapper .tab-navigation li, .sidebar-wrapper .tab-navigation a { transition: none; -webkit-transition: none; }
 .sidebar-wrapper .tab-navigation > li { float: left; }
-.sidebar-wrapper .tab-navigation a { border-bottom: 2px solid #e4e4e4; border-top: 3px solid transparent; color: #0b3576; display: block; font-size: 12px; font-weight: 600; height: 45px; line-height: 45px; padding: 10px; text-align: center; text-decoration: none; text-transform: uppercase; }
-.sidebar-wrapper .tab-navigation a:hover { border-bottom-color: transparent; border-top-color: #0B3576; }
-.sidebar-wrapper .tab-content .latest-news-content { box-sizing: border-box; padding: 0 16px; }
+.sidebar-wrapper .tab-navigation a { border-bottom: 2px solid #e4e4e4; border-top: 3px solid transparent; box-sizing: border-box; color: #0b3576; display: block; font-size: 12px; height: 50px; padding: 10px; text-align: center; text-decoration: none; text-transform: uppercase; }
+.sidebar-wrapper .tab-navigation a.selected, .sidebar-wrapper .tab-navigation a:hover { background-color: #FAFAFA; border-bottom-color: transparent; border-top-color: #0B3576; font-weight: 600; }
+.sidebar-wrapper .tab-content { background-color: #FAFAFA; }
+.sidebar-wrapper .tab-content .latest-news-content { box-sizing: border-box; padding: 0 15px 15px; }
 .sidebar-wrapper .tab-content .latest-news-content li { border-bottom: 1px solid #e4e4e4; padding: 12px 0; }
-.sidebar-wrapper .tab-content .latest-news-content a { color: #42a1e1; text-decoration: none; }
-
-.bt-viewmore { color: #0B3576 !important; display: block; text-align: right; margin-top: 17px; }
+.sidebar-wrapper .tab-content .latest-news-content a { color: #3c9fe0; text-decoration: none; }
 
 /** ********************************************* Methods Summary: Styling Subscribing Form ********************************************* */
 .sidebar-newsletter > h2 { color: #0b3576; font-size: 18px; margin-bottom: 16px; text-align: center; }
-.sidebar-newsletter > form { background-image: url("../images/site/subscribe01.png"); background-position: center center; background-repeat: no-repeat; height: 35px; margin: 0 auto; width: 273px; }
-.sidebar-newsletter > form input[type="text"] { background-color: transparent; border: medium none; margin: 0; padding: 0 0 0 10px; line-height: 35px; height: 35px; width: 225px; }
-.sidebar-newsletter > form input[type="submit"] { background-color: transparent; border: medium none; color: transparent; float: right; height: 35px; width: 35px; cursor: pointer; }
+.sidebar-newsletter .form-wrapper { background-color: #FAFAFA; padding: 10px 0; }
+.sidebar-newsletter form { background-image: url("../images/site/subscribe01.png"); background-position: center center; background-repeat: no-repeat; height: 35px; margin: 0 auto; width: 273px; }
+.sidebar-newsletter form input[type="text"] { background-color: transparent; border: medium none; font-size: 14px; height: 35px; line-height: 35px; margin: 0; padding: 0 0 0 10px; width: 225px; }
+.sidebar-newsletter form input[type="submit"] { background-color: transparent; border: medium none; color: transparent; float: right; height: 35px; width: 35px; cursor: pointer; }
 
 /** ********************************************* Methods Summary: Sidebar Listing ********************************************* */
 .sidebar-list li { border-bottom: 1px solid #e0e0e0; margin-top: 20px; padding-bottom: 20px; }
 .sidebar-list figure img { border: 1px solid black; float: left; margin-right: 20px; margin-top: 5px; }
 .sidebar-list figcaption h3 { color: #0b3576; margin-bottom: 14px; text-transform: uppercase; }
-.sidebar-list figcaption span { color: #3c9fe0; }
+.sidebar-list figcaption span { color: #3c9fe0; font-weight: 600; }
 
-.profressional-placement-list figcaption h3, .upcoming-event-list figcaption h3 { color: #3C9FE0; }
+.profressional-placement-list figcaption h3, .upcoming-event-list figcaption h3 { color: #3c9fe0; }
 
 /** ********************************************* Import: Website Pages ********************************************* */
 .page-home .tab-navigation { margin-left: 2px; max-width: 294px; }
@@ -770,7 +816,8 @@ footer .content-wrapper .content span { color: #173f7d; display: block; font-siz
 .post-3-columns-wapper .post-list > li:first-child figcaption { color: white; background-color: #bd2d48; }
 .post-3-columns-wapper .post-list > li:first-child h3 { color: white; }
 .post-3-columns-wapper .post-list li { border-bottom: 1px solid #E0E0E0; }
-.post-3-columns-wapper .post-list li, .post-3-columns-wapper .post-list li:first-child figcaption { padding: 20px 14px 6px; }
+.post-3-columns-wapper .post-list li figcaption { margin-top: -3px; }
+.post-3-columns-wapper .post-list li, .post-3-columns-wapper .post-list li:first-child figcaption { padding: 15px 14px 6px; }
 .post-3-columns-wapper .post-list h3 { color: #3c9fe0; font-size: 16px; margin-bottom: 15px; }
 .post-3-columns-wapper .post-list p:last-child { font-size: 12px; margin-top: 15px; }
 .post-3-columns-wapper .world-post-list .line-title { border-bottom: 1px solid #bd2d48; }
@@ -797,7 +844,8 @@ footer .content-wrapper .content span { color: #173f7d; display: block; font-siz
 .focus-post .line-title > h2 { color: #ff4747; top: 7px; }
 
 .focus-post-list { margin-top: 15px; }
-.focus-post-list li { border-bottom: 1px solid #e0e0e0; padding: 20px 14px 6px; }
+.focus-post-list li { border-bottom: 1px solid #e0e0e0; padding: 20px 0 6px; }
+.focus-post-list li figcaption { margin-top: -4px; }
 .focus-post-list li a { color: #3c9fe0; }
 .focus-post-list li:first-child { background-color: white; border-bottom: medium none; float: left; max-width: 415px; padding: 0 44px 0 0; }
 .focus-post-list li:first-child figcaption { background-color: #FF4747; color: white; padding: 20px 14px 6px; }
@@ -806,13 +854,49 @@ footer .content-wrapper .content span { color: #173f7d; display: block; font-siz
 .focus-post-list .bt-viewmore-wrapper { padding: 0; border-bottom: medium none; }
 .focus-post-list p:last-child { font-size: 12px; margin-top: 15px; }
 
-/** ********************************************* Methods Summary: Focus Post ********************************************* */
+/** ********************************************* Methods Summary: Snapshot Post ********************************************* */
 .snapshot-post .line-title { border-bottom: 2px solid #757519; }
 .snapshot-post .line-title > h2 { color: #757519; top: 7px; }
 .snapshot-post > figure { margin-top: 15px; }
-.snapshot-post > figure img { background-color: white; padding-right: 2px; }
+.snapshot-post > figure img { background-color: white; max-width: 540px; padding-right: 2px; width: 100%; }
 .snapshot-post figcaption { background-color: #757519; color: white; box-sizing: border-box; max-width: 318px; padding: 20px 14px 6px; position: relative; }
 .snapshot-post figcaption a { color: white; }
-.snapshot-post figcaption p:last-child { font-size: 12px; margin-top: 15px; }
+.snapshot-post figcaption p:last-child { font-size: 12px; margin-top: 15px; margin-top: 45px; }
 .snapshot-post figcaption .comment-count { background-image: url("../images/site/icon/icon-comment.png"); }
-.snapshot-post h3 { font-size: 16px; margin-bottom: 15px; }
+.snapshot-post h3 { font-size: 16px; color: #3c9fe0; margin-bottom: 15px; }
+
+/** ********************************************* Styling: Content List Usage: - Listing Page. - Listing Author ********************************************* */
+.content-list h3 { color: #3c9fe0; margin-bottom: 15px; }
+.content-list li { margin-bottom: 20px; }
+.content-list li > figure img { float: left; margin-right: 20px; max-width: 230px; }
+.content-list li figcaption { float: right; max-width: 610px; position: relative; }
+.content-list li p:last-child { font-size: 12px; margin-top: 15px; border-bottom: 1px solid #e0e0e0; padding-bottom: 10px; width: 100%; }
+.content-list li p:last-child span:first-child, .content-list li p:last-child span:last-child { border-left: medium none; padding-left: 0; margin-left: 0; }
+.content-list li p:last-child span { border-left: 1px solid black; margin-left: 12px; padding-left: 12px; }
+.content-list li .advert-placeholder { margin-bottom: 20px; }
+.content-list li .comment-count { background-image: url("../images/site/icon/icon-comment-blue.png"); color: #3c9fe0; }
+
+/** ********************************************* Styling: Listing Content List 2 Usage:  - Event Listing - Job Listing ********************************************* */
+.description-text a { color: #3c9fe0; font-weight: 600; margin-top: 17px; display: inline-block; }
+
+.content-list-2 .advert-placeholder { margin-bottom: 20px; }
+.content-list-2 li { border-bottom: 1px solid #e0e0e0; margin-bottom: 20px; padding-bottom: 20px; }
+.content-list-2 li > figure img { border: 1px solid black; float: left; margin-right: 20px; }
+.content-list-2 figcaption { float: right; height: 194px; max-width: 650px; position: relative; top: -4px; }
+.content-list-2 h3 { font-size: 18px; color: #3c9fe0; margin-bottom: 15px; }
+.content-list-2 p { margin-bottom: 20px; }
+.content-list-2 span { color: #3c9fe0; }
+
+.bt-apply-now { background-color: #3c9fe0; bottom: 0; color: white; display: block; height: 30px; line-height: 30px; position: absolute; text-align: center; width: 93px; font-weight: 600; }
+
+/** ********************************************* Styling: Author Listing ********************************************* */
+.article-by { margin-top: 20px !important; }
+.article-by > h2 { color: #0b3576; font-size: 24px; font-weight: 600; margin-top: 40px; display: inline-block; }
+.article-by figure img { float: left; }
+.article-by figcaption { float: right; max-width: 600px; }
+.article-by figcaption p { margin-top: 20px; }
+.article-by .social-content { margin-bottom: 25px; }
+.article-by .social-content ul:first-child { margin-right: 30px; }
+.article-by .social-content ul li:first-child { margin-top: 0; }
+.article-by .social-content ul li { display: block; margin-top: 15px; }
+.article-by .social-content ul li a { padding-left: 35px; color: #3c9fe0; }

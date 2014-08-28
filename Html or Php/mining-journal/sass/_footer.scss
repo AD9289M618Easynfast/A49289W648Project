@@ -3,25 +3,43 @@ footer {
     max-width: $defaultWidth;
 }
 
-.menu-col {
-    float: left;
-    max-width: 200px;
-}
-.footer-menu-wrapper {
-    margin-top: 30px;
-    > h2 {
-        color: #5ba7e2;
-        font-size: 14px;
-        margin-top: 30px;
-    }
+section.footer-menu-wrapper {
     &:first-child {
-        margin-top: 0;
+        div.footer-menu-wrapper {
+            &:first-child {
+                margin-top: 10px;
+            }
+        }
+        .menu-col {
+            &.background-color {
+                padding: 0 10px;
+            }
+        }
+    }
+    div.footer-menu-wrapper {
         > h2 {
-            margin-top: 0;
+            color: $lightBlue;
+            font-size: 14px;
+            padding-top: 30px;
+        }
+        &:first-child {
+            margin-top: 30px;
+            > h2 {
+                padding-top: 0;
+            }
+        }
+    }
+    .menu-col {
+        float: left;
+        max-width: 200px;
+        box-sizing: border-box;
+
+        &.background-color {
+            background-color: #FAFAFA;
+            padding: 0 10px 10px;
         }
     }
 }
-
 .footer-menu {
     margin-top: 15px;
     li {
@@ -34,10 +52,6 @@ footer {
         text-decoration: none;
     }
 }
-
-
-
-
 .aspermont-clients-wrapper {
     margin-bottom: 18px;
 
@@ -77,8 +91,7 @@ footer {
             span {
                 color: #173f7d;
                 display: block;
-                font-size: 13px;
-                font-weight: 700;
+                font-size: 14px;
                 margin-bottom: 15px;
             }
         }

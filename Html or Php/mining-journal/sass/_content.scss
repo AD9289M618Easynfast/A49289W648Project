@@ -1,3 +1,29 @@
+/**
+ * *********************************************
+ * Styling: Social Icons
+ * *********************************************
+ */
+.icon-linkedin, .icon-rss, .icon-twitter, .icon-mail {
+    background-repeat: no-repeat;
+    background-position: left center;
+}
+.icon-linkedin {
+    background-image: url("../images/site/icon/icon-linkedin.png");
+}
+.icon-rss {
+    background-image: url("../images/site/icon/icon-rss.png");
+}
+.icon-twitter {
+    background-image: url("../images/site/icon/icon-twitter.png");
+}
+.icon-mail {
+    background-image: url("../images/site/icon/icon-mail.png");
+}
+/**
+ * *********************************************
+ * Styling: Title with the Borderline underneath
+ * *********************************************
+ */
 .line-title {
     @include lineStyleTitle;
     > h2 {
@@ -8,7 +34,11 @@
         position: relative;
     }
 }
-
+/**
+ * *********************************************
+ * Styling: Main Content (Genernal)
+ * *********************************************
+ */
 #content-wrapper {
     margin: 0 auto;
     max-width: 1200px;
@@ -17,7 +47,7 @@
 .main-content {
     max-width: 860px;
     > section {
-        margin-top: 40px;
+        margin-top: 30px;
     }
     > section:first-child {
         margin-top: 0;
@@ -26,10 +56,9 @@
         margin-bottom: 60px;
     }
 }
-
 /**
  * *********************************************
- * Methods Summary: Styling Classified
+ * Styling: Classified
  * *********************************************
  */
 .classifields {
@@ -39,6 +68,9 @@
             height: 60px;
             margin-top: 20px;
             padding-left: 68px;
+        }
+        img {
+            border: 1px solid black;
         }
     }
 } 
@@ -88,9 +120,98 @@
             padding: 15px 11px;
         }
         a {
-            color: #3c9fe0;
+            color: $lightBlue;
+            font-weight: 600;
             text-decoration: none;
         }
     } 
 }
-
+/**
+ * *********************************************
+ * Styling: Button Read More
+ * *********************************************
+ */
+.bt-viewmore {
+    color: $darkBlue;
+    display: block;
+    font-size: 12px;
+    text-align: right;
+    margin-top: 17px;
+}
+/**
+ * *********************************************
+ * Styling: Breadcrums
+ * *********************************************
+ */
+.breadcrum-wrapper {
+    span {
+        font-size: 18px;
+        font-weight: 600;
+    }
+    > h2 {
+        font-size: 24px;
+        margin-top: 20px;
+        text-transform: uppercase;
+        color: $darkBlue;
+        font-weight: 800;
+    }
+    &.opinion-listing {
+        @include breadcrum-listing-color($opinion);
+    }
+    &.event-listing, &.job-listing {
+        @include breadcrum-listing-color($event);
+    }
+    &.author-listing {
+        @include breadcrum-listing-color($author);
+        > span {
+            color: #010101;
+            font-weight: 500;
+            display: inline-block;
+            margin-top: 15px;
+        }
+    } 
+} 
+/**
+ * *********************************************
+ * Styling: Pagination
+ * *********************************************
+ */
+.pagination-wrapper {
+    text-align: center;
+    max-width: 196px;
+    margin-left: auto;
+    margin-right: auto;
+    > span {
+        float:left;
+    }
+    a {
+        display: block;
+        color: black;
+        font-size: 12px;
+        font-weight: 700;
+        line-height: 28px;
+        width: 28px;
+        height: 28px;
+        &:hover {
+            color: $lightBlue;
+        }
+    }
+    > span:first-child {
+        margin-left: 0;
+    }
+    .next-page a, .prev-page a {
+        background-color: $borderLine;
+        background-position: center center;
+        background-repeat: no-repeat;
+        border-radius: 4px;
+    }
+    .next-page a:hover, .prev-page a:hover {
+        background-color: $lightBlue;
+    }
+    .next-page a {
+        background-image: url("../images/site/icon/icon-next.png");
+    }
+    .prev-page a {
+        background-image: url("../images/site/icon/icon-prev.png");
+    }
+}

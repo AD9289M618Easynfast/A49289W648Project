@@ -1,3 +1,4 @@
+/** ********************************************* Methods Summary: Import Sass Variables ********************************************* */
 /** ********************************************* Import: Reset Css ********************************************* */
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video { margin: 0; padding: 0; border: 0; font-size: 100%; font: inherit; vertical-align: baseline; }
 
@@ -39,7 +40,7 @@ input:out-of-range { outline: none; }
 
 /** ********************************************* Import: Website Components ********************************************* */
 @font-face { font-family: 'gothic'; src: url("../font/gothic.TTF"); font-weight: normal; }
-@font-face { font-family: 'gothic-bold'; src: url("../font/gothic-bold.TTF"); font-weight: normal; }
+@font-face { font-family: 'gothic'; src: url("../font/gothic-bold.TTF"); font-weight: bold; }
 .bx-wrapper { margin: 0 auto 60px; padding: 0; position: relative; }
 
 .bx-wrapper img { display: block; margin: 0 auto; max-width: 100%; }
@@ -885,7 +886,7 @@ div, header, footer { width: 100%; }
 /*Main Navigation Menu*/
 .main-menu { margin-top: 40px; }
 .main-menu li { float: left; margin-right: 35px; }
-.main-menu a { color: #0a234b; font-family: gothic-bold; font-size: 17px; text-transform: uppercase; text-decoration: none; }
+.main-menu a { color: #0a234b; font-size: 17px; font-weight: bold; text-decoration: none; text-transform: uppercase; }
 .main-menu a:hover { color: #007cd6; }
 
 /*Social Navigation*/
@@ -899,7 +900,7 @@ div, header, footer { width: 100%; }
 .social-menu .icon-facebook { background-position: 170px 0; }
 
 /** ********************************************* Import: Website Section/Content ********************************************* */
-.title { font-size: 75px; margin: 40px 0; text-align: center; }
+.title { font-size: 50px; margin: 40px 0; text-align: center; }
 
 .title > span, section h2 { color: #007cd6; }
 
@@ -908,7 +909,8 @@ section { border-bottom: 1px solid black; padding: 0 35px 40px; }
 section:last-child { border: medium none; }
 
 /** ********************************************* Styling: Section Services ********************************************* */
-#services h2 { font-size: 39px; margin: 35px 0 25px; }
+#about-us h2 { font-size: 27; margin: 35px 0 15px; font-weight: bold; }
+#about-us a { color: #007cd6; }
 
 /** ********************************************* Styling: Section Clients ********************************************* */
 .client-slider { margin: 0 auto; }

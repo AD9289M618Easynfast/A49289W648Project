@@ -1,4 +1,8 @@
 .sidebar-wrapper {
+    h3, a, p {
+        font-size: 14px;
+    }
+
     .line-title {
         @include lineStyleTitle(2px,$darkBlue);
     }
@@ -8,6 +12,9 @@
         margin-bottom: 30px;
     }
     .tab-navigation  {
+        li, a {
+            @include no-transition;
+        }
         > li {
 
             float: left;
@@ -15,47 +22,41 @@
         a {
             border-bottom: 2px solid #e4e4e4;
             border-top: 3px solid transparent;
+            box-sizing: border-box;
             color: #0b3576;
             display: block;
             font-size: 12px;
-            font-weight: 600;
-            height: 45px;
-            line-height: 45px;
+            height: 50px;
             padding: 10px;
             text-align: center;
             text-decoration: none;
             text-transform: uppercase;
         }
 
-        a:hover {
+        a.selected, a:hover {
+            background-color: #FAFAFA;
             border-bottom-color: transparent;
             border-top-color: #0B3576;
+            font-weight: 600;
         }
     }
     .tab-content {
+        background-color: #FAFAFA;
         .latest-news-content {
             box-sizing: border-box;
-            padding: 0 16px;
+            padding: 0 15px 15px;
             li {
                 border-bottom: 1px solid #e4e4e4;
                 padding: 12px 0;
             }
             a {
-                color: #42a1e1;
+                color: $lightBlue;
                 text-decoration: none;
             }
         }
     }
 }
 
-
-
-.bt-viewmore {
-    color: #0B3576 !important;
-    display: block;
-    text-align: right;
-    margin-top: 17px;
-}
 
 
 /**
@@ -70,7 +71,12 @@
         margin-bottom: 16px;
         text-align: center;
     }
-    > form {
+
+    .form-wrapper {
+        background-color: #FAFAFA;
+        padding: 10px 0;
+    }
+    form {
         background-image: url("../images/site/subscribe01.png");
         background-position: center center;
         background-repeat: no-repeat;
@@ -117,14 +123,15 @@
             text-transform: uppercase;
         }
         span {
-            color: #3c9fe0;
+            color: $lightBlue;
+            font-weight: 600;
         }
     }
 }
 .profressional-placement-list, .upcoming-event-list {
     figcaption {
         h3 {
-            color: #3C9FE0;
+            color: $lightBlue;
         }
     }
 }

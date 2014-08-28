@@ -3,6 +3,7 @@
         <title>Patron Saints of Music</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href='http://fonts.googleapis.com/css?family=Muli:300,400,300italic,400italic' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" type="text/css" href="css/style.css"/>
         <script type="text/javascript" src="js/jquery.min.js"></script>
         <script type="text/javascript" src="js/components/bxslider.min.js"></script>
@@ -31,7 +32,7 @@
                                 <a href="#home">Home</a>
                             </li>
                             <li>
-                                <a href="#services">Services</a>
+                                <a href="#about-us">About Us</a>
                             </li>
                             <li>
                                 <a href="#clients">Clients</a>
@@ -54,35 +55,58 @@
             </header>
 
             <!--Section Services-->
-            <section id="services">
+            <section id="about-us">
                 <div class="content">
-                    <h1 class="title">Our <span>Services</span></h1>
-                    <p>The Patron Saints of Music was launched as an indie and more accessible alternative to the established music production companies. Based in Los Angeles, California, we provide custom music and underscore to television and film.  Main titles, thematic branding, custom library, collaborations with artists for custom songs - whatever your hopes are for the music on your production, our team of top composers, beat-makers, producers, songwriters, engineers and editors will make it happen, even if it's just quietly supporting your stories :)</p>
-                    <p>We've been so busy scoring shows all year that we're just now, after much demand, launching this site.  Watch this space for updates, and we'll see you in the bays!</p>
+                    <h1 class="title">About <span>Us</span></h1>
+                    <p>
+                        With more than 30 years of recording and composing experience amongst its principles, the recently launched Patron Saints of music is poised to become the next boutique music composition and library on any producer’s shortlist. Full show credits include Below Deck (Bravo), Redneck Island (CMT), Ghost Mine (Syfy), Caveman (ABC), Robot Combat League (Syfy), Rock of Love Bus (VH-1) and many more.  In addition, PSM have writing credits on many major unscripted productions including American Idol, Masterchef, Biggest Loser, Shark Tank, Undercover Boss, True Blood and others.
+                    </p>
+                    <p>
+                        PSM knows that you’re not just using music to fill the background; you’re using it to tell a story and share emotion and its library is built for just those moments when you need something that helps your viewers feel what is on screen.  It’s this attention to your audience, built from experience both on the composing side as well as years of major label recording and touring experience that makes PSM a terrific music source.
+                    </p>
+                    <p>
+                        Whether you need a main title theme or an entire season’s worth of music, a library for your single episode or music to service an entire network, Patron Saints of Music can deliver to best suit your music needs.
+                    </p>
 
-                    <!--Scoring Section-->
-                    <h2>Scoring</h2>
-                    <p>Not only do we score series and films, we'll still treat you like a major motion picture even if you just want to augment your library music by custom scoring an important scene or two.  We're always working on passion projects around here, so call us about your next film or series pitch, and let's make something happen!</p>
+                    <!--Library Section-->
+                    <h2>Library</h2>
+                    <p>
+                        Were the new kid on the block among production libraries. Your gonna like what you hear.<br/>
+                        <a href="http://patronsaintsofmusic.sourceaudio.com/#!catalogs" target="_blank">
+                            http://patronsaintsofmusic.sourceaudio.com/#!catalogs
+                        </a>
+                    </p>
 
                     <!--Custom Library Section-->
                     <h2>Custom Library</h2>
-                    <p>Not only do we score series and films, we'll still treat you like a major motion picture even if you just want to augment your library music by custom scoring an important scene or two.  We're always working on passion projects around here, so call us about your next film or series pitch, and let's make something happen!</p>
+                    <p>
+                        We have built custom underscore libraries from top to bottom for such clients as VH1, SYFY, E, BRAVO, And we can build one for you!    
+                    </p>
 
-                    <!--Songwriting Section-->
-                    <h2>Songwriting</h2>
-                    <p>We write songs for the radio, for artists, and for soundtracks, and now we write and produce songs for television with that same level of artistic dedication.  We've written on multi-platinum records, placed songs on dozens of network TV shows, and we also write custom songs for the production world.  If you ever heard "Driveshaft" on JJ Abrams' "Lost" - hey, we wrote that, too!  This year we wrote and placed lyrical songs on "House M.D. (FOX)," "Men of a Certain Age (TNT)," "Legend Hunters (VH1)," "A Basement Affair (VH1)," and the upcoming "Ton of Cash," also on VH1.</p>
+                    <!--Score to Picture Section-->
+                    <h2>Score to Picture</h2>
+                    <p>
+                        We augment library services by scoring important scenes in addition, we score to picture for scripted TV or Film
+                    </p>
 
                     <!--Music Supervisor Section-->
-                    <h2>Music Supervisor</h2>
-                    <p>We offer several solutions for your music supervision needs, including acquiring clearances, sync licenses, and creating sound-alikes.  Can’t afford Lady Gaga or LCD Soundsystem, but want something that sounds like them, or better yet, feels like them?  If we don’t already have it, we'll make it just for you.</p>
+                    <h2>Music Supervision and Licensing</h2>
+                    <p>
+                        PSM has partnered with Sound Canyon to meet your Music Supervising and Licensing needs.
+                        <a href="http://soundcyn.com/home" target="_blank">
+                            http://soundcyn.com/home
+                        </a>
+                    </p>
 
-                    <!--Music Editing Section-->
-                    <h2>Music Editing</h2>
-                    <p>Need some editing for a song you just can’t live without?  No problem.  Our staff has all the capabilities necessary to cut and splice your track to make it work the way you envisioned, all in support of your project.  If you're looking for a music editor for an entire series, we represent some of the best, and will help you from the dub-stage through cue sheet fulfillment.</p>
+                    <!--Main Title Section-->
+                    <h2>Main Title</h2>
+                    <p>
+                        PSM is frequently hired to compose main title themes for Television, and original branding across media.
+                    </p>
 
                 </div>
-            </section>
-            <!--end Section Services-->
+            </section><!--end Section Services-->
+
 
             <!--Section Clients-->
             <section id="clients">
@@ -91,7 +115,32 @@
                     <ul class="client-slider">
                         <li>
                             <figure>
+                                <img src="images/theme/clients/abc.png"/>
+                            </figure>
+                        </li>
+                        <li>
+                            <figure>
+                                <img src="images/theme/clients/bravo.png"/>
+                            </figure>
+                        </li>
+                        <li>
+                            <figure>
                                 <img src="images/theme/clients/cbs.png"/>
+                            </figure>
+                        </li>
+                        <li>
+                            <figure>
+                                <img src="images/theme/clients/cmt.png"/>
+                            </figure>
+                        </li>
+                        <li>
+                            <figure>
+                                <img src="images/theme/clients/cw.png"/>
+                            </figure>
+                        </li>
+                        <li>
+                            <figure>
+                                <img src="images/theme/clients/discovery.png"/>
                             </figure>
                         </li>
                         <li>
@@ -106,6 +155,26 @@
                         </li>
                         <li>
                             <figure>
+                                <img src="images/theme/clients/fox.png"/>
+                            </figure>
+                        </li>
+                        <li>
+                            <figure>
+                                <img src="images/theme/clients/gac.png"/>
+                            </figure>
+                        </li>
+                        <li>
+                            <figure>
+                                <img src="images/theme/clients/gsn.png"/>
+                            </figure>
+                        </li>
+                        <li>
+                            <figure>
+                                <img src="images/theme/clients/hbo.png"/>
+                            </figure>
+                        </li>
+                        <li>
+                            <figure>
                                 <img src="images/theme/clients/miller.png"/>
                             </figure>
                         </li>
@@ -116,7 +185,27 @@
                         </li>
                         <li>
                             <figure>
-                                <img src="images/theme/clients/mtv.png"/>
+                                <img src="images/theme/clients/national-geography.png"/>
+                            </figure>
+                        </li>
+                        <li>
+                            <figure>
+                                <img src="images/theme/clients/nbc.png"/>
+                            </figure>
+                        </li>
+                        <li>
+                            <figure>
+                                <img src="images/theme/clients/syfy.png"/>
+                            </figure>
+                        </li>
+                        <li>
+                            <figure>
+                                <img src="images/theme/clients/tbs.png"/>
+                            </figure>
+                        </li>
+                        <li>
+                            <figure>
+                                <img src="images/theme/clients/vh1.png"/>
                             </figure>
                         </li>
                     </ul>

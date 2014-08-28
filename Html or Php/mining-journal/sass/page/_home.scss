@@ -102,12 +102,13 @@
 
         li {
             border-bottom: 1px solid #E0E0E0;
+            @include fixFigcaptionGap(3px);
         }
         li, li:first-child figcaption {
-            padding: 20px 14px 6px;
+            padding: 15px 14px 6px;
         }
         h3 {
-            color: #3c9fe0;
+            color: $lightBlue;
             font-size: 16px;
             margin-bottom: 15px;
         }
@@ -196,7 +197,9 @@
     margin-top: 15px;
     li {
         border-bottom: 1px solid #e0e0e0;
-        padding: $defaultPostListPadding;
+        padding: 20px 0 6px;
+
+        @include fixFigcaptionGap(4px);
 
         a {
             color: $lightBlue;
@@ -233,7 +236,7 @@
 }
 /**
  * *********************************************
- * Methods Summary: Focus Post
+ * Methods Summary: Snapshot Post
  * *********************************************
  */
 .snapshot-post {
@@ -244,7 +247,9 @@
         margin-top: 15px;
         img {
             background-color: white;
+            max-width: 540px;
             padding-right: 2px;
+            width: 100%;
         }
     }
     figcaption {
@@ -260,6 +265,7 @@
         }
         p:last-child {
             @include date-comment;
+            margin-top: 45px;
         }
 
         .comment-count {

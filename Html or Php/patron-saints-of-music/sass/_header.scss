@@ -1,5 +1,4 @@
-$defaultBlue: #007CD6;
-$margin: 35px;
+
 
 div, header, footer {
     width: 100%;
@@ -40,10 +39,10 @@ header{
     }
     a {
         color: #0a234b;
-        font-family: gothic-bold;
         font-size: 17px;
-        text-transform: uppercase;
+        font-weight: bold;
         text-decoration: none;
+        text-transform: uppercase;
     }
     a:hover {
         color: $defaultBlue;
